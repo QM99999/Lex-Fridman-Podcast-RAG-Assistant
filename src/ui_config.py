@@ -16,6 +16,16 @@ from retrieval import PROJECT_ROOT
 
 ENV_PATH = PROJECT_ROOT / ".env"
 REQUIRED_KEYS = ("OPENAI_API_KEY", "DEEPSEEK_API_KEY")
+PLACEHOLDER_MARKERS = ("sk-REPLACE_WITH_YOUR", "REPLACE_WITH_YOUR")
+
+
+def _key_is_set(key: str) -> bool:
+    """A key counts as set only if non-empty and not a template placeholder."""
+    val = os.environ.get(key, "").strip()
+    if not val:
+        return False
+    low = val.lower()
+    return not any(m.lower() in low for m in PLACEHOLDER_MARKERS)
 
 
 def read_env() -> dict:
@@ -47,7 +57,7 @@ def write_env(key: str, value: str) -> None:
 
 def missing_keys() -> list[str]:
     """Only OpenAI is required for prompting; DeepSeek stays optional."""
-    return ["OPENAI_API_KEY"] if not os.environ.get("OPENAI_API_KEY") else []
+    return ["OPENAI_API_KEY"] if not _key_is_set("OPENAI_API_KEY") else []
 
 
 ADMIN_KEY = "ADMIN_PASSWORD"
@@ -172,7 +182,7 @@ def render_keys() -> None:
     with st.sidebar.expander("API keys", expanded=bool(missing)):
         editing = any(st.session_state.get(f"edit_{k}") for k in REQUIRED_KEYS)
         for k in REQUIRED_KEYS:
-            has = bool(os.environ.get(k))
+            has = _key_is_set(k)
             if has and not st.session_state.get(f"edit_{k}"):
                 c1, c2 = st.columns([3, 1])
                 c1.success(f"{k}: set")
