@@ -99,7 +99,7 @@ with st.sidebar:
         help="faq extracts Q&A pairs with an LLM (costs tokens on new episodes); "
              "re-running fills in only new/incomplete episodes unless Force is on",
     )
-    default_backend = os.environ.get("APP_BACKEND", "elasticsearch")
+    default_backend = os.environ.get("APP_BACKEND", "memory")
     backend = st.selectbox("Backend", ["elasticsearch", "memory"],
                            index=0 if default_backend == "elasticsearch" else 1,
                            help="elasticsearch = Docker ES (production); memory = local kb_memory.json "

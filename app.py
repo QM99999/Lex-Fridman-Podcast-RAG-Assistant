@@ -45,7 +45,7 @@ ui_config.render_admin_sidebar()
 
 with st.sidebar:
     st.header("⚙️ Settings")
-    default_backend = os.environ.get("APP_BACKEND", "elasticsearch")
+    default_backend = os.environ.get("APP_BACKEND", "memory")
     backend = st.selectbox(
         "Retrieval backend", ["elasticsearch", "memory"],
         index=0 if default_backend == "elasticsearch" else 1,

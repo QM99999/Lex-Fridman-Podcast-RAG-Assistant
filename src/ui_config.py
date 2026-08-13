@@ -212,6 +212,9 @@ def render_keys() -> None:
                 for k in REQUIRED_KEYS:
                     st.session_state.pop(f"edit_{k}", None)
                 if saved:
+                    # Clients (embedder / LLM) cache the API key at creation;
+                    # force them to be rebuilt so the new key takes effect.
+                    st.cache_resource.clear()
                     st.rerun()
     if missing:
         st.warning(

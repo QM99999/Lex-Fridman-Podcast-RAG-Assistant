@@ -401,7 +401,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(
         description="Evaluate RAG answer quality with an LLM-as-a-judge (A->Q->A').")
     parser.add_argument("--faq", default=str(PROJECT_ROOT / "data/faq"))
-    parser.add_argument("--backend", choices=["memory", "elasticsearch"], default="elasticsearch")
+    parser.add_argument("--backend", choices=["memory", "elasticsearch"], default="memory")
     parser.add_argument("--top-k", type=int, default=5)
     parser.add_argument("--rerank-model", default=None,
                         help="cross-encoder model to re-rank candidates (e.g. BAAI/bge-reranker-base); empty = off")
