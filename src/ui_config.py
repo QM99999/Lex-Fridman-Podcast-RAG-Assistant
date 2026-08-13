@@ -116,6 +116,16 @@ def write_env(key: str, value: str) -> None:
     os.environ[key] = value
 
 
+def delete_key(key: str) -> None:
+    """Remove a key from .env, os.environ and the browser localStorage."""
+    if ENV_PATH.exists():
+        lines = ENV_PATH.read_text(encoding="utf-8").splitlines()
+        out = [l for l in lines if not l.strip().startswith(key + "=")]
+        ENV_PATH.write_text("\n".join(out) + ("\n" if out else ""), encoding="utf-8")
+    os.environ.pop(key, None)
+    _clear_browser_key(key)
+
+
 def missing_keys() -> list[str]:
     """Only OpenAI is required for prompting; DeepSeek stays optional."""
     return ["OPENAI_API_KEY"] if not _key_is_set("OPENAI_API_KEY") else []
@@ -247,23 +257,26 @@ def render_keys() -> None:
         for k in REQUIRED_KEYS:
             has = _key_is_set(k)
             if has and not st.session_state.get(f"edit_{k}"):
-                c1, c2 = st.columns([3, 1])
+                c1, c2, c3 = st.columns([3, 1, 1])
                 c1.success(f"{k}: set")
                 if c2.button("Edit", key=f"btn_{k}"):
                     st.session_state[f"edit_{k}"] = True
+                if c3.button("Delete", key=f"del_{k}"):
+                    delete_key(k)
+                    st.session_state.pop(f"edit_{k}", None)
+                    st.cache_resource.clear()
+                    st.rerun()
             else:
                 st.text_input(
                     f"{k} (password)", type="password",
                     key=f"key_input_{k}",
                     placeholder="sk-..." if not has else "leave blank to keep current",
                 )
-        if missing:
-            st.warning(
-                "\U0001F512 **Security:** keys are saved only to your local "
-                "`.env` file and never leave this machine. As a tester, please "
-                "generate a **NEW key** for this test and **delete it once you "
-                "are done**."
-            )
+        st.info(
+            "\U0001F512 **Tester tip:** use a **NEW key** for this test and "
+            "click **Delete** next to it once you are done. Keys are kept "
+            "only in this browser for 24h (no server copy)."
+        )
         if missing or editing:
             if st.button("Save API keys"):
                 saved = False
