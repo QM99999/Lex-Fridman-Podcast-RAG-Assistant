@@ -259,9 +259,9 @@ def render_keys() -> None:
             if has and not st.session_state.get(f"edit_{k}"):
                 c1, c2, c3 = st.columns([3, 1, 1])
                 c1.success(f"{k}: set")
-                if c2.button("Edit", key=f"btn_{k}"):
+                if c2.button("Edit", key=f"btn_{k}", width="content"):
                     st.session_state[f"edit_{k}"] = True
-                if c3.button("Delete", key=f"del_{k}"):
+                if c3.button("Delete", key=f"del_{k}", width="content"):
                     delete_key(k)
                     st.session_state.pop(f"edit_{k}", None)
                     st.cache_resource.clear()
