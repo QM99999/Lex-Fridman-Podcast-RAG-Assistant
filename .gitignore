@@ -11,8 +11,7 @@ __pycache__/
 .uv-cache/
 uv-python/
 
-# Runtime feedback / logs (not committed)
-data/results/feedback.jsonl
+# Runtime logs (not committed); feedback.jsonl is tracked so testers see monitoring data
 data/results/pipeline_run.log
 
 # Personal folder - never upload
