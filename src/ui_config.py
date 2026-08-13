@@ -7,6 +7,7 @@ into the container), so testers configure keys once and CLI runs pick them up.
 from __future__ import annotations
 
 import os
+import time
 from pathlib import Path
 
 import streamlit as st
@@ -38,7 +39,67 @@ def read_env() -> dict:
     return out
 
 
+def _clean_value(value: str) -> str:
+    """Sanitize a pasted key: strip whitespace/newlines and any inline comment.
+
+    Testers may paste a key with trailing spaces, a newline, or a `# comment`
+    glued to it; we always store the clean token so the .env stays valid.
+    """
+    v = value.strip().splitlines()[0].strip() if value.strip() else ""
+    if "#" in v:
+        v = v.split("#", 1)[0].strip()
+    return v
+
+
+_LS_PREFIX = "lfqa_key_"
+_KEY_TTL_SECONDS = 24 * 3600  # browser-side key cache: 24h
+
+
+def _ls_js(script: str) -> None:
+    """Run a tiny JS snippet in the browser (best-effort)."""
+    try:
+        components.html(f"<script>{script}</script>", height=0, key=f"k_{abs(hash(script))}")
+    except Exception:  # noqa: BLE001 - best-effort
+        pass
+
+
+def _save_key_to_browser(key: str, value: str) -> None:
+    import json as _json
+    payload = _json.dumps({"v": value, "t": time.time()})
+    _ls_js(f"localStorage.setItem('{_LS_PREFIX}{key}', '{payload}');")
+
+
+def _restore_keys_from_browser() -> None:
+    """Load any unexpired browser-cached keys into os.environ (24h TTL).
+
+    Testers paste their own key; it is kept only in this browser for 24h and
+    never in the repo, so no manual restart is needed to expire it.
+    """
+    for key in REQUIRED_KEYS:
+        if _key_is_set(key):
+            continue
+        v = components.html(
+            f"<script>const p=localStorage.getItem('{_LS_PREFIX}{key}');"
+            "Streamlit.setComponentValue(p||'');</script>",
+            height=0, key=f"ls_read_{key}",
+        )
+        if not v:
+            continue
+        try:
+            import json as _json
+            data = _json.loads(v)
+            if time.time() - data.get("t", 0) <= _KEY_TTL_SECONDS:
+                os.environ[key] = str(data["v"])
+        except Exception:  # noqa: BLE001 - ignore corrupt/expired entries
+            pass
+
+
+def _clear_browser_key(key: str) -> None:
+    _ls_js(f"localStorage.removeItem('{_LS_PREFIX}{key}');")
+
+
 def write_env(key: str, value: str) -> None:
+    value = _clean_value(value)
     lines = ENV_PATH.read_text(encoding="utf-8").splitlines() if ENV_PATH.exists() else []
     out, found = [], False
     for line in lines:
@@ -179,6 +240,8 @@ def render_keys() -> None:
     show as "set" with an Edit button; editing replaces the stored value.
     """
     missing = missing_keys()
+    _restore_keys_from_browser()
+    missing = missing_keys()
     with st.sidebar.expander("API keys", expanded=bool(missing)):
         editing = any(st.session_state.get(f"edit_{k}") for k in REQUIRED_KEYS)
         for k in REQUIRED_KEYS:
@@ -208,6 +271,7 @@ def render_keys() -> None:
                     v = st.session_state.get(f"key_input_{k}", "").strip()
                     if v:
                         write_env(k, v)
+                        _save_key_to_browser(k, _clean_value(v))
                         saved = True
                 for k in REQUIRED_KEYS:
                     st.session_state.pop(f"edit_{k}", None)
