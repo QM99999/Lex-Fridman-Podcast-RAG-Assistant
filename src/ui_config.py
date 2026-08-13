@@ -81,7 +81,7 @@ def _restore_keys_from_browser() -> None:
         v = components.html(
             f"<script>const p=localStorage.getItem('{_LS_PREFIX}{key}');"
             "Streamlit.setComponentValue(p||'');</script>",
-            height=0, key=f"ls_read_{key}",
+            height=0,
         )
         if not v:
             continue
