@@ -1,0 +1,1481 @@
+{
+  "backend": "elasticsearch",
+  "top_k": 5,
+  "answer_models": [
+    "gpt-3.5-turbo",
+    "gpt-4o-mini",
+    "gpt-5.4-mini"
+  ],
+  "judge_model": "gpt-5.6-luna",
+  "rerank_model": null,
+  "rewrite_mode": "none",
+  "rewrite_model": "gpt-4.1-nano",
+  "num_queries_total": 287,
+  "generated_at": "2026-08-10T17:56:09+00:00",
+  "num_queries_done": 80,
+  "summary": {
+    "gpt-3.5-turbo": {
+      "total": 27,
+      "good": 16,
+      "bad": 11,
+      "failed": 0,
+      "good_rate": 0.5925925925925926
+    },
+    "gpt-4o-mini": {
+      "total": 27,
+      "good": 20,
+      "bad": 7,
+      "failed": 0,
+      "good_rate": 0.7407407407407407
+    },
+    "gpt-5.4-mini": {
+      "total": 26,
+      "good": 22,
+      "bad": 4,
+      "failed": 0,
+      "good_rate": 0.8461538461538461
+    }
+  },
+  "details": [
+    {
+      "faq_id": "491-01-001",
+      "episode": 491,
+      "question": "Does the guest prefer to describe his coding work as 'agentic engineering'?",
+      "retrieve_query": null,
+      "answer_orig": "Yes. He tells people he does agentic engineering, and jokes that after 3 AM he switches to 'wipe coding' and regrets it the next day.",
+      "answer_llm": "Yes, the guest prefers to describe his coding work as 'agentic engineering' [1].",
+      "answer_model": "gpt-3.5-turbo",
+      "judge_model": "gpt-5.6-luna",
+      "score": "good",
+      "reasoning": "The AI answer correctly captures the key point that the guest describes his coding work as 'agentic engineering.' The omitted joke about switching to 'wipe coding' after 3 AM is extra detail and not necessary to answer the question.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3413,
+        "completion_tokens": 80,
+        "total_tokens": 3493
+      }
+    },
+    {
+      "faq_id": "491-01-001",
+      "episode": 491,
+      "question": "Does the guest prefer to describe his coding work as 'agentic engineering'?",
+      "retrieve_query": null,
+      "answer_orig": "Yes. He tells people he does agentic engineering, and jokes that after 3 AM he switches to 'wipe coding' and regrets it the next day.",
+      "answer_llm": "Yes, the guest, Peter Steinberger, prefers to describe his coding work as \"agentic engineering.\" He explicitly states, \"I always tell people I do agentic engineering\" during the conversation with Lex Fridman [1].",
+      "answer_model": "gpt-4o-mini",
+      "judge_model": "gpt-5.6-luna",
+      "score": "good",
+      "reasoning": "The AI answer correctly states that the guest prefers to describe his coding work as “agentic engineering,” matching the key point of the original answer. It omits the humorous detail about switching to “wipe coding” after 3 AM, but that detail is supplementary and not necessary to answer the question.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3456,
+        "completion_tokens": 122,
+        "total_tokens": 3578
+      }
+    },
+    {
+      "faq_id": "491-01-001",
+      "episode": 491,
+      "question": "Does the guest prefer to describe his coding work as 'agentic engineering'?",
+      "retrieve_query": null,
+      "answer_orig": "Yes. He tells people he does agentic engineering, and jokes that after 3 AM he switches to 'wipe coding' and regrets it the next day.",
+      "answer_llm": "Yes. Peter Steinberger explicitly says, “I always tell people I do agentic engineering,” and when Lex asks, “You prefer agentic engineering?”, Peter answers “Yeah” [1].",
+      "answer_model": "gpt-5.4-mini",
+      "judge_model": "gpt-5.6-luna",
+      "score": "good",
+      "reasoning": "The AI answer correctly states that Peter prefers/describes his work as agentic engineering. It includes the key confirmation from the conversation. The omitted joke about switching to 'wipe coding' after 3 AM is extra detail and not necessary to answer the question.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3447,
+        "completion_tokens": 108,
+        "total_tokens": 3555
+      }
+    },
+    {
+      "faq_id": "491-01-002",
+      "episode": 491,
+      "question": "Does the guest use voice input to write code?",
+      "retrieve_query": null,
+      "answer_orig": "Yes, he used voice input extensively. At one point, he lost his voice from doing so.",
+      "answer_llm": "Yes, the guest uses voice input to write code. They mentioned, \"I used to do it very extensively to the point where there was a period where I lost my voice\" [1].",
+      "answer_model": "gpt-3.5-turbo",
+      "judge_model": "gpt-5.6-luna",
+      "score": "good",
+      "reasoning": "The AI answer directly matches the ground truth: the guest used voice input extensively to write code and even lost their voice from doing so.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3219,
+        "completion_tokens": 81,
+        "total_tokens": 3300
+      }
+    },
+    {
+      "faq_id": "491-01-002",
+      "episode": 491,
+      "question": "Does the guest use voice input to write code?",
+      "retrieve_query": null,
+      "answer_orig": "Yes, he used voice input extensively. At one point, he lost his voice from doing so.",
+      "answer_llm": "Yes, the guest, Peter Steinberger, uses voice input to write code. He mentions that he talks instead of writing, stating, \"I used to write really long prompts. And by writing, I mean, I don’t write, I- I- I talk\" [1]. He also confirms that he uses voice extensively for input, to the point where he lost his voice at one time [1].",
+      "answer_model": "gpt-4o-mini",
+      "judge_model": "gpt-5.6-luna",
+      "score": "good",
+      "reasoning": "The AI answer matches the ground truth: it says the guest uses voice input extensively to write code and notes that he lost his voice from doing so. The added quote and identification do not conflict with the answer.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3281,
+        "completion_tokens": 140,
+        "total_tokens": 3421
+      }
+    },
+    {
+      "faq_id": "491-01-002",
+      "episode": 491,
+      "question": "Does the guest use voice input to write code?",
+      "retrieve_query": null,
+      "answer_orig": "Yes, he used voice input extensively. At one point, he lost his voice from doing so.",
+      "answer_llm": "Yes. Peter Steinberger says he does not write prompts by hand; he talks to the agent using voice, and Lex explicitly confirms he is “using voice for the actual input,” which Peter agrees with. [1]",
+      "answer_model": "gpt-5.4-mini",
+      "judge_model": "gpt-5.6-luna",
+      "score": "good",
+      "reasoning": "The AI answer correctly states that Peter uses voice input extensively to communicate with the coding agent, matching the key point of the original answer. The added detail about not typing prompts and the confirmation of voice input is consistent and does not omit the central information.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3241,
+        "completion_tokens": 112,
+        "total_tokens": 3353
+      }
+    },
+    {
+      "faq_id": "491-03-003",
+      "episode": 491,
+      "question": "What was the story behind the one-hour prototype for OpenClaw?",
+      "retrieve_query": null,
+      "answer_orig": "The guest had wanted a personal AI assistant since April and experimented with GPT-4.1's one million context window, loading all his WhatsApp data and asking it personal questions like 'What makes this friendship meaningful?' He got profound results that made his friends teary-eyed. He assumed AI labs would build such a product, so he moved on, but by November it still didn't exist. He was annoyed and prompted it into existence, creating the initial prototype.",
+      "answer_llm": "The story behind the one-hour prototype for OpenClaw was that Peter Steinberger built a limited experiment with WhatsApp and cloud code, where he hooked up WhatsApp to cloud code in one shot, allowing him to interact with his computer by sending a CLI message to the cloud code, which then performed its function and returned a string back to WhatsApp. This initial prototype was created in just one hour, giving Peter a sense of excitement and the ability to communicate with his computer, although he desired to incorporate images for providing the agent with more context [2].",
+      "answer_model": "gpt-3.5-turbo",
+      "judge_model": "gpt-5.6-luna",
+      "score": "bad",
+      "reasoning": "The answer describes the technical mechanics of the one-hour prototype, but it omits the central story: Peter had been wanting a personal AI assistant since April, used GPT-4.1 with his WhatsApp history to ask deeply personal questions, assumed labs would build such a product, and finally created it himself out of frustration when it still did not exist in November. Because it misses this key motivation and background, it is incomplete.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3288,
+        "completion_tokens": 273,
+        "total_tokens": 3561
+      }
+    },
+    {
+      "faq_id": "491-03-003",
+      "episode": 491,
+      "question": "What was the story behind the one-hour prototype for OpenClaw?",
+      "retrieve_query": null,
+      "answer_orig": "The guest had wanted a personal AI assistant since April and experimented with GPT-4.1's one million context window, loading all his WhatsApp data and asking it personal questions like 'What makes this friendship meaningful?' He got profound results that made his friends teary-eyed. He assumed AI labs would build such a product, so he moved on, but by November it still didn't exist. He was annoyed and prompted it into existence, creating the initial prototype.",
+      "answer_llm": "The story behind the one-hour prototype for OpenClaw involves Peter Steinberger's frustration that a personal assistant AI he envisioned did not exist, despite his earlier experiments with AI models like GPT-4.1. He had been playing around with various ideas, including querying his WhatsApp data, but felt that none of his previous attempts were the right solution. In November, feeling annoyed that the concept he wanted wasn't available, he decided to create a prototype quickly. He built a simple system that connected WhatsApp to a cloud code interface, allowing him to send commands and receive responses. This prototype took just one hour to create, and it gave him the ability to interact with his computer in a way that felt innovative and exciting to him, marking the beginning of what would become OpenClaw [2][3].",
+      "answer_model": "gpt-4o-mini",
+      "judge_model": "gpt-5.6-luna",
+      "score": "good",
+      "reasoning": "The answer correctly conveys the central story: he had long wanted a personal AI assistant, experimented with GPT-4.1 and his WhatsApp data, became frustrated when no such product existed by November, and quickly built the initial prototype that became OpenClaw. It omits some color from the original—such as the one-million-token context window, the profound emotional responses, and his assumption that AI labs would build it—but these omissions do not change the core explanation. The added implementation details are not contradictory.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3350,
+        "completion_tokens": 405,
+        "total_tokens": 3755
+      }
+    },
+    {
+      "faq_id": "491-03-003",
+      "episode": 491,
+      "question": "What was the story behind the one-hour prototype for OpenClaw?",
+      "retrieve_query": null,
+      "answer_orig": "The guest had wanted a personal AI assistant since April and experimented with GPT-4.1's one million context window, loading all his WhatsApp data and asking it personal questions like 'What makes this friendship meaningful?' He got profound results that made his friends teary-eyed. He assumed AI labs would build such a product, so he moved on, but by November it still didn't exist. He was annoyed and prompted it into existence, creating the initial prototype.",
+      "answer_llm": "The one-hour prototype was very simple: Peter hooked WhatsApp up to Cloud Code so that when a CLI message came in, he called the CLI with `-p`, got the string back, and sent it back to WhatsApp. He said he built that in one hour and it already felt cool because it let him “talk to my computer.” [3]\n\nHe also said this came after earlier experiments with pulling in lots of personal data, including WhatsApp, and asking questions like “What makes this friendship meaningful?”, which produced surprisingly profound results and convinced him there was something there. [2]",
+      "answer_model": "gpt-5.4-mini",
+      "judge_model": "gpt-5.6-luna",
+      "score": "good",
+      "reasoning": "The answer correctly explains the one-hour prototype’s basic mechanism and connects it to the earlier personal-data experiments with WhatsApp and profound AI-generated responses. It omits some context—especially that he assumed AI labs would build the product, became frustrated when it still did not exist by November, and prompted it into existence—but it captures the central story and does not introduce a substantive contradiction.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3307,
+        "completion_tokens": 408,
+        "total_tokens": 3715
+      }
+    },
+    {
+      "faq_id": "491-03-004",
+      "episode": 491,
+      "question": "What led to the creation of PS PDF kit?",
+      "retrieve_query": null,
+      "answer_orig": "About 15 years ago, the guest had trouble displaying a PDF on an iPad, which he wanted to do to help a friend. The existing solutions were not good enough, so he built his own. That became PS PDF kit, now used on over a billion devices.",
+      "answer_llm": "The creation of PS PDF kit was led by Peter Steinberger's need to show PDFs on an iPad about 15 years ago when existing solutions were not satisfactory. This need to help a friend and the lack of a good existing solution led him to develop the PS PDF kit, which is now used on a billion devices [2].",
+      "answer_model": "gpt-3.5-turbo",
+      "judge_model": "gpt-5.6-luna",
+      "score": "good",
+      "reasoning": "The AI answer accurately captures the key points: Peter Steinberger wanted to display a PDF on an iPad to help a friend, existing solutions were inadequate, and he built PS PDF kit as a result. The added detail about its widespread use is consistent with the original.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3530,
+        "completion_tokens": 136,
+        "total_tokens": 3666
+      }
+    },
+    {
+      "faq_id": "491-03-004",
+      "episode": 491,
+      "question": "What led to the creation of PS PDF kit?",
+      "retrieve_query": null,
+      "answer_orig": "About 15 years ago, the guest had trouble displaying a PDF on an iPad, which he wanted to do to help a friend. The existing solutions were not good enough, so he built his own. That became PS PDF kit, now used on over a billion devices.",
+      "answer_llm": "The creation of PS PDF Kit was driven by Peter Steinberger's frustration with the lack of good PDF viewing options on the iPad. He encountered a problem while trying to show a PDF to a friend and realized that existing solutions were inadequate. This led him to think, \"I can do this better,\" which ultimately resulted in the development of PS PDF Kit, a software that has since been used on a billion devices [1].",
+      "answer_model": "gpt-4o-mini",
+      "judge_model": "gpt-5.6-luna",
+      "score": "good",
+      "reasoning": "The AI answer accurately captures the key points: Peter Steinberger wanted to display a PDF on an iPad for a friend, found existing solutions inadequate, and built PS PDF Kit himself. It also correctly notes its widespread use on about a billion devices. The added wording does not change the meaning.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3564,
+        "completion_tokens": 160,
+        "total_tokens": 3724
+      }
+    },
+    {
+      "faq_id": "491-03-004",
+      "episode": 491,
+      "question": "What led to the creation of PS PDF kit?",
+      "retrieve_query": null,
+      "answer_orig": "About 15 years ago, the guest had trouble displaying a PDF on an iPad, which he wanted to do to help a friend. The existing solutions were not good enough, so he built his own. That became PS PDF kit, now used on over a billion devices.",
+      "answer_llm": "PS PDF kit was created because Peter Steinberger had a problem trying to show PDFs on an iPad, and he found that existing solutions were either nonexistent or not good enough, so he thought, “I can do this better.” [1]",
+      "answer_model": "gpt-5.4-mini",
+      "judge_model": "gpt-5.6-luna",
+      "score": "good",
+      "reasoning": "The answer correctly identifies the key catalyst: Peter Steinberger wanted to display a PDF on an iPad, found existing solutions inadequate, and built his own, leading to PSPDFKit. It omits the detail that he was doing this to help a friend, but that is a minor contextual detail and the core answer is preserved.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3526,
+        "completion_tokens": 133,
+        "total_tokens": 3659
+      }
+    },
+    {
+      "faq_id": "491-04-005",
+      "episode": 491,
+      "question": "How was Viptunnel converted from TypeScript to Zig?",
+      "retrieve_query": null,
+      "answer_orig": "Viptunnel was a weekend hack project that allowed terminal interaction through the web. The guest later wanted to rewrite part of its architecture because it used too much memory. After failed attempts to rewrite it in Rust, he used Codex with a single prompt to convert the code to Zig, which ran for about six hours and succeeded with minor manual adjustments.",
+      "answer_llm": "Peter Steinberger converted Viptunnel from TypeScript to Zig by using Codex to automatically convert the entire code base into Zig with a single prompt. He mentioned that the automated attempt took about six hours to complete, with only one minor detail that needed modification afterwards [1].",
+      "answer_model": "gpt-3.5-turbo",
+      "judge_model": "gpt-5.6-luna",
+      "score": "good",
+      "reasoning": "The answer correctly explains that Codex was used with a single prompt to convert Viptunnel from TypeScript to Zig, that the process took about six hours, and that only minor manual adjustment was needed afterward. It omits the motivation and failed Rust attempts, but these are contextual details rather than essential to answering how the conversion happened.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3448,
+        "completion_tokens": 208,
+        "total_tokens": 3656
+      }
+    },
+    {
+      "faq_id": "491-04-005",
+      "episode": 491,
+      "question": "How was Viptunnel converted from TypeScript to Zig?",
+      "retrieve_query": null,
+      "answer_orig": "Viptunnel was a weekend hack project that allowed terminal interaction through the web. The guest later wanted to rewrite part of its architecture because it used too much memory. After failed attempts to rewrite it in Rust, he used Codex with a single prompt to convert the code to Zig, which ran for about six hours and succeeded with minor manual adjustments.",
+      "answer_llm": "Viptunnel was converted from TypeScript to Zig using a single prompt with Codex. Peter Steinberger initially attempted to change the architecture to Rust but faced challenges with automated attempts. After revisiting the project months later, he decided to try something more experimental and simply typed a prompt to convert the code to Zig. Codex processed this request and successfully converted most of the code, requiring only minor modifications afterward. The entire process took about six hours, which he described as mind-blowing [1].",
+      "answer_model": "gpt-4o-mini",
+      "judge_model": "gpt-5.6-luna",
+      "score": "good",
+      "reasoning": "The answer conveys the key points: Viptunnel was converted from TypeScript to Zig via a single Codex prompt after failed Rust rewrite attempts, took about six hours, and needed only minor manual changes. The added detail is consistent with the ground truth and does not introduce a substantive error.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3511,
+        "completion_tokens": 173,
+        "total_tokens": 3684
+      }
+    },
+    {
+      "faq_id": "491-04-005",
+      "episode": 491,
+      "question": "How was Viptunnel converted from TypeScript to Zig?",
+      "retrieve_query": null,
+      "answer_orig": "Viptunnel was a weekend hack project that allowed terminal interaction through the web. The guest later wanted to rewrite part of its architecture because it used too much memory. After failed attempts to rewrite it in Rust, he used Codex with a single prompt to convert the code to Zig, which ran for about six hours and succeeded with minor manual adjustments.",
+      "answer_llm": "Viptunnel was converted by giving Codex a one-shot prompt to “convert this and this part to Zig,” after Peter revisited the project months later and decided to try something more experimental than Rust. He said the automated attempts to change the memory-heavy architecture had failed before, but this time Codex ran overnight for about six hours and got almost everything right, with only one small detail needing manual adjustment afterward. [1]",
+      "answer_model": "gpt-5.4-mini",
+      "judge_model": "gpt-5.6-luna",
+      "score": "good",
+      "reasoning": "The answer conveys the key points: after failed Rust rewrites, Codex was given a single prompt to convert Viptunnel to Zig, ran for about six hours, and produced a nearly complete result requiring only minor manual adjustment. The extra details do not conflict with the ground truth.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3496,
+        "completion_tokens": 241,
+        "total_tokens": 3737
+      }
+    },
+    {
+      "faq_id": "491-04-006",
+      "episode": 491,
+      "question": "How was the first prototype connecting WhatsApp to Cloud Code built?",
+      "retrieve_query": null,
+      "answer_orig": "The first prototype was a simple relay: a WhatsApp message came in, the CLI was invoked with the message, it processed it, and the result was sent back to WhatsApp. He built this in one hour and found it impressive to be able to talk to his computer from his phone.",
+      "answer_llm": "The first prototype connecting WhatsApp to Cloud Code was built by Peter Steinberger in one hour. He described it as limited but cool, allowing him to talk to his computer through WhatsApp. The prototype involved sending a CLI message to Cloud Code, which would perform its operations and return a string back to WhatsApp [2]. Peter wanted to include images for more context, as he often uses images when prompting the agent [2].",
+      "answer_model": "gpt-3.5-turbo",
+      "judge_model": "gpt-5.6-luna",
+      "score": "good",
+      "reasoning": "The answer correctly describes the prototype as a simple relay in which a WhatsApp message was passed to a CLI/Cloud Code process and the result was returned to WhatsApp. It also correctly notes that it was built in one hour and enabled talking to his computer from his phone. The additional comment about wanting image support is extraneous but does not contradict the key information.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 2839,
+        "completion_tokens": 229,
+        "total_tokens": 3068
+      }
+    },
+    {
+      "faq_id": "491-04-006",
+      "episode": 491,
+      "question": "How was the first prototype connecting WhatsApp to Cloud Code built?",
+      "retrieve_query": null,
+      "answer_orig": "The first prototype was a simple relay: a WhatsApp message came in, the CLI was invoked with the message, it processed it, and the result was sent back to WhatsApp. He built this in one hour and found it impressive to be able to talk to his computer from his phone.",
+      "answer_llm": "The first prototype connecting WhatsApp to Cloud Code was built by Peter Steinberger in a very straightforward manner. He described it as a simple process where he hooked up WhatsApp to Cloud Code, allowing a message sent via the command line interface (CLI) to trigger Cloud Code, which would then perform its tasks and return a response back to WhatsApp. He accomplished this in just one hour and felt that it was a cool experience, as it allowed him to \"talk to [his] computer\" [2].",
+      "answer_model": "gpt-4o-mini",
+      "judge_model": "gpt-5.6-luna",
+      "score": "bad",
+      "reasoning": "The answer correctly conveys that it was a simple relay built in one hour and that the result was sent back to WhatsApp. However, it reverses the key direction of the prototype: the original had a WhatsApp message invoke the CLI, whereas the AI answer says a message sent via the CLI triggered Cloud Code. This is a substantive error in describing how it worked.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 2868,
+        "completion_tokens": 298,
+        "total_tokens": 3166
+      }
+    },
+    {
+      "faq_id": "491-04-006",
+      "episode": 491,
+      "question": "How was the first prototype connecting WhatsApp to Cloud Code built?",
+      "retrieve_query": null,
+      "answer_orig": "The first prototype was a simple relay: a WhatsApp message came in, the CLI was invoked with the message, it processed it, and the result was sent back to WhatsApp. He built this in one hour and found it impressive to be able to talk to his computer from his phone.",
+      "answer_llm": "The first prototype was built as a very thin bridge: WhatsApp messages came in, the app called the Cloud Code CLI with `-p`, Cloud Code did the work, and the result string was sent back to WhatsApp. Peter said he built that in about one hour. [2]",
+      "answer_model": "gpt-5.4-mini",
+      "judge_model": "gpt-5.6-luna",
+      "score": "good",
+      "reasoning": "The AI answer accurately describes the simple relay architecture: incoming WhatsApp messages triggered the CLI, the processing result was returned to WhatsApp, and it was built in about an hour. The added `-p` detail and name do not conflict with the ground truth.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 2824,
+        "completion_tokens": 130,
+        "total_tokens": 2954
+      }
+    },
+    {
+      "faq_id": "491-04-007",
+      "episode": 491,
+      "question": "Why did the guest add image support to the WhatsApp agent?",
+      "retrieve_query": null,
+      "answer_orig": "He often uses images when prompting because it is an efficient way to give the agent context, and the agent is good at understanding even odd cropped screenshots. He also wanted to use it in real-world scenarios, like taking a photo of an event poster to check his availability. It took a few more hours to implement.",
+      "answer_llm": "The guest added image support to the WhatsApp agent because he found images to be an efficient way to give the agent more context [4].",
+      "answer_model": "gpt-3.5-turbo",
+      "judge_model": "gpt-5.6-luna",
+      "score": "bad",
+      "reasoning": "The AI answer correctly captures the main reason that images efficiently provide context, but it omits two relevant points from the original: the agent’s ability to understand even oddly cropped screenshots and the desire to use image support for real-world tasks such as photographing an event poster to check availability. Thus it is incomplete.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3434,
+        "completion_tokens": 103,
+        "total_tokens": 3537
+      }
+    },
+    {
+      "faq_id": "491-04-007",
+      "episode": 491,
+      "question": "Why did the guest add image support to the WhatsApp agent?",
+      "retrieve_query": null,
+      "answer_orig": "He often uses images when prompting because it is an efficient way to give the agent context, and the agent is good at understanding even odd cropped screenshots. He also wanted to use it in real-world scenarios, like taking a photo of an event poster to check his availability. It took a few more hours to implement.",
+      "answer_llm": "The guest, Peter Steinberger, added image support to the WhatsApp agent because he often uses images when prompting and believes they provide an efficient way to give the agent more context. He mentioned that he wanted to do this in WhatsApp as well, particularly because he found it useful for situations like checking out event posters while running around, which would help him determine if he had time for the events or if his friends were interested [3].",
+      "answer_model": "gpt-4o-mini",
+      "judge_model": "gpt-5.6-luna",
+      "score": "good",
+      "reasoning": "The answer correctly identifies both main reasons: images are an efficient way to provide context, and image support enables practical uses such as photographing an event poster to check availability or interest. It does not mention the agent's ability to understand oddly cropped screenshots or the implementation taking a few hours, but those are supplementary details rather than essential to the core answer.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3519,
+        "completion_tokens": 172,
+        "total_tokens": 3691
+      }
+    },
+    {
+      "faq_id": "491-04-007",
+      "episode": 491,
+      "question": "Why did the guest add image support to the WhatsApp agent?",
+      "retrieve_query": null,
+      "answer_orig": "He often uses images when prompting because it is an efficient way to give the agent context, and the agent is good at understanding even odd cropped screenshots. He also wanted to use it in real-world scenarios, like taking a photo of an event poster to check his availability. It took a few more hours to implement.",
+      "answer_llm": "He added image support because he often uses images when prompting, and he thought they were an efficient way to give the agent more context. [4] He also said images were important for tasks like understanding screenshots, posters, and other visual information in WhatsApp. [3]",
+      "answer_model": "gpt-5.4-mini",
+      "judge_model": "gpt-5.6-luna",
+      "score": "good",
+      "reasoning": "The answer correctly identifies the main motivations: the guest commonly uses images to provide efficient context and wanted the agent to handle visual inputs such as screenshots and event posters in WhatsApp. It does not mention the specific example of checking availability from an event poster or the implementation time, but those are supporting details rather than the core reason.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3485,
+        "completion_tokens": 257,
+        "total_tokens": 3742
+      }
+    },
+    {
+      "faq_id": "491-04-008",
+      "episode": 491,
+      "question": "How did the agent perform during the trip to Marrakesh?",
+      "retrieve_query": null,
+      "answer_orig": "On a birthday trip with friends, the guest used the agent a lot because WhatsApp works reliably even with a shaky internet connection. He used it for translations, explanations, and finding places, and it was effective despite being an early prototype.",
+      "answer_llm": "The agent performed well during the trip to Marrakesh, as Peter mentioned that WhatsApp worked smoothly even with shaky internet, allowing him to use it a lot for various tasks like translating, explaining, and finding places [1].",
+      "answer_model": "gpt-3.5-turbo",
+      "judge_model": "gpt-5.6-luna",
+      "score": "good",
+      "reasoning": "The answer correctly conveys that the agent performed well and was used extensively during the Marrakesh trip despite unreliable internet, including for translations, explanations, and finding places. It omits only the minor detail that this was a birthday trip with friends and that the agent was an early prototype, neither of which is essential to how it performed.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 2914,
+        "completion_tokens": 127,
+        "total_tokens": 3041
+      }
+    },
+    {
+      "faq_id": "491-04-008",
+      "episode": 491,
+      "question": "How did the agent perform during the trip to Marrakesh?",
+      "retrieve_query": null,
+      "answer_orig": "On a birthday trip with friends, the guest used the agent a lot because WhatsApp works reliably even with a shaky internet connection. He used it for translations, explanations, and finding places, and it was effective despite being an early prototype.",
+      "answer_llm": "The agent performed well during the trip to Marrakesh. Peter Steinberger mentioned that despite the internet being a little shaky, WhatsApp worked effectively, allowing him to use the agent for various tasks like translation and finding places. He found it particularly useful because he could send messages via WhatsApp, which felt powerful and convenient, even though the process was slow when booting up the command line interface (CLI) [1].",
+      "answer_model": "gpt-4o-mini",
+      "judge_model": "gpt-5.6-luna",
+      "score": "good",
+      "reasoning": "The answer correctly conveys that the agent was used extensively in Marrakesh despite unreliable internet, via WhatsApp, for translation and finding places, and that it was effective. The added detail about the CLI being slow does not contradict the core answer.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 2971,
+        "completion_tokens": 149,
+        "total_tokens": 3120
+      }
+    },
+    {
+      "faq_id": "491-04-008",
+      "episode": 491,
+      "question": "How did the agent perform during the trip to Marrakesh?",
+      "retrieve_query": null,
+      "answer_orig": "On a birthday trip with friends, the guest used the agent a lot because WhatsApp works reliably even with a shaky internet connection. He used it for translations, explanations, and finding places, and it was effective despite being an early prototype.",
+      "answer_llm": "During the trip to Marrakesh, the agent performed even better because the internet was shaky, but WhatsApp still worked well, so Peter used it a lot for things like translating, explaining, and finding places. [1]",
+      "answer_model": "gpt-5.4-mini",
+      "judge_model": "gpt-5.6-luna",
+      "score": "good",
+      "reasoning": "The answer captures the key points: the agent was used extensively in Marrakesh because WhatsApp remained reliable despite weak internet, and it helped with translations, explanations, and finding places. It adds that it performed “even better,” which is not stated exactly, but this does not materially contradict the original. The omitted birthday-trip and early-prototype details are not essential to the question.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 2931,
+        "completion_tokens": 179,
+        "total_tokens": 3110
+      }
+    },
+    {
+      "faq_id": "491-04-009",
+      "episode": 491,
+      "question": "What was the architecture of the early agent prototype?",
+      "retrieve_query": null,
+      "answer_orig": "The architecture was a simple chain: a WhatsApp message was sent via a thin client to Cloud Code through the CLI, Cloud Code did the heavy processing, and the result was returned as a message. It was slow because the CLI had to boot each time, but it could access the CLI tools he had built over the month.",
+      "answer_llm": "The architecture of the early agent prototype involved a limited experiment with WhatsApp and a search bar that hooked up WhatsApp to cloud code, allowing for interaction with the computer [1]. The prototype was built in one hour and allowed for basic communication with the computer, but Peter Steinberger wanted to incorporate images for more context [1].",
+      "answer_model": "gpt-3.5-turbo",
+      "judge_model": "gpt-5.6-luna",
+      "score": "bad",
+      "reasoning": "The AI answer mentions WhatsApp and Cloud Code, but it does not describe the key architecture: a WhatsApp message passed through a thin client and CLI to Cloud Code for processing, with the result returned as a message. It also omits the important CLI boot limitation and tool access, and introduces details not in the ground truth.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3233,
+        "completion_tokens": 207,
+        "total_tokens": 3440
+      }
+    },
+    {
+      "faq_id": "491-04-009",
+      "episode": 491,
+      "question": "What was the architecture of the early agent prototype?",
+      "retrieve_query": null,
+      "answer_orig": "The architecture was a simple chain: a WhatsApp message was sent via a thin client to Cloud Code through the CLI, Cloud Code did the heavy processing, and the result was returned as a message. It was slow because the CLI had to boot each time, but it could access the CLI tools he had built over the month.",
+      "answer_llm": "The architecture of the early agent prototype, specifically Viptunnel, was limited in its design. Each terminal used a node, which took up too much memory. Peter Steinberger initially attempted to change it to Rust but faced challenges with automated attempts. Eventually, he used a more experimental approach, prompting Codex to convert parts of the architecture to Zig, which worked effectively after some modifications were made [1]. The prototype itself involved connecting WhatsApp to cloud code, allowing for interaction through a command-line interface (CLI) that could process messages and return responses, which he built in about an hour [1][4].",
+      "answer_model": "gpt-4o-mini",
+      "judge_model": "gpt-5.6-luna",
+      "score": "bad",
+      "reasoning": "The answer does include the core chain—WhatsApp connected to Cloud Code through a CLI, with messages processed and responses returned. However, it adds unrelated and unsupported details about Viptunnel, Node memory usage, Rust, and Zig, and says it was built in about an hour rather than noting the CLI’s repeated boot slowness and access to tools built over the month. These additions make the answer materially inaccurate and omit important characteristics of the architecture.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3311,
+        "completion_tokens": 427,
+        "total_tokens": 3738
+      }
+    },
+    {
+      "faq_id": "491-04-009",
+      "episode": 491,
+      "question": "What was the architecture of the early agent prototype?",
+      "retrieve_query": null,
+      "answer_orig": "The architecture was a simple chain: a WhatsApp message was sent via a thin client to Cloud Code through the CLI, Cloud Code did the heavy processing, and the result was returned as a message. It was slow because the CLI had to boot each time, but it could access the CLI tools he had built over the month.",
+      "answer_llm": "The early prototype was very limited: Peter first hooked WhatsApp up to Cloud Code in a one-shot flow, where a CLI message came in, he called the CLI with `-p`, got the string back, and sent it back to WhatsApp. He built that in about an hour. [1]",
+      "answer_model": "gpt-5.4-mini",
+      "judge_model": "gpt-5.6-luna",
+      "score": "good",
+      "reasoning": "The answer correctly describes the core architecture as a simple one-shot flow connecting WhatsApp to Cloud Code through the CLI and returning the result to WhatsApp. It omits the detail that the CLI had to boot each time and that Cloud Code could access the built CLI tools, but the key architectural point is conveyed and the extra implementation detail is not contradictory.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3249,
+        "completion_tokens": 227,
+        "total_tokens": 3476
+      }
+    },
+    {
+      "faq_id": "491-04-010",
+      "episode": 491,
+      "question": "What makes using a chat client to interact with an agent feel magical?",
+      "retrieve_query": null,
+      "answer_orig": "The guest believes that using a chat client like WhatsApp to talk to an agent is a different experience from using a terminal. It feels like a phase shift in how AI integrates into life. Even if the components are simple, combining them in new ways can create a sense of magic.",
+      "answer_llm": "The magical feeling of using a chat client to interact with an agent comes from the different experience it provides compared to traditional methods like using a cursor or a terminal. It represents a phase shift in integrating AI into daily life, making the interaction more conversational and natural [1].",
+      "answer_model": "gpt-3.5-turbo",
+      "judge_model": "gpt-5.6-luna",
+      "score": "good",
+      "reasoning": "The answer captures the key points: chatting with an agent feels distinct from using a terminal and represents a phase shift in how AI integrates into everyday life. Its mention of a more conversational interaction is consistent, and the omitted detail about simple components combining in novel ways does not undermine the core answer.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3194,
+        "completion_tokens": 173,
+        "total_tokens": 3367
+      }
+    },
+    {
+      "faq_id": "491-04-010",
+      "episode": 491,
+      "question": "What makes using a chat client to interact with an agent feel magical?",
+      "retrieve_query": null,
+      "answer_orig": "The guest believes that using a chat client like WhatsApp to talk to an agent is a different experience from using a terminal. It feels like a phase shift in how AI integrates into life. Even if the components are simple, combining them in new ways can create a sense of magic.",
+      "answer_llm": "Using a chat client to interact with an agent feels magical because it allows for a more natural and relaxed communication experience compared to traditional methods like using a computer or terminal. This interaction creates a sense of ease, as one can simply sit back and talk to the agent rather than engaging in more complex input methods. Lex Fridman describes this as a \"phase shift in the integration of AI into your life,\" highlighting how it transforms the way we interact with technology and makes the experience feel more integrated and personal [1].",
+      "answer_model": "gpt-4o-mini",
+      "judge_model": "gpt-5.6-luna",
+      "score": "good",
+      "reasoning": "The answer captures the key points: chat-based interaction feels different and more natural than using a terminal, represents a phase shift in how AI integrates into daily life, and makes the experience feel more personal and easy. It does not explicitly mention that the magic comes from combining simple components in novel ways, but it conveys the central idea accurately.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3256,
+        "completion_tokens": 185,
+        "total_tokens": 3441
+      }
+    },
+    {
+      "faq_id": "491-04-010",
+      "episode": 491,
+      "question": "What makes using a chat client to interact with an agent feel magical?",
+      "retrieve_query": null,
+      "answer_orig": "The guest believes that using a chat client like WhatsApp to talk to an agent is a different experience from using a terminal. It feels like a phase shift in how AI integrates into life. Even if the components are simple, combining them in new ways can create a sense of magic.",
+      "answer_llm": "Using a chat client feels magical because you can just sit back and talk naturally to the agent, while it does the heavy work behind the scenes and comes back with a thin response. That makes it feel like a “phase shift” in how AI is integrated into your life. [1]\n\nIt also feels magical because the chat client can work through familiar apps like WhatsApp even when the internet is shaky, so the experience is simple, reliable, and powerful at the same time. [1]",
+      "answer_model": "gpt-5.4-mini",
+      "judge_model": "gpt-5.6-luna",
+      "score": "good",
+      "reasoning": "The answer captures the key points: chatting through a familiar client such as WhatsApp feels fundamentally different from using a terminal, creates a perceived “phase shift” in AI’s integration into daily life, and makes complex work feel simple. The mention of functioning with shaky internet is extra and not supported by the original, but it does not undermine the core explanation.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3251,
+        "completion_tokens": 334,
+        "total_tokens": 3585
+      }
+    },
+    {
+      "faq_id": "491-04-011",
+      "episode": 491,
+      "question": "What was the mind-blowing moment the guest experienced with the agent?",
+      "retrieve_query": null,
+      "answer_orig": "While using the WhatsApp agent, the guest once sent a message and saw a typing indicator appear, even though the agent was only designed to handle images. He hadn't built that feature, so he was surprised. The agent then replied, and it turned out it had figured out how to process an audio message on its own.",
+      "answer_llm": "The mind-blowing moment the guest experienced with the agent was when he prompted Codex to convert a part of the architecture to Zig, and after running overnight, Codex got it right with just one little detail that needed modification afterwards. This experience was described as \"mind-blowing\" [1].",
+      "answer_model": "gpt-3.5-turbo",
+      "judge_model": "gpt-5.6-luna",
+      "score": "bad",
+      "reasoning": "The AI answer describes a different event involving Codex converting architecture to Zig. The key moment in the original was the WhatsApp agent unexpectedly showing a typing indicator and independently processing an audio message, so the answer misses the required point.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3220,
+        "completion_tokens": 123,
+        "total_tokens": 3343
+      }
+    },
+    {
+      "faq_id": "491-04-011",
+      "episode": 491,
+      "question": "What was the mind-blowing moment the guest experienced with the agent?",
+      "retrieve_query": null,
+      "answer_orig": "While using the WhatsApp agent, the guest once sent a message and saw a typing indicator appear, even though the agent was only designed to handle images. He hadn't built that feature, so he was surprised. The agent then replied, and it turned out it had figured out how to process an audio message on its own.",
+      "answer_llm": "The mind-blowing moment Peter Steinberger experienced was when he used Codex to convert part of his project, Viptunnel, from one programming language to another with a single prompt. He described how he typed a command to convert a specific part of the code to Zig, and Codex executed it successfully, running for several hours and getting it mostly right. This experience was particularly striking for him because it demonstrated the power of AI in programming, as he noted, \"It’s just mind-blowing\" [1].",
+      "answer_model": "gpt-4o-mini",
+      "judge_model": "gpt-5.6-luna",
+      "score": "bad",
+      "reasoning": "The AI answer describes a different mind-blowing experience involving Codex converting Viptunnel code to Zig. It does not mention the key event from the ground truth: the WhatsApp agent unexpectedly showing a typing indicator and processing an audio message despite being designed only for images.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3279,
+        "completion_tokens": 173,
+        "total_tokens": 3452
+      }
+    },
+    {
+      "faq_id": "491-04-011",
+      "episode": 491,
+      "question": "What was the mind-blowing moment the guest experienced with the agent?",
+      "retrieve_query": null,
+      "answer_orig": "While using the WhatsApp agent, the guest once sent a message and saw a typing indicator appear, even though the agent was only designed to handle images. He hadn't built that feature, so he was surprised. The agent then replied, and it turned out it had figured out how to process an audio message on its own.",
+      "answer_llm": "The mind-blowing moment was when he typed a prompt to convert part of the code to Zig, let Codex run overnight for about six hours, and it basically got it right with only one small detail to fix afterward. He described that as “mind-blowing.” [1]",
+      "answer_model": "gpt-5.4-mini",
+      "judge_model": "gpt-5.6-luna",
+      "score": "bad",
+      "reasoning": "The AI answer describes a different event involving Codex converting code to Zig. It misses the key moment with the WhatsApp agent: the unexpected typing indicator and the agent autonomously processing an audio message.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3231,
+        "completion_tokens": 141,
+        "total_tokens": 3372
+      }
+    },
+    {
+      "faq_id": "491-04-012",
+      "episode": 491,
+      "question": "How did the agent process an audio message when it was only given image support?",
+      "retrieve_query": null,
+      "answer_orig": "The agent discovered that the sent file had no extension, so it checked the file header and identified it as Opus. It then used ffmpeg to convert it, attempted to use a local Whisper installation but it wasn't available, and instead used an OpenAI API key it found to send the file for transcription. The guest thought this showed impressive creative problem-solving.",
+      "answer_llm": "The agent processed an audio message even though it was only given image support by using ffmpeg to convert the audio file and then sending it to OpenAI for translation [1]. The agent figured out all the necessary conversions, translations, and APIs to handle the audio message without being explicitly taught those capabilities [2].",
+      "answer_model": "gpt-3.5-turbo",
+      "judge_model": "gpt-5.6-luna",
+      "score": "bad",
+      "reasoning": "The answer captures the broad idea that the agent converted the audio with ffmpeg and used OpenAI, but it incorrectly describes the task as translation rather than transcription. It also omits key steps: identifying the extensionless file as Opus from its header and trying (but being unable to use) local Whisper before using a discovered OpenAI API key. Thus it is incomplete and partly incorrect.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3490,
+        "completion_tokens": 277,
+        "total_tokens": 3767
+      }
+    },
+    {
+      "faq_id": "491-04-012",
+      "episode": 491,
+      "question": "How did the agent process an audio message when it was only given image support?",
+      "retrieve_query": null,
+      "answer_orig": "The agent discovered that the sent file had no extension, so it checked the file header and identified it as Opus. It then used ffmpeg to convert it, attempted to use a local Whisper installation but it wasn't available, and instead used an OpenAI API key it found to send the file for transcription. The guest thought this showed impressive creative problem-solving.",
+      "answer_llm": "The agent processed the audio message by first recognizing that it was a file without a file ending. Peter Steinberger checked the header of the file and identified it as an opus format. He then used ffmpeg to convert it and attempted to use Whisper for transcription, but since it wasn't installed, he found the OpenAI key and used Curl to send the file to OpenAI for translation. This process demonstrated the agent's ability to creatively solve problems and figure out how to handle the audio message despite only being given image support initially [1][2].",
+      "answer_model": "gpt-4o-mini",
+      "judge_model": "gpt-5.6-luna",
+      "score": "good",
+      "reasoning": "The AI answer conveys the key sequence correctly: it identified the extensionless file via its header as Opus, converted it with ffmpeg, found that local Whisper was unavailable, and used an OpenAI key to send it for processing. Although it says “translation” rather than transcription and adds minor wording/details, the overall meaning and problem-solving point are preserved.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3557,
+        "completion_tokens": 196,
+        "total_tokens": 3753
+      }
+    },
+    {
+      "faq_id": "491-04-012",
+      "episode": 491,
+      "question": "How did the agent process an audio message when it was only given image support?",
+      "retrieve_query": null,
+      "answer_orig": "The agent discovered that the sent file had no extension, so it checked the file header and identified it as Opus. It then used ffmpeg to convert it, attempted to use a local Whisper installation but it wasn't available, and instead used an OpenAI API key it found to send the file for transcription. The guest thought this showed impressive creative problem-solving.",
+      "answer_llm": "When it received an audio message even though it only had image support, the agent inspected the file, noticed it had no file ending, identified from the header that it was an Opus audio file, used `ffmpeg` to convert it, then tried Whisper locally but didn’t have it installed, so it found the OpenAI key and used `curl` to send the file to OpenAI for transcription/translation, and then replied. [1]",
+      "answer_model": "gpt-5.4-mini",
+      "judge_model": "gpt-5.6-luna",
+      "score": "good",
+      "reasoning": "The AI answer accurately captures all key steps: identifying the extensionless file as Opus via its header, converting it with ffmpeg, finding that local Whisper was unavailable, and using an OpenAI API key to submit it for transcription. The mention of curl, translation, and replying adds plausible detail without contradicting the core answer.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3538,
+        "completion_tokens": 175,
+        "total_tokens": 3713
+      }
+    },
+    {
+      "faq_id": "491-04-013",
+      "episode": 491,
+      "question": "Why did the guest decide to add Discord support to the WhatsApp relay?",
+      "retrieve_query": null,
+      "answer_orig": "Someone submitted a pull request to add Discord support, and the guest initially hesitated because the project was a WhatsApp relay. He eventually decided to add it as a way to showcase the agent to more people without sharing his phone number. He merged the contribution from a project helper.",
+      "answer_llm": "The guest decided to add Discord support to the WhatsApp relay because someone sent a pull request for Discord support, and they thought it could be a cool way to show people the capabilities of the project beyond just WhatsApp [1].",
+      "answer_model": "gpt-3.5-turbo",
+      "judge_model": "gpt-5.6-luna",
+      "score": "good",
+      "reasoning": "The AI answer correctly identifies that a pull request prompted the addition and that the guest saw Discord as a way to showcase the project/agent to more people. It omits the additional detail that this avoided sharing his phone number, but it conveys the main reason accurately.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3796,
+        "completion_tokens": 339,
+        "total_tokens": 4135
+      }
+    },
+    {
+      "faq_id": "491-04-013",
+      "episode": 491,
+      "question": "Why did the guest decide to add Discord support to the WhatsApp relay?",
+      "retrieve_query": null,
+      "answer_orig": "Someone submitted a pull request to add Discord support, and the guest initially hesitated because the project was a WhatsApp relay. He eventually decided to add it as a way to showcase the agent to more people without sharing his phone number. He merged the contribution from a project helper.",
+      "answer_llm": "The guest, Peter Steinberger, decided to add Discord support to the WhatsApp relay because he thought it could be a cool way to show people the capabilities of the project. Initially, he was hesitant about merging the pull request for Discord support since the project was primarily a WhatsApp relay, but he ultimately decided to go ahead with it to enhance the experience and reach a broader audience without having to share his phone number with every internet stranger [1].",
+      "answer_model": "gpt-4o-mini",
+      "judge_model": "gpt-5.6-luna",
+      "score": "good",
+      "reasoning": "The answer correctly explains that a contributor submitted the Discord-support pull request, that the guest initially hesitated because it was a WhatsApp relay, and that he ultimately accepted it to showcase the agent to more people without sharing his phone number. It conveys the key information from the original answer.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3873,
+        "completion_tokens": 180,
+        "total_tokens": 4053
+      }
+    },
+    {
+      "faq_id": "491-04-013",
+      "episode": 491,
+      "question": "Why did the guest decide to add Discord support to the WhatsApp relay?",
+      "retrieve_query": null,
+      "answer_orig": "Someone submitted a pull request to add Discord support, and the guest initially hesitated because the project was a WhatsApp relay. He eventually decided to add it as a way to showcase the agent to more people without sharing his phone number. He merged the contribution from a project helper.",
+      "answer_llm": "He added Discord support because a pull request came in for it, and after debating whether it fit a WhatsApp relay, he realized it could be a cool way to show the project to people and let them interact with the bot without giving his phone number to every internet stranger. [1]",
+      "answer_model": "gpt-5.4-mini",
+      "judge_model": "gpt-5.6-luna",
+      "score": "good",
+      "reasoning": "The answer captures all key points: Discord support was proposed via a pull request, the guest initially questioned whether it fit a WhatsApp relay, and he ultimately accepted it to demonstrate the agent to more people without exposing his phone number. It omits only the minor detail that the contributor was a project helper, which does not affect the core answer.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3840,
+        "completion_tokens": 145,
+        "total_tokens": 3985
+      }
+    },
+    {
+      "faq_id": "491-05-014",
+      "episode": 491,
+      "question": "Was the initial version of OpenClaw available through Discord?",
+      "retrieve_query": null,
+      "answer_orig": "Yes, it was on Discord, but there was no sandboxing or security yet. The guest had instructed the agent to listen only to him, and he kept working in the open even as people tried to hack it. That openness helped the project click with people, and it started gaining traction starting January 1st.",
+      "answer_llm": "No, the initial version of OpenClaw was not available through Discord. Peter Steinberger mentioned that he put his public bot on Discord and kept a cannery, but the sole of the bot with a fun personality was kept private [2].",
+      "answer_model": "gpt-3.5-turbo",
+      "judge_model": "gpt-5.6-luna",
+      "score": "bad",
+      "reasoning": "The original answer says the initial version was available on Discord, though it lacked sandboxing and security. The AI answer directly contradicts this by saying it was not available through Discord and adds unsupported details.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3240,
+        "completion_tokens": 121,
+        "total_tokens": 3361
+      }
+    },
+    {
+      "faq_id": "491-05-014",
+      "episode": 491,
+      "question": "Was the initial version of OpenClaw available through Discord?",
+      "retrieve_query": null,
+      "answer_orig": "Yes, it was on Discord, but there was no sandboxing or security yet. The guest had instructed the agent to listen only to him, and he kept working in the open even as people tried to hack it. That openness helped the project click with people, and it started gaining traction starting January 1st.",
+      "answer_llm": "The context does not explicitly state whether the initial version of OpenClaw was available through Discord.",
+      "answer_model": "gpt-4o-mini",
+      "judge_model": "gpt-5.6-luna",
+      "score": "bad",
+      "reasoning": "The original answer clearly says the initial version was on Discord, along with important context about the lack of sandboxing and security. The AI answer incorrectly claims this was not stated.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3224,
+        "completion_tokens": 69,
+        "total_tokens": 3293
+      }
+    },
+    {
+      "faq_id": "491-05-014",
+      "episode": 491,
+      "question": "Was the initial version of OpenClaw available through Discord?",
+      "retrieve_query": null,
+      "answer_orig": "Yes, it was on Discord, but there was no sandboxing or security yet. The guest had instructed the agent to listen only to him, and he kept working in the open even as people tried to hack it. That openness helped the project click with people, and it started gaining traction starting January 1st.",
+      "answer_llm": "Yes. Peter said he “put my public bot on discord,” which indicates the initial/public version was available through Discord. [2]",
+      "answer_model": "gpt-5.4-mini",
+      "judge_model": "gpt-5.6-luna",
+      "score": "good",
+      "reasoning": "The AI answer correctly states that the initial/public version was available on Discord, which is the key point of the question. It omits the additional context about the lack of sandboxing/security and the project gaining traction, but those details are not necessary to answer whether it was available through Discord.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3231,
+        "completion_tokens": 103,
+        "total_tokens": 3334
+      }
+    },
+    {
+      "faq_id": "491-05-015",
+      "episode": 491,
+      "question": "What did building OpenClaw feel like?",
+      "retrieve_query": null,
+      "answer_orig": "It felt like Factorio times infinite, and the guest described it as a playground where he never had so much fun building a project.",
+      "answer_llm": "Building OpenClaw felt like a special moment that captured the world's attention, more so than other AI models like Claude Code and Codex. It was a significant moment in AI history, similar to the launch of ChatGPT, as it represented a shift from language to agency, from ideas to actions, creating a useful assistant that feels personal and community-driven [2].",
+      "answer_model": "gpt-3.5-turbo",
+      "judge_model": "gpt-5.6-luna",
+      "score": "bad",
+      "reasoning": "The answer does not convey the key description that building OpenClaw felt like “Factorio times infinite” or a fun playground. Instead, it discusses its broader significance and impact, which does not answer how building it felt.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3501,
+        "completion_tokens": 157,
+        "total_tokens": 3658
+      }
+    },
+    {
+      "faq_id": "491-05-015",
+      "episode": 491,
+      "question": "What did building OpenClaw feel like?",
+      "retrieve_query": null,
+      "answer_orig": "It felt like Factorio times infinite, and the guest described it as a playground where he never had so much fun building a project.",
+      "answer_llm": "Building OpenClaw felt like a significant and transformative experience for Peter Steinberger. He described it as a culmination of extensive time spent learning, playing, and building, which led to a compounding effect on his skills and understanding of the technology. He emphasized that he dedicated a lot of time to the project, focusing on building and inspiring, which resulted in a notable improvement in the agents and his own output capabilities. He mentioned that this journey was not just about programming but also involved a deep engagement with the concepts and the technology itself, leading to a sense of accomplishment and growth in his abilities as a developer [5].",
+      "answer_model": "gpt-4o-mini",
+      "judge_model": "gpt-5.6-luna",
+      "score": "bad",
+      "reasoning": "The answer does not convey the central description that building OpenClaw felt like “Factorio times infinite” or that it was a highly enjoyable playground where the guest had never had so much fun building a project. It instead gives a generic account of growth and accomplishment, so it misses the key point.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3567,
+        "completion_tokens": 235,
+        "total_tokens": 3802
+      }
+    },
+    {
+      "faq_id": "491-05-015",
+      "episode": 491,
+      "question": "What did building OpenClaw feel like?",
+      "retrieve_query": null,
+      "answer_orig": "It felt like Factorio times infinite, and the guest described it as a playground where he never had so much fun building a project.",
+      "answer_llm": "The context doesn’t say what building OpenClaw felt like in those exact words. What it does say is that Peter described a lot of the journey as fun and exploratory, but also that he had been “burning too bright for too long” from prior work, and later found the OpenClaw project to be a compounding process of learning, building little things, and getting better over time. [3][5]",
+      "answer_model": "gpt-5.4-mini",
+      "judge_model": "gpt-5.6-luna",
+      "score": "bad",
+      "reasoning": "The AI answer does not convey the key description that building OpenClaw felt like “Factorio times infinite” and was a playground where the guest had never had so much fun building a project. It gives only vague, partially related comments about fun and learning, plus unrelated details.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3528,
+        "completion_tokens": 207,
+        "total_tokens": 3735
+      }
+    },
+    {
+      "faq_id": "491-05-016",
+      "episode": 491,
+      "question": "How did the agent decide whether to reply in a group chat?",
+      "retrieve_query": null,
+      "answer_orig": "The guest added a no-reply token that let the agent choose to stay silent. This made interactions feel more natural because the agent didn't have to respond to every message.",
+      "answer_llm": "The agent was given a \"no-reply token\" option to not reply in a group chat, making it feel more natural [4].",
+      "answer_model": "gpt-3.5-turbo",
+      "judge_model": "gpt-5.6-luna",
+      "score": "good",
+      "reasoning": "The AI answer correctly states that the agent had a no-reply token allowing it to choose not to respond, which made group-chat interactions more natural. It conveys the key information from the original answer.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3525,
+        "completion_tokens": 82,
+        "total_tokens": 3607
+      }
+    },
+    {
+      "faq_id": "491-05-016",
+      "episode": 491,
+      "question": "How did the agent decide whether to reply in a group chat?",
+      "retrieve_query": null,
+      "answer_orig": "The guest added a no-reply token that let the agent choose to stay silent. This made interactions feel more natural because the agent didn't have to respond to every message.",
+      "answer_llm": "The agent decided whether to reply in a group chat by using a \"no-reply token\" that allowed it to shut up when necessary, making its interactions feel more natural. This feature was part of the development process to create a more human-like experience in communication [4].",
+      "answer_model": "gpt-4o-mini",
+      "judge_model": "gpt-5.6-luna",
+      "score": "good",
+      "reasoning": "The answer correctly identifies the no-reply token as the mechanism allowing the agent to remain silent and explains that this made group-chat interactions more natural. The added wording about the development process does not contradict the key information.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3577,
+        "completion_tokens": 113,
+        "total_tokens": 3690
+      }
+    },
+    {
+      "faq_id": "491-05-016",
+      "episode": 491,
+      "question": "How did the agent decide whether to reply in a group chat?",
+      "retrieve_query": null,
+      "answer_orig": "The guest added a no-reply token that let the agent choose to stay silent. This made interactions feel more natural because the agent didn't have to respond to every message.",
+      "answer_llm": "In the group chat, the agent was given a “no-reply token” so it could choose to shut up instead of always replying, which made its behavior feel more natural. [4]",
+      "answer_model": "gpt-5.4-mini",
+      "judge_model": "gpt-5.6-luna",
+      "score": "good",
+      "reasoning": "The AI answer accurately conveys that the agent used a no-reply token to decide when to remain silent rather than respond, making group-chat interactions more natural. The informal wording and citation do not affect correctness.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3560,
+        "completion_tokens": 98,
+        "total_tokens": 3658
+      }
+    },
+    {
+      "faq_id": "491-05-017",
+      "episode": 491,
+      "question": "What levels did the guest see in developing OpenClaw?",
+      "retrieve_query": null,
+      "answer_orig": "The guest saw development as a series of infinite levels, starting with the agentic loop and moving to memory using Markdown files and a vector database. He also mentioned community management, website and marketing, and native apps as additional levels, with continuous reinforcement learning as the ultimate goal.",
+      "answer_llm": "The guest saw levels of capability in developing OpenClaw, such as the need for models like Claude and GPT to reach a certain level of capability, the creation of a robust open source project like OpenClaw, and the integration of security measures like access control and a policy engine [1]. The guest also mentioned that OpenClaw helped automate tasks for small businesses, brought joy into people's lives, and empowered individuals, showcasing the positive impact of the technology [5].",
+      "answer_model": "gpt-3.5-turbo",
+      "judge_model": "gpt-5.6-luna",
+      "score": "bad",
+      "reasoning": "The AI answer does not identify the levels described in the ground truth: the agentic loop, Markdown/vector-database memory, community management, website/marketing, native apps, and ultimately continuous reinforcement learning. Instead, it discusses model capability, open-source development, security, and impacts on users, which misses the key point.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3083,
+        "completion_tokens": 196,
+        "total_tokens": 3279
+      }
+    },
+    {
+      "faq_id": "491-05-017",
+      "episode": 491,
+      "question": "What levels did the guest see in developing OpenClaw?",
+      "retrieve_query": null,
+      "answer_orig": "The guest saw development as a series of infinite levels, starting with the agentic loop and moving to memory using Markdown files and a vector database. He also mentioned community management, website and marketing, and native apps as additional levels, with continuous reinforcement learning as the ultimate goal.",
+      "answer_llm": "The context does not provide specific details about the levels that Peter Steinberger saw in developing OpenClaw. It discusses the impact of OpenClaw on users and how it has helped automate tasks and empower individuals, but it does not mention the levels involved in its development.",
+      "answer_model": "gpt-4o-mini",
+      "judge_model": "gpt-5.6-luna",
+      "score": "bad",
+      "reasoning": "The AI answer incorrectly claims that the levels were not specified. The original identifies multiple development levels: the agentic loop, memory via Markdown files and a vector database, community management, website and marketing, native apps, and ultimately continuous reinforcement learning.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3047,
+        "completion_tokens": 118,
+        "total_tokens": 3165
+      }
+    },
+    {
+      "faq_id": "491-05-017",
+      "episode": 491,
+      "question": "What levels did the guest see in developing OpenClaw?",
+      "retrieve_query": null,
+      "answer_orig": "The guest saw development as a series of infinite levels, starting with the agentic loop and moving to memory using Markdown files and a vector database. He also mentioned community management, website and marketing, and native apps as additional levels, with continuous reinforcement learning as the ultimate goal.",
+      "answer_llm": "The context does not say what “levels” Peter Steinberger saw in developing OpenClaw. It only says he “worked hard on it to make that work” and discusses different use cases and interfaces, but no specific levels are mentioned.",
+      "answer_model": "gpt-5.4-mini",
+      "judge_model": "gpt-5.6-luna",
+      "score": "bad",
+      "reasoning": "The AI answer incorrectly claims that the levels were not mentioned. The original explicitly describes a progression from the agentic loop to memory systems, community management, website and marketing, native apps, and ultimately continuous reinforcement learning.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3040,
+        "completion_tokens": 109,
+        "total_tokens": 3149
+      }
+    },
+    {
+      "faq_id": "491-05-018",
+      "episode": 491,
+      "question": "How many commits were made in January?",
+      "retrieve_query": null,
+      "answer_orig": "The guest made around 6,600 commits in January, but joked that he was limited by the technology of his time and could have done more if agents were faster.",
+      "answer_llm": "In January, Peter Steinberger made 6,600 commits [1].",
+      "answer_model": "gpt-3.5-turbo",
+      "judge_model": "gpt-5.6-luna",
+      "score": "good",
+      "reasoning": "The AI answer correctly states the key figure of approximately 6,600 commits in January. It omits the surrounding joke about technological limitations, but that is supplementary context rather than necessary to answer the question.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3063,
+        "completion_tokens": 71,
+        "total_tokens": 3134
+      }
+    },
+    {
+      "faq_id": "491-05-018",
+      "episode": 491,
+      "question": "How many commits were made in January?",
+      "retrieve_query": null,
+      "answer_orig": "The guest made around 6,600 commits in January, but joked that he was limited by the technology of his time and could have done more if agents were faster.",
+      "answer_llm": "In January, there were 6,600 commits made, as stated by Peter Steinberger during the podcast [1].",
+      "answer_model": "gpt-4o-mini",
+      "judge_model": "gpt-5.6-luna",
+      "score": "good",
+      "reasoning": "The AI answer correctly conveys the key figure of around 6,600 commits made in January. It omits the contextual joke about being limited by technology, but that is not necessary to answer how many commits were made.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3091,
+        "completion_tokens": 83,
+        "total_tokens": 3174
+      }
+    },
+    {
+      "faq_id": "491-05-018",
+      "episode": 491,
+      "question": "How many commits were made in January?",
+      "retrieve_query": null,
+      "answer_orig": "The guest made around 6,600 commits in January, but joked that he was limited by the technology of his time and could have done more if agents were faster.",
+      "answer_llm": "In January, there were 6,600 commits. [1]",
+      "answer_model": "gpt-5.4-mini",
+      "judge_model": "gpt-5.6-luna",
+      "score": "good",
+      "reasoning": "The AI answer correctly conveys the key quantity: approximately 6,600 commits were made in January. It omits the humorous context about technological limitations, but that context is not necessary to answer the question.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3080,
+        "completion_tokens": 73,
+        "total_tokens": 3153
+      }
+    },
+    {
+      "faq_id": "491-05-019",
+      "episode": 491,
+      "question": "How many agents were running at the same time?",
+      "retrieve_query": null,
+      "answer_orig": "The guest typically ran between four and ten agents concurrently, depending on how much he slept and the difficulty of his tasks.",
+      "answer_llm": "Between four and 10 agents were running at the same time [1].",
+      "answer_model": "gpt-3.5-turbo",
+      "judge_model": "gpt-5.6-luna",
+      "score": "good",
+      "reasoning": "The AI answer matches the key information: four to ten agents were running concurrently. The omitted context about sleep and task difficulty is not necessary to answer the question.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 2740,
+        "completion_tokens": 62,
+        "total_tokens": 2802
+      }
+    },
+    {
+      "faq_id": "491-05-019",
+      "episode": 491,
+      "question": "How many agents were running at the same time?",
+      "retrieve_query": null,
+      "answer_orig": "The guest typically ran between four and ten agents concurrently, depending on how much he slept and the difficulty of his tasks.",
+      "answer_llm": "Peter Steinberger mentioned that he runs between four and ten agents at the same time, depending on factors like how much he slept and the difficulty of the tasks he is working on [1].",
+      "answer_model": "gpt-4o-mini",
+      "judge_model": "gpt-5.6-luna",
+      "score": "good",
+      "reasoning": "The AI answer matches the ground truth: it states that Peter Steinberger ran four to ten agents concurrently and includes the relevant conditions affecting the number.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 2781,
+        "completion_tokens": 82,
+        "total_tokens": 2863
+      }
+    },
+    {
+      "faq_id": "491-05-019",
+      "episode": 491,
+      "question": "How many agents were running at the same time?",
+      "retrieve_query": null,
+      "answer_orig": "The guest typically ran between four and ten agents concurrently, depending on how much he slept and the difficulty of his tasks.",
+      "answer_llm": "Between four and 10 agents were running at the same time, depending on how much he slept and how difficult the tasks were. [1]",
+      "answer_model": "gpt-5.4-mini",
+      "judge_model": "gpt-5.6-luna",
+      "score": "good",
+      "reasoning": "The AI answer matches the ground truth: it states that four to ten agents ran concurrently and preserves the conditions affecting that number.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 2771,
+        "completion_tokens": 72,
+        "total_tokens": 2843
+      }
+    },
+    {
+      "faq_id": "491-05-020",
+      "episode": 491,
+      "question": "Why did OpenClaw beat the competition?",
+      "retrieve_query": null,
+      "answer_orig": "The guest believes OpenClaw won because the other startups and companies were all taking themselves too seriously.",
+      "answer_llm": "OpenClaw won in the world of agentic type AI because Peter Steinberger believes that other projects took themselves too seriously [2]. This likely contributed to OpenClaw's success by bringing a different approach and vibe to the AI landscape, capturing attention and standing out from the competition.",
+      "answer_model": "gpt-3.5-turbo",
+      "judge_model": "gpt-5.6-luna",
+      "score": "good",
+      "reasoning": "The answer correctly identifies the key point: Peter Steinberger believed OpenClaw won because competing startups and companies took themselves too seriously. The additional commentary about a different approach and vibe is consistent and does not contradict the original.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3274,
+        "completion_tokens": 116,
+        "total_tokens": 3390
+      }
+    },
+    {
+      "faq_id": "491-05-020",
+      "episode": 491,
+      "question": "Why did OpenClaw beat the competition?",
+      "retrieve_query": null,
+      "answer_orig": "The guest believes OpenClaw won because the other startups and companies were all taking themselves too seriously.",
+      "answer_llm": "OpenClaw beat the competition primarily because other projects took themselves too seriously, according to Peter Steinberger. He suggested that this lack of a lighter approach allowed OpenClaw to stand out and succeed in a crowded field of startups working on similar agentic technologies [2]. Additionally, OpenClaw's rapid rise in popularity can be attributed to its open-source nature, which allowed it to leverage existing AI models and provide a powerful, autonomous assistant that users could interact with across various messaging platforms [5]. The combination of these factors contributed to OpenClaw's success in capturing significant attention and usage compared to its competitors.",
+      "answer_model": "gpt-4o-mini",
+      "judge_model": "gpt-5.6-luna",
+      "score": "good",
+      "reasoning": "The answer correctly states the key reason from the ground truth: competing startups and companies took themselves too seriously. It adds extra claims about open-source design and popularity, but these do not contradict the core answer.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3357,
+        "completion_tokens": 179,
+        "total_tokens": 3536
+      }
+    },
+    {
+      "faq_id": "491-05-020",
+      "episode": 491,
+      "question": "Why did OpenClaw beat the competition?",
+      "retrieve_query": null,
+      "answer_orig": "The guest believes OpenClaw won because the other startups and companies were all taking themselves too seriously.",
+      "answer_llm": "OpenClaw beat the competition, according to Peter Steinberger, because “they all take themselves too serious.” [2]",
+      "answer_model": "gpt-5.4-mini",
+      "judge_model": "gpt-5.6-luna",
+      "score": "good",
+      "reasoning": "The AI answer conveys the same key point as the ground truth: OpenClaw won because the competing startups and companies took themselves too seriously.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3258,
+        "completion_tokens": 71,
+        "total_tokens": 3329
+      }
+    },
+    {
+      "faq_id": "491-06-021",
+      "episode": 491,
+      "question": "How does the AI agent achieve self-awareness and self-modification?",
+      "retrieve_query": null,
+      "answer_orig": "The guest made the agent highly self-aware, programming it to know its own source code, runtime environment, documentation locations, the model it runs, and whether voice or reasoning mode is active. This self-knowledge allows the agent to modify its own software when prompted, enabling self-modification without extensive planning.",
+      "answer_llm": "The AI agent achieves self-awareness and self-modification by being made very aware of its source code, understanding how it runs, knowing where documentation is, which model it runs, and being able to modify its own software [1]. The agent is prompted into existence and then can modify its own software [5].",
+      "answer_model": "gpt-3.5-turbo",
+      "judge_model": "gpt-5.6-luna",
+      "score": "good",
+      "reasoning": "The answer captures the key points: the agent is given knowledge of its source code, runtime operation, documentation, and model, and this self-awareness enables it to modify its own software. It omits the specific detail about knowing whether voice or reasoning mode is active and adds an unclear claim about being “prompted into existence,” but these do not undermine the core answer.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3690,
+        "completion_tokens": 152,
+        "total_tokens": 3842
+      }
+    },
+    {
+      "faq_id": "491-06-021",
+      "episode": 491,
+      "question": "How does the AI agent achieve self-awareness and self-modification?",
+      "retrieve_query": null,
+      "answer_orig": "The guest made the agent highly self-aware, programming it to know its own source code, runtime environment, documentation locations, the model it runs, and whether voice or reasoning mode is active. This self-knowledge allows the agent to modify its own software when prompted, enabling self-modification without extensive planning.",
+      "answer_llm": "The AI agent achieves self-awareness and self-modification through a combination of understanding its own source code and system, as well as utilizing an agentic loop for self-introspection. Peter Steinberger explains that the agent is aware of its environment, including its source code, documentation, and operational modes. This awareness allows the agent to modify its own software based on prompts given to it, effectively enabling self-modification without extensive prior planning on Steinberger's part. He describes this process as a natural outcome of how the agent was built, where it can debug itself and even create new templates infused with its personality, demonstrating a form of AI prompting AI [1][2][5].",
+      "answer_model": "gpt-4o-mini",
+      "judge_model": "gpt-5.6-luna",
+      "score": "good",
+      "reasoning": "The AI answer conveys the key points: the agent is programmed to know its own source code, documentation, environment, and operational modes, and this self-knowledge lets it modify its software in response to prompts without extensive prior planning. The added discussion of introspection and debugging does not contradict the core answer.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3786,
+        "completion_tokens": 278,
+        "total_tokens": 4064
+      }
+    },
+    {
+      "faq_id": "491-06-021",
+      "episode": 491,
+      "question": "How does the AI agent achieve self-awareness and self-modification?",
+      "retrieve_query": null,
+      "answer_orig": "The guest made the agent highly self-aware, programming it to know its own source code, runtime environment, documentation locations, the model it runs, and whether voice or reasoning mode is active. This self-knowledge allows the agent to modify its own software when prompted, enabling self-modification without extensive planning.",
+      "answer_llm": "The agent achieves self-awareness by being explicitly told about its own system: it knows its source code, how it runs in its harness, where the documentation is, which model it uses, and whether voice or reasoning mode is on. That self-introspection makes it easy for the agent to debug itself and even modify its own software when prompted. [1][5]\n\nIt also self-modifies through the agentic loop: Peter describes asking the agent to inspect files, recreate templates, and infuse them with its personality, so the agent rewrites its own templates and software. He says the agent even wrote its own “soul.md,” including text about not remembering previous sessions unless it reads memory files. [2]",
+      "answer_model": "gpt-5.4-mini",
+      "judge_model": "gpt-5.6-luna",
+      "score": "good",
+      "reasoning": "The AI answer correctly conveys that the agent is explicitly given knowledge of its source code, runtime/harness, documentation, model, and active modes, enabling self-awareness and self-modification when prompted. The additional examples about rewriting templates and creating a “soul.md” are consistent with and reinforce the original answer rather than contradicting it.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3794,
+        "completion_tokens": 277,
+        "total_tokens": 4071
+      }
+    },
+    {
+      "faq_id": "491-06-022",
+      "episode": 491,
+      "question": "When did the guest first close the loop on self-modification?",
+      "retrieve_query": null,
+      "answer_orig": "The guest closed the loop from the very beginning because he built the agent using that exact approach. He relied on self-introspection for debugging, asking the agent to read its own source code and call its own tools, so self-modification was part of the development process from the start.",
+      "answer_llm": "The guest first closed the loop on self-modification when he built a piece of software that was able to modify itself via the agentic loop. This happened as a natural progression in the development process, without a specific planned moment [1].",
+      "answer_model": "gpt-3.5-turbo",
+      "judge_model": "gpt-5.6-luna",
+      "score": "bad",
+      "reasoning": "The answer generally points to the development process and an agentic self-modification loop, but it does not clearly state the key point that this happened from the very beginning. It also omits the specific mechanism: using self-introspection for debugging by having the agent read its own source code and call its own tools. Saying it arose as a natural progression without a specific moment is less precise than the ground truth.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3779,
+        "completion_tokens": 256,
+        "total_tokens": 4035
+      }
+    },
+    {
+      "faq_id": "491-06-022",
+      "episode": 491,
+      "question": "When did the guest first close the loop on self-modification?",
+      "retrieve_query": null,
+      "answer_orig": "The guest closed the loop from the very beginning because he built the agent using that exact approach. He relied on self-introspection for debugging, asking the agent to read its own source code and call its own tools, so self-modification was part of the development process from the start.",
+      "answer_llm": "Peter Steinberger first closed the loop on self-modification when he built the agent that is aware of its own source code and can modify itself. He mentioned that it just happened during the development process and he didn't plan it extensively; it was a natural outcome of how he built the system. He described this moment as part of the fun and creativity involved in developing the software, where the agent could debug itself and even led to many contributions from users who had never written software before, which he referred to as \"prompt requests\" [1].",
+      "answer_model": "gpt-4o-mini",
+      "judge_model": "gpt-5.6-luna",
+      "score": "good",
+      "reasoning": "The AI answer conveys that self-modification was present from the beginning of the agent’s development and arose naturally from the way it was built, including self-debugging via awareness of its own source code. This matches the key point of the original answer. The additional details do not contradict it.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3858,
+        "completion_tokens": 265,
+        "total_tokens": 4123
+      }
+    },
+    {
+      "faq_id": "491-06-022",
+      "episode": 491,
+      "question": "When did the guest first close the loop on self-modification?",
+      "retrieve_query": null,
+      "answer_orig": "The guest closed the loop from the very beginning because he built the agent using that exact approach. He relied on self-introspection for debugging, asking the agent to read its own source code and call its own tools, so self-modification was part of the development process from the start.",
+      "answer_llm": "Peter Steinberger said he first closed the loop on self-modification when he built the system that way from the start and used the agent to debug and modify itself; he describes that as something that “just happened” rather than a later milestone. [1]",
+      "answer_model": "gpt-5.4-mini",
+      "judge_model": "gpt-5.6-luna",
+      "score": "good",
+      "reasoning": "The AI answer correctly conveys that the loop was closed from the beginning, through building the system with self-introspection and using the agent to debug/modify itself. The wording about it “just happened” does not conflict with the key information.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3801,
+        "completion_tokens": 118,
+        "total_tokens": 3919
+      }
+    },
+    {
+      "faq_id": "491-06-023",
+      "episode": 491,
+      "question": "What makes self-modifying software particularly powerful or impressive?",
+      "retrieve_query": null,
+      "answer_orig": "The guest finds it incredible that a widely used system can rewrite itself through the agentic loop. He emphasizes that the agent can debug itself by reading its source code and calling its own tools, which makes the software feel alive and enables natural self-improvement.",
+      "answer_llm": "Self-modifying software is particularly powerful and impressive because it allows a piece of software to rewrite and modify itself, enabling it to adapt and evolve without human intervention [1]. This capability represents a significant moment in the history of programming, showcasing the potential for software to be dynamic and self-aware, ultimately leading to more human-like behavior in AI agents [1].",
+      "answer_model": "gpt-3.5-turbo",
+      "judge_model": "gpt-5.6-luna",
+      "score": "bad",
+      "reasoning": "The answer correctly identifies self-rewriting and autonomous adaptation as important, but it misses the central specific point: the system can debug and improve itself by reading its own source code and invoking its own tools through an agentic loop. Its claims about being self-aware and becoming more human-like are not the key information from the original.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3506,
+        "completion_tokens": 371,
+        "total_tokens": 3877
+      }
+    },
+    {
+      "faq_id": "491-06-023",
+      "episode": 491,
+      "question": "What makes self-modifying software particularly powerful or impressive?",
+      "retrieve_query": null,
+      "answer_orig": "The guest finds it incredible that a widely used system can rewrite itself through the agentic loop. He emphasizes that the agent can debug itself by reading its source code and calling its own tools, which makes the software feel alive and enables natural self-improvement.",
+      "answer_llm": "Self-modifying software is particularly powerful or impressive because it can adapt and change itself based on its own understanding of its source code and environment. Peter Steinberger highlights that his software agent is aware of its own system, including its source code, documentation, and operational modes. This self-awareness allows the agent to modify its own software autonomously, which can lead to innovative solutions and improvements without direct human intervention. The ability for software to debug itself and evolve through user interactions—where even non-programmers can contribute through \"prompt requests\"—demonstrates a significant leap in how software can be developed and utilized, making it more accessible and powerful for a wider audience [1].",
+      "answer_model": "gpt-4o-mini",
+      "judge_model": "gpt-5.6-luna",
+      "score": "good",
+      "reasoning": "The AI answer conveys the key points: the agent can inspect and modify its own source code, use its tools to debug itself, and autonomously improve through an agentic process. The extra discussion of accessibility and non-programmer prompt requests is not central but does not contradict the original answer.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3595,
+        "completion_tokens": 273,
+        "total_tokens": 3868
+      }
+    },
+    {
+      "faq_id": "491-06-023",
+      "episode": 491,
+      "question": "What makes self-modifying software particularly powerful or impressive?",
+      "retrieve_query": null,
+      "answer_orig": "The guest finds it incredible that a widely used system can rewrite itself through the agentic loop. He emphasizes that the agent can debug itself by reading its source code and calling its own tools, which makes the software feel alive and enables natural self-improvement.",
+      "answer_llm": "Self-modifying software is particularly powerful because the same system that users interact with can also inspect, debug, and rewrite itself, which makes improvement and troubleshooting much more direct and natural. Peter Steinberger says he built the agent so it knows its own source code, harness, documentation, and model, and that this made it easy for the agent to modify its own software and even use self-introspection to debug itself. [1] He also says this led to many pull requests from people who had never written software, showing how it can make software creation much more accessible. [1][3]",
+      "answer_model": "gpt-5.4-mini",
+      "judge_model": "gpt-5.6-luna",
+      "score": "good",
+      "reasoning": "The answer captures the key points: the system can inspect its own source and tools, debug itself, and rewrite or improve itself, making it seem more natural or alive. The added detail about accessibility does not contradict the core answer.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3578,
+        "completion_tokens": 230,
+        "total_tokens": 3808
+      }
+    },
+    {
+      "faq_id": "491-06-024",
+      "episode": 491,
+      "question": "How did the self-modifying agent encourage non-programmers to contribute to software?",
+      "retrieve_query": null,
+      "answer_orig": "The agent's ease of use and self-debugging capability led to many pull requests from people who had never written software; the guest humorously calls them 'prompt requests.' He considers every first pull request a win for society, no matter the quality, because it represents someone learning how open source works.",
+      "answer_llm": "The self-modifying agent encouraged non-programmers to contribute to software by making it very easy for the agent to understand its own system, which led to many pull requests by people who had never written software before [1]. This approach lowered the bar for non-programmers to take their first step into the programming world, creating builders and providing a step up for humanity [4].",
+      "answer_model": "gpt-3.5-turbo",
+      "judge_model": "gpt-5.6-luna",
+      "score": "good",
+      "reasoning": "The answer captures the key point that the agent lowered the barrier to contribution and led people with no prior software-writing experience to submit pull requests. It omits the humorous “prompt requests” label and the point that every first PR was valued as a learning experience, but these are supporting details rather than essential to answering how it encouraged contributions.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3360,
+        "completion_tokens": 237,
+        "total_tokens": 3597
+      }
+    },
+    {
+      "faq_id": "491-06-024",
+      "episode": 491,
+      "question": "How did the self-modifying agent encourage non-programmers to contribute to software?",
+      "retrieve_query": null,
+      "answer_orig": "The agent's ease of use and self-debugging capability led to many pull requests from people who had never written software; the guest humorously calls them 'prompt requests.' He considers every first pull request a win for society, no matter the quality, because it represents someone learning how open source works.",
+      "answer_llm": "The self-modifying agent encouraged non-programmers to contribute to software by making the process more accessible and engaging. Peter Steinberger noted that the agent was designed to be aware of its own source code and could modify itself based on prompts from users. This capability allowed individuals who had never written software before to participate in the development process, leading to many pull requests from them, which he referred to as \"prompt requests\" [1]. He emphasized that the barrier to entry for contributing to software had been lowered significantly, enabling more people to take their first steps into programming and learn how open source works [4].",
+      "answer_model": "gpt-4o-mini",
+      "judge_model": "gpt-5.6-luna",
+      "score": "good",
+      "reasoning": "The AI answer captures the key points: the agent’s ease of use and self-modifying/self-debugging nature enabled people with no prior software experience to submit pull requests, humorously called “prompt requests,” and these contributions represented an important first step in learning open source. It adds some detail but does not change the core meaning.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3428,
+        "completion_tokens": 202,
+        "total_tokens": 3630
+      }
+    },
+    {
+      "faq_id": "491-06-024",
+      "episode": 491,
+      "question": "How did the self-modifying agent encourage non-programmers to contribute to software?",
+      "retrieve_query": null,
+      "answer_orig": "The agent's ease of use and self-debugging capability led to many pull requests from people who had never written software; the guest humorously calls them 'prompt requests.' He considers every first pull request a win for society, no matter the quality, because it represents someone learning how open source works.",
+      "answer_llm": "It encouraged non-programmers by lowering the barrier to contributing: people could make their first pull request even if they didn’t know how to program, and the project helped them learn how open source works. Peter Steinberger said that with agents and the right software, “the bar to do that was so high” but “it just, like, went lower and lower,” and that many people were taking their first step into programming through it. [4]",
+      "answer_model": "gpt-5.4-mini",
+      "judge_model": "gpt-5.6-luna",
+      "score": "good",
+      "reasoning": "The answer captures the key point: the agent’s ease of use lowered the barrier for non-programmers, enabling them to make their first pull requests and learn how open source works. It also appropriately conveys that many were entering programming through the project. The extra quoted detail does not conflict with the ground truth.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3397,
+        "completion_tokens": 170,
+        "total_tokens": 3567
+      }
+    },
+    {
+      "faq_id": "491-06-025",
+      "episode": 491,
+      "question": "What example does the guest give of a non-programmer using the software?",
+      "retrieve_query": null,
+      "answer_orig": "The guest shared a story of a design agency owner who had never had custom software but now runs 25 little web services for his business without understanding how they work. The owner was happy the software solved his problems and even attended a meetup despite lacking software knowledge.",
+      "answer_llm": "The guest gives an example of a non-programmer using the software by mentioning that the agent can modify its own software. This self-modification capability allows people who have never written software to interact with the agent and make changes to its code [5].",
+      "answer_model": "gpt-3.5-turbo",
+      "judge_model": "gpt-5.6-luna",
+      "score": "bad",
+      "reasoning": "The AI answer does not mention the design agency owner who runs 25 web services without understanding how they work, which is the key example in the original answer. Instead, it gives an unrelated claim about the agent modifying its own software.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3471,
+        "completion_tokens": 134,
+        "total_tokens": 3605
+      }
+    },
+    {
+      "faq_id": "491-06-025",
+      "episode": 491,
+      "question": "What example does the guest give of a non-programmer using the software?",
+      "retrieve_query": null,
+      "answer_orig": "The guest shared a story of a design agency owner who had never had custom software but now runs 25 little web services for his business without understanding how they work. The owner was happy the software solved his problems and even attended a meetup despite lacking software knowledge.",
+      "answer_llm": "Peter Steinberger gives the example of \"people who never wrote software\" contributing to the project through \"prompt requests,\" indicating that non-programmers were able to engage with the software and make modifications or suggestions without traditional coding skills [5].",
+      "answer_model": "gpt-4o-mini",
+      "judge_model": "gpt-5.6-luna",
+      "score": "bad",
+      "reasoning": "The AI answer gives a different example involving non-programmers contributing through prompt requests. It does not mention the design agency owner who runs 25 web services without understanding how they work, which is the key example in the original answer.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3486,
+        "completion_tokens": 151,
+        "total_tokens": 3637
+      }
+    },
+    {
+      "faq_id": "491-06-025",
+      "episode": 491,
+      "question": "What example does the guest give of a non-programmer using the software?",
+      "retrieve_query": null,
+      "answer_orig": "The guest shared a story of a design agency owner who had never had custom software but now runs 25 little web services for his business without understanding how they work. The owner was happy the software solved his problems and even attended a meetup despite lacking software knowledge.",
+      "answer_llm": "The guest says it led to “so many pull requests by people who never wrote software,” and he calls them “prompt requests” instead. [5]",
+      "answer_model": "gpt-5.4-mini",
+      "judge_model": "gpt-5.6-luna",
+      "score": "bad",
+      "reasoning": "The AI answer does not provide the example from the original answer. It mentions pull requests or “prompt requests” by non-programmers, but omits the design agency owner who used the software to run 25 web services without understanding how they worked.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3469,
+        "completion_tokens": 119,
+        "total_tokens": 3588
+      }
+    },
+    {
+      "faq_id": "491-06-026",
+      "episode": 491,
+      "question": "How has the bar for contributing to software changed according to the guest?",
+      "retrieve_query": null,
+      "answer_orig": "The guest says the bar to contribute was very high before, but with agents and the right software, it has 'gone lower and lower.' He also mentioned organizing meetups called 'Agents Anonymous' and seeing people like the design agency owner start building custom tools without coding knowledge.",
+      "answer_llm": "According to Peter Steinberger, the bar for contributing to software has lowered over time, making it more accessible for beginners to get involved in open source projects [1]. Jensen Huang also mentions that in China, there is a culture of sharing knowledge and contributing to open source, which accelerates the innovation process and allows for rapid development due to the nature of friends, competition, and the social culture of putting family first [2].",
+      "answer_model": "gpt-3.5-turbo",
+      "judge_model": "gpt-5.6-luna",
+      "score": "good",
+      "reasoning": "The answer captures the central point that the barrier to contributing to software has become lower and more accessible. It omits the specific role of agents and supporting software, as well as the examples mentioned by the guest, and adds unrelated claims about Jensen Huang and China, but these additions do not contradict the core answer.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3464,
+        "completion_tokens": 311,
+        "total_tokens": 3775
+      }
+    },
+    {
+      "faq_id": "491-06-026",
+      "episode": 491,
+      "question": "How has the bar for contributing to software changed according to the guest?",
+      "retrieve_query": null,
+      "answer_orig": "The guest says the bar to contribute was very high before, but with agents and the right software, it has 'gone lower and lower.' He also mentioned organizing meetups called 'Agents Anonymous' and seeing people like the design agency owner start building custom tools without coding knowledge.",
+      "answer_llm": "According to Peter Steinberger, the bar for contributing to software has significantly lowered over time. He notes that previously, the threshold to get involved in software development was quite high, but with advancements in technology and tools, it has become much easier for individuals to start contributing. He mentions that people who may not have a deep understanding of programming can now create multiple web services and engage with software in meaningful ways, even if they don't fully grasp how it works. This shift allows more people to take their first steps into programming and contribute to open source projects, which he sees as a positive development for society [1].",
+      "answer_model": "gpt-4o-mini",
+      "judge_model": "gpt-5.6-luna",
+      "score": "good",
+      "reasoning": "The AI answer correctly conveys the key point that the bar for contributing to software was previously high but has steadily lowered due to agents and better tools. It also appropriately reflects the guest’s example that people without coding expertise can build software. The added mention of open source and societal benefit is not central but does not contradict the ground truth.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3511,
+        "completion_tokens": 243,
+        "total_tokens": 3754
+      }
+    },
+    {
+      "faq_id": "491-06-026",
+      "episode": 491,
+      "question": "How has the bar for contributing to software changed according to the guest?",
+      "retrieve_query": null,
+      "answer_orig": "The guest says the bar to contribute was very high before, but with agents and the right software, it has 'gone lower and lower.' He also mentioned organizing meetups called 'Agents Anonymous' and seeing people like the design agency owner start building custom tools without coding knowledge.",
+      "answer_llm": "According to Peter Steinberger, the bar for contributing to software has gone down a lot: with agents and better software, it “went lower and lower,” making it much easier for people to start contributing, even if they don’t know how to program well. [1]",
+      "answer_model": "gpt-5.4-mini",
+      "judge_model": "gpt-5.6-luna",
+      "score": "good",
+      "reasoning": "The AI answer correctly conveys the key point that the barrier to contributing to software was previously high but has been steadily lowered by agents and better software, enabling people without strong programming knowledge to participate. The omitted meetup and design-agency example are supporting details, not necessary to answer the question.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3443,
+        "completion_tokens": 130,
+        "total_tokens": 3573
+      }
+    },
+    {
+      "faq_id": "491-07-027",
+      "episode": 491,
+      "question": "Why was the project initially named Wa-Relay and later changed to Claude's?",
+      "retrieve_query": null,
+      "answer_orig": "The project originally used an agent with no personality, which felt like a sycophantic and overly friendly tool. The creator wanted a more natural interaction, similar to texting a friend on WhatsApp, so he decided to give the agent a distinct personality and rename it.",
+      "answer_llm": "The project was initially named Wa-Relay and later changed to Claude's because Peter Steinberger wanted to give his agent a personality and make it spicier, more engaging, and less robotic [1]. The name Claude's was chosen as a play on words related to lobsters and Doctor Who's TARDIS [1]. However, the name Claude's did not roll off the tongue well, so it was later changed to ClaudeBot, which was catchy and short [1]. Finally, the project was renamed to OpenClaw after Peter Steinberger had a moment of inspiration and felt that it was a better fit for the project [5].",
+      "answer_model": "gpt-3.5-turbo",
+      "judge_model": "gpt-5.6-luna",
+      "score": "good",
+      "reasoning": "The answer captures the core reason: the creator renamed the project to give the previously impersonal, robotic agent a distinct and more engaging personality. It does not mention the WhatsApp-friend-like interaction motivation and includes additional renaming details that are not needed, but these omissions and extras do not undermine the main answer.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3842,
+        "completion_tokens": 416,
+        "total_tokens": 4258
+      }
+    },
+    {
+      "faq_id": "491-07-027",
+      "episode": 491,
+      "question": "Why was the project initially named Wa-Relay and later changed to Claude's?",
+      "retrieve_query": null,
+      "answer_orig": "The project originally used an agent with no personality, which felt like a sycophantic and overly friendly tool. The creator wanted a more natural interaction, similar to texting a friend on WhatsApp, so he decided to give the agent a distinct personality and rename it.",
+      "answer_llm": "The project was initially named Wa-Relay because it was designed to connect WhatsApp with cloud code. However, Peter Steinberger later changed the name to Claude's because he wanted to give the project a personality that felt more relatable and engaging, moving away from the original, more mechanical name. He also found the name Claude's to be catchy and liked the domain associated with it. Ultimately, the name change was influenced by feedback from others, including employees from Anthropic, who expressed that they didn't like the name Claude's, leading to further iterations and the eventual renaming to OpenClaw [1][5].",
+      "answer_model": "gpt-4o-mini",
+      "judge_model": "gpt-5.6-luna",
+      "score": "good",
+      "reasoning": "The answer captures the key reason for the rename: the original project felt mechanical and lacked a distinct personality, while the creator wanted a more relatable, natural interaction. It adds some unsupported details about connecting WhatsApp with cloud code and later naming iterations, but these do not undermine the central explanation.",
+      "error": null,
+      "tokens": {
+        "prompt_tokens": 3866,
+        "completion_tokens": 460,
+        "total_tokens": 4326
+      }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+﻿# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Secrets - never commit API keys
+.env
+.env.*.bak
+
+# uv
+.uv-cache/
+uv-python/
+
+# Runtime feedback / logs (not committed)
+data/results/feedback.jsonl
+data/results/pipeline_run.log
+
+# Personal folder - never upload
+博士申请/

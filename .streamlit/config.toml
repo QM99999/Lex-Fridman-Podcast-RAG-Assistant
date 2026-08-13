@@ -1,0 +1,6 @@
+# Streamlit Cloud / headless run settings
+[server]
+headless = true
+
+[browser]
+gatherUsageStats = false

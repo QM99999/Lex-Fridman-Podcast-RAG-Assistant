@@ -1,0 +1,1648 @@
+{
+  "episode": 494,
+  "guest": "Jensen Huang",
+  "provider": "deepseek",
+  "model": "deepseek-v4-flash",
+  "faq_count": 118,
+  "processed_chapters": [
+    "AGI timeline",
+    "AI data centers in space",
+    "AI scaling laws",
+    "Biggest blockers to AI scaling laws",
+    "China",
+    "Consciousness",
+    "Elon and Colossus",
+    "Extreme co-design and rack-scale engineering",
+    "Future of programming",
+    "How Jensen runs NVIDIA",
+    "Introduction",
+    "Jensen’s approach to engineering and leadership",
+    "Leadership under pressure",
+    "Memory",
+    "Mortality",
+    "NVIDIA’s moat",
+    "Power",
+    "Supply chain",
+    "TSMC and Taiwan",
+    "Video games",
+    "Will NVIDIA be worth $10 trillion?"
+  ],
+  "chapters": {},
+  "stats": {
+    "ok": 37,
+    "merge": 1,
+    "long_split": 80,
+    "skipped": 20,
+    "est_tokens_median": 90,
+    "est_tokens_max": 159,
+    "est_over_500": 0
+  },
+  "faqs": [
+    {
+      "question": "What makes extreme co-design at rack scale so difficult?",
+      "answer": "The main difficulty is that the AI problem no longer fits inside a single computer or GPU. To achieve speedups beyond linear scaling, the algorithm, pipeline, data, and model must be refactored and distributed across thousands of computers, and then every component—from CPU and GPU to networking and storage—becomes a potential bottleneck.",
+      "source_timestamps": [
+        "00:01:11"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 99,
+      "id": "494-02-001",
+      "chapter": "Extreme co-design and rack-scale engineering",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "How does Amdahl's law limit the benefits of speeding up computation?",
+      "answer": "Amdahl's law says the total speedup is limited by the fraction of the workload that is parallelized. If computation is only half of the total workload, even an infinite speedup of that half gives at most a 2x overall improvement, so other parts like networking and switching also need to be optimized.",
+      "source_timestamps": [
+        "00:02:03"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 93,
+      "id": "494-02-002",
+      "chapter": "Extreme co-design and rack-scale engineering",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "Why is distributed computing at NVIDIA's scale a complex computer science problem?",
+      "answer": "Because at large scale, the CPU, GPU, networking, switching, and workload distribution all become interdependent challenges. Solving it requires bringing every technology to bear, especially as Moore's law and Dennard scaling have slowed, so linear scaling is no longer enough.",
+      "source_timestamps": [
+        "00:02:57"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 90,
+      "id": "494-02-003",
+      "chapter": "Extreme co-design and rack-scale engineering",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "What does extreme co-design mean in the context of building a computer system?",
+      "answer": "Extreme co-design involves optimizing across the entire stack, from software architectures and chips to system software, algorithms, and applications. It also includes power and cooling because these computers are extremely power hungry and consume a lot of energy. The first step is defining what the system actually is.",
+      "source_timestamps": [
+        "00:03:51"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 100,
+      "id": "494-03-001",
+      "chapter": "How Jensen runs NVIDIA",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "What are the three guiding questions used for extreme co-design?",
+      "answer": "The three questions are what, why, and how. The 'why' focuses on distributing workload so that you can exceed the benefit of simply increasing the number of computers. The 'how' addresses implementation.",
+      "source_timestamps": [
+        "00:04:34"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 67,
+      "id": "494-03-002",
+      "chapter": "How Jensen runs NVIDIA",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "Why should a company's organization chart reflect its environment and the product it creates?",
+      "answer": "The guest believes a company should be the machinery that produces its output, and its architecture should mirror the environment in which it exists. He criticizes generic organization charts that look the same across different industries, saying the structure should dictate what the organization should do.",
+      "source_timestamps": [
+        "00:04:51"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 101,
+      "id": "494-03-003",
+      "chapter": "How Jensen runs NVIDIA",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "Why does the guest have 60 direct reports and avoid one-on-one meetings?",
+      "answer": "He has about 60 direct reports, which makes traditional one-on-ones impossible. Instead, he avoids them because no conversation is ever one person: problems are presented to the whole group, and everyone attacks them together, since the company is doing extreme co-design all the time.",
+      "source_timestamps": [
+        "00:05:36",
+        "00:06:18"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 90,
+      "id": "494-03-004",
+      "chapter": "How Jensen runs NVIDIA",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "How does the team engage when a specific component like cooling or networking is being discussed?",
+      "answer": "When a specific component is discussed, everyone is expected to listen in, even if it's not their specialty. People can choose to tune out, but if they had something to contribute and stayed silent, they get called out. This ensures cross-domain issues like power distribution or memory compatibility are caught.",
+      "source_timestamps": [
+        "00:06:49"
+      ],
+      "boundary": "ok",
+      "est_tokens": 103,
+      "id": "494-03-005",
+      "chapter": "How Jensen runs NVIDIA",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "Why did NVIDIA start as an accelerator company, and what was the trade-off?",
+      "answer": "Starting as an accelerator allowed incredible optimization for a narrow application domain. However, intense specialization limits market reach, and market size dictates R&D capacity, which in turn limits influence and impact in computing. So the company had to find a path toward accelerated computing without losing specialization.",
+      "source_timestamps": [
+        "00:07:32",
+        "00:08:23"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 102,
+      "id": "494-03-006",
+      "chapter": "How Jensen runs NVIDIA",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "What were the first technical steps NVIDIA took toward becoming a computing company?",
+      "answer": "The first step was inventing a programmable pixel shader, which introduced programmability. Then they added IEEE-compatible FP32 to shaders, attracting researchers who used stream processors and data flow processors. They later put C on top of FP32, creating Cg, which eventually evolved into CUDA.",
+      "source_timestamps": [
+        "00:09:13",
+        "00:09:55"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 96,
+      "id": "494-03-007",
+      "chapter": "How Jensen runs NVIDIA",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "Why is install base more important than architectural elegance for a computing platform?",
+      "answer": "The guest says developers come to a platform because of its large install base, as they want their software to reach many people. He suggests x86 survived because of its install base despite many criticisms, while many elegant RISC architectures failed. Therefore, install base defines an architecture, and everything else is secondary.",
+      "source_timestamps": [
+        "00:11:27",
+        "00:12:18",
+        "00:12:58"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 106,
+      "id": "494-03-008",
+      "chapter": "How Jensen runs NVIDIA",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "What strategic decision almost bankrupted NVIDIA, and why did they take the risk?",
+      "answer": "NVIDIA decided to put CUDA on GeForce and ship it with every PC, even if consumers never used it, to cultivate a large install base for their new computing architecture. This increased the cost of the consumer GPU so much that it consumed all of the company's gross profit dollars, dropping NVIDIA's market cap from around $8 billion to $1.5 billion. They carried CUDA on GeForce anyway because they believed it would eventually attract developers.",
+      "source_timestamps": [
+        "00:13:29",
+        "00:14:15"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 133,
+      "id": "494-03-009",
+      "chapter": "How Jensen runs NVIDIA",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "How did putting CUDA on GeForce pave the way for the deep learning revolution?",
+      "answer": "GeForce was already selling millions of units, and putting CUDA on it put a supercomputer in the hands of researchers, students, and scientists, many of whom were gamers and built their own PCs. They discovered CUDA on GeForce and used it for clusters, which provided the foundation for deep learning.",
+      "source_timestamps": [
+        "00:15:10"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 95,
+      "id": "494-03-010",
+      "chapter": "How Jensen runs NVIDIA",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "What were the financial consequences of adding CUDA to GeForce?",
+      "answer": "CUDA increased the cost of the GPU by about 50%, and with a 35% gross margin, it consumed all of NVIDIA's gross profit dollars. The company reasoned that workstations and supercomputers would eventually allow higher margins, but it still took a decade for the bet to pay off.",
+      "source_timestamps": [
+        "00:15:48",
+        "00:16:36"
+      ],
+      "boundary": "ok",
+      "est_tokens": 85,
+      "id": "494-03-011",
+      "chapter": "How Jensen runs NVIDIA",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "How does the guest make bold decisions about the future?",
+      "answer": "The guest says he is informed by curiosity and a reasoning system that convinces him an outcome will happen. Once he believes it in his mind, he manifests that future, even though there is a lot of suffering in between. He also emphasizes reasoning about why it must exist and how to get there.",
+      "source_timestamps": [
+        "00:17:14",
+        "00:17:59"
+      ],
+      "boundary": "ok",
+      "est_tokens": 88,
+      "id": "494-03-012",
+      "chapter": "How Jensen runs NVIDIA",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "How does the guest approach learning about something new and communicating its importance to his team?",
+      "answer": "The guest reasons through new developments step by step and immediately communicates to his team why something matters. He consistently uses external information to shape the belief systems of his board, management, and employees, often before making any formal decision.",
+      "source_timestamps": [
+        "00:18:43"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 94,
+      "id": "494-03-013",
+      "chapter": "How Jensen runs NVIDIA",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "What strategy does the guest use to ensure major decisions like buying Mellanox or betting on deep learning are met with full support?",
+      "answer": "He plants seeds early and continuously shapes beliefs across the company. By the time he announces a major decision, such as acquiring Mellanox or committing to deep learning, most people already understand and support it, ensuring immediate buy-in.",
+      "source_timestamps": [
+        "00:19:33"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 96,
+      "id": "494-03-014",
+      "chapter": "How Jensen runs NVIDIA",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "Why does the guest feel that employees often respond to his announcements with \"what took you so long?\"",
+      "answer": "Because he has been preparing his team for so long, employees feel the announcement is overdue. This method — leading from behind — gives the appearance that he's following, but in reality he has already aligned everyone's thinking for full commitment.",
+      "source_timestamps": [
+        "00:20:19"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 89,
+      "id": "494-03-015",
+      "chapter": "How Jensen runs NVIDIA",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "What role do conferences like GTC play in the guest's approach to leadership?",
+      "answer": "He uses GTC to shape the belief systems of industry partners and his own employees. By discussing stepping stones and future directions years in advance, people are ready when he finally makes a big announcement, as with the Grok platform.",
+      "source_timestamps": [
+        "00:21:02"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 79,
+      "id": "494-03-016",
+      "chapter": "How Jensen runs NVIDIA",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "How does the guest describe NVIDIA's business model?",
+      "answer": "The guest says NVIDIA is a computing platform company, not a builder of computers or clouds. The company designs and optimizes integrated platforms but opens them at every layer so others can embed them in their own offerings. This requires convincing partners first, which is why he uses events like GTC to manifest a future where his products are ready and the ecosystem is waiting.",
+      "source_timestamps": [
+        "00:21:53"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 109,
+      "id": "494-03-017",
+      "chapter": "How Jensen runs NVIDIA",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "What did people initially think would limit AI scaling?",
+      "answer": "People thought the supply of high-quality data would run out and limit the intelligence of pre-trained models. Some declared pre-training over, but the guest said that fear was unfounded.",
+      "source_timestamps": [
+        "00:23:12"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 61,
+      "id": "494-04-001",
+      "chapter": "AI scaling laws",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "How does synthetic data help solve the data shortage?",
+      "answer": "AI can take ground truth, augment it, and generate enormous amounts of synthetic training data. Much of the data humans exchange is already synthetic—created, modified, and regenerated—so training will not stall for lack of human-produced data.",
+      "source_timestamps": [
+        "00:23:57"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 75,
+      "id": "494-04-002",
+      "chapter": "AI scaling laws",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "What did the guest say becomes the limiting factor as synthetic data grows?",
+      "answer": "As human-generated data becomes a smaller share, training becomes limited by compute rather than data. Since most data will be synthetic, the ability to generate and process it depends on available computing power.",
+      "source_timestamps": [
+        "00:24:47"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 73,
+      "id": "494-04-003",
+      "chapter": "AI scaling laws",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "Why did the guest think inference would be harder than people assumed?",
+      "answer": "He viewed inference as thinking, which is far more difficult than the memorization and pattern recognition of pre-training. Reasoning, planning, and search during test time require intense computation, so inference cannot be lightweight or commoditized.",
+      "source_timestamps": [
+        "00:25:32",
+        "00:25:59",
+        "00:26:50"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 81,
+      "id": "494-04-004",
+      "chapter": "AI scaling laws",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "What does the agentic scaling law say?",
+      "answer": "The agentic scaling law describes AI agents spawning sub-agents to create large teams that can use tools and do research. This 'multiplying AI' approach can be scaled as fast as needed, unlike adding employees.",
+      "source_timestamps": [
+        "00:26:50",
+        "00:27:44"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 62,
+      "id": "494-04-005",
+      "chapter": "AI scaling laws",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "How do the four scaling laws reinforce one another?",
+      "answer": "Agentic systems generate new data and experiences that return to pre-training, are refined in post-training, and enhanced during test time. This cycle accelerates continuously, so intelligence ultimately scales with compute.",
+      "source_timestamps": [
+        "00:28:12",
+        "00:28:41"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 69,
+      "id": "494-04-006",
+      "chapter": "AI scaling laws",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "How does the guest decide which hardware to build when AI models change so rapidly?",
+      "answer": "He does internal basic and applied research, builds his own models, and collaborates with nearly every AI company to learn their challenges. This lets him anticipate the hardware and system architecture needed two to three years in the future.",
+      "source_timestamps": [
+        "00:29:09",
+        "00:29:40",
+        "00:30:02"
+      ],
+      "boundary": "ok",
+      "est_tokens": 82,
+      "id": "494-04-007",
+      "chapter": "AI scaling laws",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "How did advances like mixture-of-experts influence hardware design?",
+      "answer": "CUDA is both a strong accelerator and a flexible platform, letting it adapt to new algorithms without losing performance. This balance helped NVIDIA respond to mixtures of experts by scaling NVLink to run massive models as one computing domain.",
+      "source_timestamps": [
+        "00:30:44"
+      ],
+      "boundary": "ok",
+      "est_tokens": 78,
+      "id": "494-04-008",
+      "chapter": "AI scaling laws",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "What reasoning led the guest to predict agentic AI before tools like OpenClaw existed?",
+      "answer": "He reasoned that for an LLM to be a digital worker, it must access ground truth, do research, and use existing tools; otherwise it would have to wait until it was universally smart. That logic made agentic systems an obvious direction.",
+      "source_timestamps": [
+        "00:32:26"
+      ],
+      "boundary": "ok",
+      "est_tokens": 81,
+      "id": "494-04-009",
+      "chapter": "AI scaling laws",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "How does the humanoid robot thought experiment explain how agents will use tools?",
+      "answer": "A humanoid robot would use an ordinary microwave rather than morphing its hand into a specialized tool. It can read the microwave's manual online and immediately learn to use it, showing that agents will access files, perform research, and have an I/O subsystem.",
+      "source_timestamps": [
+        "00:33:13"
+      ],
+      "boundary": "ok",
+      "est_tokens": 86,
+      "id": "494-04-010",
+      "chapter": "AI scaling laws",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "How far in advance did the guest describe agentic systems like OpenClaw?",
+      "answer": "Two years before OpenClaw, he presented a schematic at GTC of an agentic system that matches today's OpenClaw. He calls this a reinvention of the computer, enabled by capable models and a robust open-source project.",
+      "source_timestamps": [
+        "00:34:35"
+      ],
+      "boundary": "ok",
+      "est_tokens": 72,
+      "id": "494-04-011",
+      "chapter": "AI scaling laws",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "What impact did OpenClaw have on agentic systems?",
+      "answer": "It did for agentic systems what ChatGPT did for generative systems, making them broadly accessible. The guest calls it a very big deal.",
+      "source_timestamps": [
+        "00:35:26"
+      ],
+      "boundary": "ok",
+      "est_tokens": 46,
+      "id": "494-04-012",
+      "chapter": "AI scaling laws",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "What is being done to make agentic systems like OpenClaw more secure?",
+      "answer": "NVIDIA integrated an initiative called OpenShell into OpenClaw, sending security experts to work on it. The model allows only two of three powers at a time—accessing sensitive data, executing code, or communicating externally—while enforcing enterprise access control and policy engines.",
+      "source_timestamps": [
+        "00:36:44",
+        "00:37:03"
+      ],
+      "boundary": "ok",
+      "est_tokens": 89,
+      "id": "494-04-013",
+      "chapter": "AI scaling laws",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "What are the main challenges that could impede the scaling of AI as intelligent agents become more widespread?",
+      "answer": "Power is a concern, but not the only one. Through extreme co-design, the efficiency measured in tokens per second per watt can be improved by orders of magnitude each year. Over the past decade, computing scaled up by a million times, far exceeding Moore's Law's 100x. This efficiency drives down token costs by an order of magnitude annually, even as hardware prices rise.",
+      "source_timestamps": [
+        "00:37:59",
+        "00:38:51"
+      ],
+      "boundary": "ok",
+      "est_tokens": 121,
+      "id": "494-05-001",
+      "chapter": "Biggest blockers to AI scaling laws",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "What is the guest's level of concern about AI supply chain bottlenecks, including EUV lithography, advanced packaging, and high bandwidth memory?",
+      "answer": "The guest is extremely concerned and works on supply chain issues constantly. He notes that the company is increasing its share of AI computing, making upstream and downstream supply chains critical. To help manage this, he regularly informs hundreds of partner CEOs about current conditions, near-term growth drivers, and future directions so they can align their investments.",
+      "source_timestamps": [
+        "00:39:38",
+        "00:40:32"
+      ],
+      "boundary": "ok",
+      "est_tokens": 131,
+      "id": "494-06-001",
+      "chapter": "Supply chain",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "How did the guest influence memory manufacturers to adopt HBM and LPDDR5 for data centers?",
+      "answer": "He convinced DRAM industry CEOs to invest in HBM memory by arguing it would become a mainstream data center technology despite its limited use at the time. He also pushed for adapting low-power cell phone memory (LPDDR5) for supercomputers, citing the huge volumes that would result. These efforts contributed to record years for all three memory types in these 45-year-old companies.",
+      "source_timestamps": [
+        "00:41:06",
+        "00:41:55"
+      ],
+      "boundary": "ok",
+      "est_tokens": 119,
+      "id": "494-07-001",
+      "chapter": "Memory",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "How complex is the supply chain for a product like the Vera Rubin rack, and how does the guest manage it?",
+      "answer": "He describes the deep science, deep engineering, and incredible manufacturing involved, with much of it already robotic. A single Vera Rubin rack has about 1.3 to 1.5 million components supplied by 200 companies, and he works closely with suppliers across the supply chain.",
+      "source_timestamps": [
+        "00:43:18"
+      ],
+      "boundary": "ok",
+      "est_tokens": 95,
+      "id": "494-07-002",
+      "chapter": "Memory",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "Why isn't supply chain complexity among the things that keep the guest up at night?",
+      "answer": "The guest checks off issues by reasoning about architecture changes from first principles. For example, the shift from DGX-1 to NVLink-72 rack-scale computing meant moving supercomputer integration from data centers into manufacturing, which he analyzed thoroughly, allowing him to sleep.",
+      "source_timestamps": [
+        "00:43:52"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 93,
+      "id": "494-07-003",
+      "chapter": "Memory",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "What power implications came from moving supercomputer manufacturing into the supply chain?",
+      "answer": "To run 50 gigawatts of supercomputers simultaneously, with one week to manufacture that capacity, the supply chain would need an additional gigawatt of power each week for building and testing. This is a direct consequence of moving supercomputer manufacturing into the supply chain.",
+      "source_timestamps": [
+        "00:44:42"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 94,
+      "id": "494-07-004",
+      "chapter": "Memory",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "Why are supercomputers now shipped as complete racks instead of being assembled in data centers?",
+      "answer": "NVLink-72 is so dense that a single rack weighs two to three tons, making on-site assembly impractical. Instead, the supercomputers are built entirely in the supply chain and shipped as finished racks.",
+      "source_timestamps": [
+        "00:45:25"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 75,
+      "id": "494-07-005",
+      "chapter": "Memory",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "How does the guest convince supply chain partners to make billion-dollar investments?",
+      "answer": "He first explains what is going to happen, such as the coming inference market, and why it will happen. Then he asks each partner to invest billions of dollars, building trust through extended discussions, open questioning, first-principles reasoning, and visual explanations until they understand what to do.",
+      "source_timestamps": [
+        "00:46:05"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 99,
+      "id": "494-07-006",
+      "chapter": "Memory",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "Is the guest worried about specific bottlenecks like ASML's EUV lithography or TSMC's CoWoS packaging?",
+      "answer": "No, because he tells suppliers what he needs, they understand and commit to actions, and he believes they will follow through. He does not worry because the commitments are clear.",
+      "source_timestamps": [
+        "00:47:12",
+        "00:47:13",
+        "00:47:14"
+      ],
+      "boundary": "ok",
+      "est_tokens": 71,
+      "id": "494-07-007",
+      "chapter": "Memory",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "What is the proposed approach to solving the energy problem using the power grid's idle capacity?",
+      "answer": "The power grid is designed for worst-case conditions, but such peak demand only occurs a few days each year; most of the time it runs at about 60% of capacity. This unused capacity could be tapped by designing data centers and contracts so that during rare grid peak events, data centers reduce their power usage by shifting workloads, slowing compute, or using backup generators. The goal is to avoid forcing grid expansions by utilizing the existing excess.",
+      "source_timestamps": [
+        "00:47:30",
+        "00:48:08",
+        "00:48:49"
+      ],
+      "boundary": "ok",
+      "est_tokens": 139,
+      "id": "494-08-001",
+      "chapter": "Power",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "What obstacles stand in the way of using the grid's excess capacity?",
+      "answer": "One obstacle is that customers and CEOs often demand perfect availability, typically written as 'six nines' in contracts, which places excessive strain on the grid. Another obstacle is the need for data centers that can gracefully degrade—when asked to cut power to 80%, they can shift critical workloads and lower compute rates without losing data.",
+      "source_timestamps": [
+        "00:49:43",
+        "00:50:28",
+        "00:51:13"
+      ],
+      "boundary": "ok",
+      "est_tokens": 105,
+      "id": "494-08-002",
+      "chapter": "Power",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "How difficult is it to implement dynamic power allocation in a data center?",
+      "answer": "It is not hard once the requirements are clearly specified; as long as the solution abides by the laws of physics, it can be engineered. The challenge lies in defining the precise behavior wanted, not in the fundamental feasibility.",
+      "source_timestamps": [
+        "00:51:49"
+      ],
+      "boundary": "ok",
+      "est_tokens": 77,
+      "id": "494-08-003",
+      "chapter": "Power",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "What is the third factor needed to make this approach work?",
+      "answer": "The third piece is that utilities need to offer more flexible power delivery options with varying guarantees and prices. Instead of saying a grid upgrade will take five years, they could provide lower-guarantee power almost immediately, allowing customers to choose what suits their needs.",
+      "source_timestamps": [
+        "00:52:00"
+      ],
+      "boundary": "ok",
+      "est_tokens": 87,
+      "id": "494-08-004",
+      "chapter": "Power",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "What aspects of the Colossus supercomputer project's approach are most instructive for data center builders?",
+      "answer": "The project leader applies systems thinking by questioning every element—whether it is necessary, whether it must be done that way, and whether it has to take this long—reducing the process to its essential minimum while preserving the required capabilities, all at a system scale. He is also personally present at the point of action, going directly to problems and asking to be shown them. His demonstrated urgency makes his project the top priority for suppliers and teams, which overcomes excuses and accelerates execution.",
+      "source_timestamps": [
+        "00:53:15",
+        "00:54:25"
+      ],
+      "boundary": "ok",
+      "est_tokens": 159,
+      "id": "494-09-001",
+      "chapter": "Elon and Colossus",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "What is the guest's methodology for approaching systems engineering problems?",
+      "answer": "The guest treats co-design as the ultimate systems engineering problem and approaches it from first principles. He also uses a \"speed of light\" philosophy, which is a shorthand for the physical limits of what is possible, and compares every aspect—like memory speed, power, and cost—against those limits.",
+      "source_timestamps": [
+        "00:56:18"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 96,
+      "id": "494-10-001",
+      "chapter": "Jensen’s approach to engineering and leadership",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "How does the guest use the speed of light concept to make trade-offs in system design?",
+      "answer": "The guest tests constraints such as latency, throughput, cost, and capacity separately against the speed of light to find the physical limit for each. Because systems optimized for low latency versus high throughput have fundamentally different architectures, knowing these individual limits enables balanced trade-offs for the total system.",
+      "source_timestamps": [
+        "00:57:09"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 107,
+      "id": "494-10-002",
+      "chapter": "Jensen’s approach to engineering and leadership",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "Why does the guest prefer starting from first principles rather than continuous improvement?",
+      "answer": "The guest dislikes improving an existing process by just shaving off small amounts, like reducing a 74-day task to 72 days. He prefers stripping back to zero and asking what is physically possible today, which often reveals the task could be done in six days. Knowing that makes the conversation about improvement from 74 to six days much more effective.",
+      "source_timestamps": [
+        "00:58:01",
+        "00:58:52"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 112,
+      "id": "494-10-003",
+      "chapter": "Jensen’s approach to engineering and leadership",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "Is simplicity a design metric the guest aims for in complex systems like the Vera Rubin pod?",
+      "answer": "The guest uses the phrase \"as complex as necessary, but as simple as possible.\" He tests whether all the complexity is necessary and challenges it, considering any extra complexity gratuitous.",
+      "source_timestamps": [
+        "01:00:35"
+      ],
+      "boundary": "ok",
+      "est_tokens": 71,
+      "id": "494-10-004",
+      "chapter": "Jensen’s approach to engineering and leadership",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "What role do China's AI researchers and its educational system play in its technology growth?",
+      "answer": "Around 50% of the world's AI researchers are Chinese, and most still reside in China. The country's tech industry also emerged at the right time, during the mobile cloud era, when software became the main contribution, supported by a strong emphasis on science and math education.",
+      "source_timestamps": [
+        "01:02:05"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 94,
+      "id": "494-11-001",
+      "chapter": "China",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "Why does China have so many competing companies in fields like electric vehicles and AI?",
+      "answer": "China is not a single monolithic economy but consists of many provinces and cities with mayors all competing against one another. This internal competition encourages the creation of numerous EV and AI companies, and the intense rivalry ensures that only the strongest survive.",
+      "source_timestamps": [
+        "01:03:01"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 92,
+      "id": "494-11-002",
+      "chapter": "China",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "How does Chinese social culture encourage the sharing of knowledge and open source?",
+      "answer": "The social culture prioritizes family first, friends second, and company third, and because many people are schoolmates or even brothers, there is a natural tendency to share knowledge. As a result, there is little sense in keeping technology hidden, so open source participation becomes a way to accelerate innovation for everyone.",
+      "source_timestamps": [
+        "01:03:01",
+        "01:03:47"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 104,
+      "id": "494-11-003",
+      "chapter": "China",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "What makes China the fastest innovating country in the world today?",
+      "answer": "The combination of excellent education, a culture that values engineering, and a competitive yet collaborative environment drives rapid innovation. Because technology emerged during an exponential era, and with open source amplifying progress, China has become the fastest innovating country today.",
+      "source_timestamps": [
+        "01:04:35"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 92,
+      "id": "494-11-004",
+      "chapter": "China",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "What is the typical professional background of China's leaders compared to the U.S.?",
+      "answer": "The guest describes China as a builder nation, noting that unlike the U.S. where leaders are mostly lawyers, China's leaders are often engineers. This stems from the country's history of building out of poverty, so many leaders are some of the brightest engineering minds.",
+      "source_timestamps": [
+        "01:05:16",
+        "01:05:19"
+      ],
+      "boundary": "ok",
+      "est_tokens": 89,
+      "id": "494-11-005",
+      "chapter": "China",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "Why does NVIDIA develop open source models like Nemotron 3?",
+      "answer": "To be a great AI computing company, NVIDIA needs to understand how AI models evolve. Nemotron 3 combines transformer and state space models, and the company's early work on GANs helped lead to diffusion. This research informs what kind of computing systems will be needed for future models, as part of an extreme co-design strategy.",
+      "source_timestamps": [
+        "01:06:28",
+        "01:06:36"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 98,
+      "id": "494-11-006",
+      "chapter": "China",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "What is NVIDIA's second reason for open sourcing AI models?",
+      "answer": "NVIDIA recognizes that while world-class models should be proprietary products, AI also needs to diffuse into every industry, country, researcher, and student. Open source is fundamentally necessary for many industries to join the AI revolution, and NVIDIA has the skills, scale, and motivation to build and release these models, activating everyone.",
+      "source_timestamps": [
+        "01:07:37"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 103,
+      "id": "494-11-007",
+      "chapter": "China",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "Why is AI more than just language?",
+      "answer": "The guest points out that AI is not just language; it will use tools and models trained on other modalities like biology, chemistry, and physics. NVIDIA wants to ensure that fields like weather prediction, drug discovery, and physical AI can be pushed to the frontier, so by open sourcing models, every car company or drug company can access world-class AI systems.",
+      "source_timestamps": [
+        "01:08:39"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 100,
+      "id": "494-11-008",
+      "chapter": "China",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "What is a common misconception about TSMC's success?",
+      "answer": "The common misconception is that TSMC's success depends solely on a great transistor. In reality, their technological excellence spans metallization, packaging, 3D packaging, silicon photonics, and other advanced areas, which together make the company special.",
+      "source_timestamps": [
+        "01:10:19"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 78,
+      "id": "494-12-001",
+      "chapter": "TSMC and Taiwan",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "How does TSMC handle the complex and changing demands of its customers?",
+      "answer": "TSMC orchestrates the dynamic demands of hundreds of companies, managing fluctuations in wafer starts and stops while maintaining high throughput, yields, and cost efficiency. They also keep their promises by delivering wafers on time, allowing customers to run their companies smoothly.",
+      "source_timestamps": [
+        "01:10:59",
+        "01:11:49"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 90,
+      "id": "494-12-002",
+      "chapter": "TSMC and Taiwan",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "What makes TSMC's culture exceptional?",
+      "answer": "TSMC uniquely combines a focus on advancing technology with world-class customer service. Many companies are strong in one area but not both; TSMC achieves the bleeding edge of technology while also being highly customer-oriented.",
+      "source_timestamps": [
+        "01:11:49",
+        "01:12:27"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 67,
+      "id": "494-12-003",
+      "chapter": "TSMC and Taiwan",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "What is the most valuable intangible aspect of TSMC according to the guest?",
+      "answer": "The guest values the trust that TSMC has established, which allows him to place his company's future in their hands. This trust is a significant and intangible asset, as TSMC's reliability and promise-keeping are foundational to the partnership.",
+      "source_timestamps": [
+        "01:12:27"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 80,
+      "id": "494-12-004",
+      "chapter": "TSMC and Taiwan",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "What is the nature of the long-term business relationship between the guest's company and TSMC?",
+      "answer": "The business relationship has lasted three decades, involving tens to hundreds of billions of dollars in transactions, and it operates without a formal contract. This lack of a contract underscores the extraordinary level of trust that has been built over time.",
+      "source_timestamps": [
+        "01:13:05"
+      ],
+      "boundary": "ok",
+      "est_tokens": 89,
+      "id": "494-12-005",
+      "chapter": "TSMC and Taiwan",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "Is it true that in 2013, TSMC's founder offered the guest the position of chief executive, and the guest declined?",
+      "answer": "Yes, the story is true. The guest was deeply honored and humbled by the offer, but he declined because he believed his work at NVIDIA was critically important and he had a clear vision for its future. He felt it was his sole responsibility to pursue that vision, even though the offer was incredible.",
+      "source_timestamps": [
+        "01:13:30"
+      ],
+      "boundary": "ok",
+      "est_tokens": 104,
+      "id": "494-12-006",
+      "chapter": "TSMC and Taiwan",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "What is NVIDIA's most important competitive advantage according to the guest?",
+      "answer": "The guest identifies the install base of CUDA as NVIDIA's most important advantage. He emphasizes that it is not just the technology but the dedication of 43,000 employees and millions of developers who have built and trusted the platform over the years. This large install base creates a strong barrier to entry for competitors.",
+      "source_timestamps": [
+        "01:15:20",
+        "01:16:17"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 102,
+      "id": "494-13-001",
+      "chapter": "NVIDIA’s moat",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "How does the speed of NVIDIA's development reinforce its moat?",
+      "answer": "The guest explains that NVIDIA's execution velocity, with significant improvements roughly every six months, makes CUDA ten times better for developers. This rapid pace, combined with the existing install base, ensures developers that waiting a short time will bring major enhancements. This continuous improvement cycle strengthens the platform's hold.",
+      "source_timestamps": [
+        "01:16:17",
+        "01:17:16"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 104,
+      "id": "494-13-002",
+      "chapter": "NVIDIA’s moat",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "What benefits do developers gain by choosing CUDA?",
+      "answer": "Developers who target CUDA can reach a few hundred million computers across every cloud, computer company, and industry worldwide. They also trust that NVIDIA will continue to maintain and improve CUDA indefinitely. This combination of reach and reliability makes CUDA the preferred platform for new software development.",
+      "source_timestamps": [
+        "01:17:16"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 93,
+      "id": "494-13-003",
+      "chapter": "NVIDIA’s moat",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "What is the second advantage of NVIDIA's platform besides the install base?",
+      "answer": "The second major advantage is NVIDIA's broad ecosystem. The same architecture is integrated into cloud providers, enterprise systems, cars, robots, and other domains, covering every industry. This horizontal integration makes the platform ubiquitous and deeply embedded in the tech landscape.",
+      "source_timestamps": [
+        "01:18:16"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 92,
+      "id": "494-13-004",
+      "chapter": "NVIDIA’s moat",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "How has NVIDIA's view of computing units evolved to include AI factories?",
+      "answer": "The guest explains that the unit of computing has shifted from a single GPU to a computer, then a cluster, and now an entire AI factory. His mental model now involves massive facilities with power generation, cooling, and complex networking systems, requiring thousands of people to operate. This represents a fundamental shift in what NVIDIA designs and builds.",
+      "source_timestamps": [
+        "01:19:16",
+        "01:19:47"
+      ],
+      "boundary": "ok",
+      "est_tokens": 109,
+      "id": "494-13-005",
+      "chapter": "NVIDIA’s moat",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "What scale does the guest currently think about when designing computers?",
+      "answer": "The guest says he now thinks in terms of entire infrastructure, not individual chips. He hopes that the next evolution will be planetary-scale computing, indicating his vision for even larger systems.",
+      "source_timestamps": [
+        "01:20:33"
+      ],
+      "boundary": "ok",
+      "est_tokens": 69,
+      "id": "494-13-006",
+      "chapter": "NVIDIA’s moat",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "What has NVIDIA already accomplished in space?",
+      "answer": "NVIDIA GPUs are the first GPUs to be placed in space. They are used for high-resolution imaging from satellites.",
+      "source_timestamps": [
+        "01:21:09"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 40,
+      "id": "494-14-001",
+      "chapter": "AI data centers in space",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "Why do satellites need on-board AI processing?",
+      "answer": "High-resolution imaging satellites continuously scan the Earth and generate massive amounts of data, potentially petabytes. Rather than sending all that data back to Earth, AI processes it on the satellite, discarding unchanged data and keeping only what is needed.",
+      "source_timestamps": [
+        "01:21:32"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 78,
+      "id": "494-14-002",
+      "chapter": "AI data centers in space",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "How does the guest plan to address power and cooling for space data centers?",
+      "answer": "At polar orbits, solar power would be available 24/7. For cooling, space lacks conduction and convection, so heat must be radiated away using large radiators.",
+      "source_timestamps": [
+        "01:21:32",
+        "01:22:23"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 59,
+      "id": "494-14-003",
+      "chapter": "AI data centers in space",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "What engineering problems must be solved to run AI in space?",
+      "answer": "The guest is exploring how to handle radiation, performance degradation, continuous testing of defects, redundancy, and graceful degradation. He also wants software designed so a computer never breaks but simply becomes slower over time.",
+      "source_timestamps": [
+        "01:22:41",
+        "01:23:24"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 75,
+      "id": "494-14-004",
+      "chapter": "AI data centers in space",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "What does the guest believe is the best way to scale AI in the near term?",
+      "answer": "His favorite answer is to eliminate waste, particularly by putting idle power to use as quickly as possible. This practical approach is prioritized while space-based options are being developed.",
+      "source_timestamps": [
+        "01:23:24"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 67,
+      "id": "494-14-005",
+      "chapter": "AI data centers in space",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "What fundamental shift in computing does the guest say makes NVIDIA's growth inevitable?",
+      "answer": "The guest explains that computing has moved from a retrieval-based system—where files are pre-recorded and a recommender system retrieves them—to a generative-based system in which AI computers are contextually aware and process/generate tokens in real time. This new generative paradigm requires far more computation than the old storage-heavy model, so the demand for processing power will keep growing.",
+      "source_timestamps": [
+        "01:24:45",
+        "01:25:39"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 124,
+      "id": "494-15-001",
+      "chapter": "Will NVIDIA be worth $10 trillion?",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "Why won't computing slide back to the old retrieval-based model?",
+      "answer": "The guest says that the only thing that would reverse this shift is if generative computing proved ineffective—if it didn't scale, solve different modalities, or work in applications. After 10–15 years of working on deep learning, he hasn't seen that; instead, the last five years have given him more confidence than the previous ten.",
+      "source_timestamps": [
+        "01:26:15"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 100,
+      "id": "494-15-002",
+      "chapter": "Will NVIDIA be worth $10 trillion?",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "What is the second reason computing will drive NVIDIA's growth?",
+      "answer": "The second idea is that computers used to be warehouses (storage systems), but now they have become factories that directly generate revenue. These factories produce tokens—commodities that people want to consume—and those tokens are starting to segment into tiers (like free and premium iPhones).",
+      "source_timestamps": [
+        "01:27:04"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 90,
+      "id": "494-15-003",
+      "chapter": "Will NVIDIA be worth $10 trillion?",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "Why does the guest describe intelligence as a scalable product?",
+      "answer": "He says intelligence is scalable because there are extremely high-intelligence tokens for specialized tasks that people will pay a lot for—for example, $1,000 per million tokens is coming soon. The commodity produced by these AI factories is valuable, revenue-generating, and profit-generating.",
+      "source_timestamps": [
+        "01:28:10"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 90,
+      "id": "494-15-004",
+      "chapter": "Will NVIDIA be worth $10 trillion?",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "What economic impact does the guest expect from AI computation?",
+      "answer": "The guest is absolutely certain that the world's GDP will accelerate in growth, and that the percentage of GDP used for computation will be 100 times greater than in the past. That's because computation is no longer a storage unit but a product generation unit, and new drugs, products, and services will be discovered.",
+      "source_timestamps": [
+        "01:29:08"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 96,
+      "id": "494-15-005",
+      "chapter": "Will NVIDIA be worth $10 trillion?",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "Can NVIDIA reach $3 trillion in revenue, according to the guest?",
+      "answer": "Yes. The guest sees no physical limits that make $3 trillion impossible. NVIDIA's supply chain burden is shared by about 200 companies, and he believes there will be enough energy to scale; in that context, the number is just a number.",
+      "source_timestamps": [
+        "01:29:58"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 75,
+      "id": "494-15-006",
+      "chapter": "Will NVIDIA be worth $10 trillion?",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "How does the guest respond to past predictions about NVIDIA's limits?",
+      "answer": "He recalls CEOs telling him that a fabless semiconductor company could never exceed $1 billion, or that NVIDIA would never surpass $25 billion, but he considers those not first-principles reasoning. The real question is what NVIDIA makes and how large the opportunity it can create is.",
+      "source_timestamps": [
+        "01:30:51"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 89,
+      "id": "494-15-007",
+      "chapter": "Will NVIDIA be worth $10 trillion?",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "Why does the guest say NVIDIA is not in the market share business?",
+      "answer": "Because there is no existing market to take share from—almost everything he talks about doesn't exist yet. It's harder for people to imagine how large NVIDIA could be when there is no competitor's share to capture; the challenge is societal imagination of the future. He will keep reasoning and talking about it, and every GTC will make it more real; he's 100% they will get there.",
+      "source_timestamps": [
+        "01:31:42",
+        "01:32:27"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 112,
+      "id": "494-15-008",
+      "chapter": "Will NVIDIA be worth $10 trillion?",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "What is the 'iPhone of tokens' the guest refers to?",
+      "answer": "The guest says the 'iPhone of tokens' has arrived and it refers to AI agents in general—specifically, he says OpenClaw is the iPhone of tokens. It is the fastest-growing application in history and went straight up.",
+      "source_timestamps": [
+        "01:33:05",
+        "01:33:18",
+        "01:33:27"
+      ],
+      "boundary": "ok",
+      "est_tokens": 67,
+      "id": "494-15-009",
+      "chapter": "Will NVIDIA be worth $10 trillion?",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "Is something truly special happening since December with AI coding tools like Claude Code, Codex, and OpenClaw?",
+      "answer": "The guest agrees. He elaborates that AI agents will likely bother people all the time because they get things done so fast—they report back 'I got that done' and ask what to do next. Most people don't realize that the agent chatting with them most will be their AI agent.",
+      "source_timestamps": [
+        "01:33:59",
+        "01:34:13"
+      ],
+      "boundary": "ok",
+      "est_tokens": 96,
+      "id": "494-15-010",
+      "chapter": "Will NVIDIA be worth $10 trillion?",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "Why does the guest feel a strong sense of responsibility as NVIDIA's CEO?",
+      "answer": "He is conscious that NVIDIA's success is important to the United States because it generates enormous tax revenues and establishes technology leadership, which supports national security. It also drives re-industrialization and creates many jobs. He sees the company as central to a large network of ecosystem partners.",
+      "source_timestamps": [
+        "01:35:38",
+        "01:36:57"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 98,
+      "id": "494-16-001",
+      "chapter": "Leadership under pressure",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "How does the guest view NVIDIA's impact on ordinary people and partners?",
+      "answer": "He notes that many mainstream investors, including teachers and policemen, bought NVIDIA stock and became millionaires. He also realizes that NVIDIA is central to a large ecosystem of partners, and its decisions can create great benefits or burdens for them. This awareness makes him thoughtful about the company's wider influence.",
+      "source_timestamps": [
+        "01:36:35",
+        "01:36:57"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 101,
+      "id": "494-16-002",
+      "chapter": "Leadership under pressure",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "What practical method does the guest use to cope with pressure?",
+      "answer": "He decomposes the problem and reasons about what has changed, what is hard, and what he can do about it. Then he either does it himself or gets someone else to do it; if he hasn't done it, he tells himself to stop complaining. This helps him avoid panic and get to sleep at night.",
+      "source_timestamps": [
+        "01:36:57",
+        "01:37:56",
+        "01:38:27"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 86,
+      "id": "494-16-003",
+      "chapter": "Leadership under pressure",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "Has the guest experienced low points in building NVIDIA, and how does he deal with them?",
+      "answer": "Yes, he says he hits low points all the time. He copes by decomposing the problem, sharing the burden with others, and deliberately forgetting setbacks. He also tells himself to stop crying, gets out of bed, and focuses on the next opportunity, like an athlete focusing on the next point.",
+      "source_timestamps": [
+        "01:39:22",
+        "01:39:33",
+        "01:40:04"
+      ],
+      "boundary": "merge",
+      "est_tokens": 94,
+      "id": "494-16-004",
+      "chapter": "Leadership under pressure",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "What does the guest mean by having the mind of a child?",
+      "answer": "He means looking at even a huge, daunting challenge and thinking, 'How hard could it be?' He deliberately avoids over-simulating every possible setback in advance. When setbacks happen, he relies on endurance and grit, then forgets them and keeps moving toward the future he believes in.",
+      "source_timestamps": [
+        "01:41:53",
+        "01:42:37",
+        "01:43:17"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 86,
+      "id": "494-16-005",
+      "chapter": "Leadership under pressure",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "What combination of qualities does the guest say makes a person resilient?",
+      "answer": "He says resilience comes from going into experiences fresh-minded, forgetting setbacks, believing in yourself, and staying true to that belief while constantly reevaluating. He also emphasizes being curious, humble, and always learning from other people.",
+      "source_timestamps": [
+        "01:43:54",
+        "01:44:20"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 82,
+      "id": "494-16-006",
+      "chapter": "Leadership under pressure",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "Does the guest find it harder to stay humble and open to being wrong now that he is wealthy and powerful?",
+      "answer": "He says surprisingly no, and in fact the opposite is true. Because he does much of his work publicly, when he is wrong everyone sees it, which keeps him humble. He reasons openly in meetings, showing his steps so that others can disagree with any part and redirect the thinking.",
+      "source_timestamps": [
+        "01:45:41",
+        "01:45:55",
+        "01:46:40"
+      ],
+      "boundary": "ok",
+      "est_tokens": 96,
+      "id": "494-16-007",
+      "chapter": "Leadership under pressure",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "How does the guest stay open-minded after years of success and pain?",
+      "answer": "He credits tolerance for embarrassment as an important factor. He is willing to be wrong publicly and to have others see his mistakes. He also stays grounded by remembering humble beginnings, such as his first job cleaning toilets.",
+      "source_timestamps": [
+        "01:47:57",
+        "01:48:17"
+      ],
+      "boundary": "ok",
+      "est_tokens": 75,
+      "id": "494-16-008",
+      "chapter": "Leadership under pressure",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "What is the controversy around DLSS 5, and how does it avoid making games look like AI slop?",
+      "answer": "The guest acknowledges that gamers worry about AI-generated visuals looking similar and beautiful, but he explains that DLSS 5 is different. It is 3D-conditioned and guided by ground-truth structure, so it remains completely faithful to the artist's geometry and textures in every frame. It enhances the image without changing it, and it is an open tool that artists can choose to use or reject. It can even generate in a specific style, giving artists more creative control.",
+      "source_timestamps": [
+        "01:49:56",
+        "01:50:55",
+        "01:51:50"
+      ],
+      "boundary": "ok",
+      "est_tokens": 142,
+      "id": "494-17-001",
+      "chapter": "Video games",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "Which game does the guest consider the most influential, and why?",
+      "answer": "The guest considers Doom the most influential game from a cultural and industrial standpoint because its popularity turned the PC from an office tool into a gaming device for families and gamers. He also highlights Virtua Fighter as the most important from a game technology perspective. Earlier flight simulators existed but did not have Doom's impact on the market.",
+      "source_timestamps": [
+        "01:53:24",
+        "01:53:28"
+      ],
+      "boundary": "ok",
+      "est_tokens": 108,
+      "id": "494-17-002",
+      "chapter": "Video games",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "Could an AI system actually start and run a company that reaches a billion-dollar valuation?",
+      "answer": "It's possible, because a billion-dollar valuation doesn't require permanence. An AI could create a web service that briefly attracts billions of users paying 50 cents and then goes out of business. Many internet-era companies were exactly like that, and their websites were no more sophisticated than what current AI can generate. The guest admits he wouldn't have been able to predict those successes either.",
+      "source_timestamps": [
+        "01:56:37",
+        "01:57:23"
+      ],
+      "boundary": "ok",
+      "est_tokens": 126,
+      "id": "494-18-001",
+      "chapter": "AGI timeline",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "What is currently happening with AI agents in terms of making money?",
+      "answer": "People in China are already using AI agents to find jobs, do work, and earn money. It wouldn't be surprising if someone created a digital influencer or a viral social application, though 100,000 such agents could not build something on the scale of NVIDIA.",
+      "source_timestamps": [
+        "01:57:38"
+      ],
+      "boundary": "ok",
+      "est_tokens": 81,
+      "id": "494-19-001",
+      "chapter": "Future of programming",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "Why should people not be too worried about losing their jobs to AI?",
+      "answer": "The purpose of a job is related to but different from the tasks and tools used to accomplish it. Tools have changed dramatically over the years without eliminating the underlying purpose. The guest has worked as a tech CEO for over three decades, and the tools used for that job have continuously evolved.",
+      "source_timestamps": [
+        "01:58:28"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 93,
+      "id": "494-19-002",
+      "chapter": "Future of programming",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "What happened in radiology after AI surpassed human performance in computer vision?",
+      "answer": "Computer vision reached superhuman performance around 2019 or 2020, and today every radiology platform relies on AI. Instead of replacing radiologists, the number of radiologists grew, and there is now a global shortage, because faster scan analysis increased the demand for diagnostic services.",
+      "source_timestamps": [
+        "01:59:25",
+        "01:59:39",
+        "02:00:38"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 95,
+      "id": "494-19-003",
+      "chapter": "Future of programming",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "What will happen to the number of software engineers at NVIDIA?",
+      "answer": "The number of software engineers at NVIDIA will grow, not decline. The purpose of a software engineer is to solve problems, work in teams, and innovate, not merely write lines of code. Those higher-level tasks are not going away even as AI automates coding.",
+      "source_timestamps": [
+        "02:00:38",
+        "02:01:25"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 80,
+      "id": "494-19-004",
+      "chapter": "Future of programming",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "Will the number of programmers in the world increase or decrease?",
+      "answer": "The number of programmers will increase. Coding today means writing specifications, and with AI, anyone can specify what software to build, expanding the pool from about 30 million to potentially 1 billion people.",
+      "source_timestamps": [
+        "02:01:45"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 70,
+      "id": "494-19-005",
+      "chapter": "Future of programming",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "How will AI affect professions like carpentry and accounting?",
+      "answer": "AI will elevate such professions by enabling workers to also act as architects of their own solutions. A carpenter with AI can deliver far greater value and artistry, while an accountant can also serve as a financial analyst and advisor.",
+      "source_timestamps": [
+        "02:02:43"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 75,
+      "id": "494-19-006",
+      "chapter": "Future of programming",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "Is learning traditional programming still valuable in an AI-driven world?",
+      "answer": "Traditional programming knowledge remains important because it teaches design principles and good practices for building large software systems. Writing specifications is also a form of coding, and the level of specificity depends on the problem, so understanding programming helps people decide where they want to be on that spectrum.",
+      "source_timestamps": [
+        "02:03:04",
+        "02:03:43",
+        "02:04:36"
+      ],
+      "boundary": "ok",
+      "est_tokens": 102,
+      "id": "494-19-007",
+      "chapter": "Future of programming",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "How should people cope with anxiety about AI disrupting their jobs?",
+      "answer": "Break anxiety down into parts that are actionable and parts that are not. For the actionable parts, reason through them and take action. Learning to use AI is a concrete step that can elevate a person's work and make them an innovator in their field.",
+      "source_timestamps": [
+        "02:06:51",
+        "02:07:20"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 80,
+      "id": "494-19-008",
+      "chapter": "Future of programming",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "What advice should college students and workers follow regarding AI?",
+      "answer": "College students should graduate as experts in AI, and workers in all fields should explore how AI can transform their jobs. When hiring, the guest would choose the candidate who is expert in using AI over someone with no AI knowledge, across everything from accounting to sales.",
+      "source_timestamps": [
+        "02:07:20",
+        "02:08:21"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 87,
+      "id": "494-19-009",
+      "chapter": "Future of programming",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "Why is AI especially helpful for learning how to use new tools?",
+      "answer": "AI chatbots can provide step-by-step plans and act as a life coach, guiding people from beginner-level questions. Unlike traditional programs such as Excel, which cannot explain themselves, AI can handhold a user through the first steps of any new experience.",
+      "source_timestamps": [
+        "02:09:14",
+        "02:09:51",
+        "02:10:00"
+      ],
+      "boundary": "ok",
+      "est_tokens": 81,
+      "id": "494-19-010",
+      "chapter": "Future of programming",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "Can artificial intelligence ever replicate human emotions or subjective experience?",
+      "answer": "The guest doubts that chips will ever feel emotions such as anxiety or excitement. AI may be able to recognize and understand these feelings, but it will not experience them. He also sees no indication that two computers presented with the same context would produce different outcomes because one felt differently.",
+      "source_timestamps": [
+        "02:11:18",
+        "02:12:15"
+      ],
+      "boundary": "ok",
+      "est_tokens": 100,
+      "id": "494-20-001",
+      "chapter": "Consciousness",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "What is intelligence according to the guest?",
+      "answer": "He defines intelligence as a system involving perception, understanding, reasoning, and planning. It is not a mysterious word and should not be equated with humanity. He believes intelligence has a concrete functional meaning.",
+      "source_timestamps": [
+        "02:13:34",
+        "02:13:46"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 68,
+      "id": "494-20-002",
+      "chapter": "Consciousness",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "Why does the guest describe intelligence as a commodity?",
+      "answer": "He describes intelligence as a commodity because he sees many people who are more intelligent and educated than he is, yet he coordinates them. He believes intelligence is functional rather than something that defines a person's worth or success.",
+      "source_timestamps": [
+        "02:13:46",
+        "02:14:39"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 76,
+      "id": "494-20-003",
+      "chapter": "Consciousness",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "How does the guest distinguish intelligence from humanity?",
+      "answer": "He says intelligence is a functional thing, while humanity is a much bigger word that includes life experience, tolerance for pain, determination, compassion, and generosity. He calls these qualities superhuman powers and believes they are more important than intelligence alone.",
+      "source_timestamps": [
+        "02:15:15",
+        "02:15:55"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 85,
+      "id": "494-20-004",
+      "chapter": "Consciousness",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "What advice does the guest give about the commoditization of intelligence?",
+      "answer": "He advises people not to let the democratization of intelligence cause anxiety, but rather to feel inspired. His own experience shows that being lower on the intelligence curve than those around him does not prevent success, because life is more than a single word like intelligence.",
+      "source_timestamps": [
+        "02:16:22"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 90,
+      "id": "494-20-005",
+      "chapter": "Consciousness",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "What is the guest's attitude toward death?",
+      "answer": "The guest does not want to die because he has a great life, a great family, and important work. He views his current work as a once-in-a-humanity experience, with his company being one of the most consequential in history. He takes this responsibility very seriously.",
+      "source_timestamps": [
+        "02:17:42"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 78,
+      "id": "494-21-001",
+      "chapter": "Mortality",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "What is the guest's approach to succession planning?",
+      "answer": "The guest does not believe in traditional succession planning. Instead, he focuses on continuously passing on knowledge, information, insight, skills, and experience to others. He does this by reasoning openly in every meeting and sharing new knowledge immediately.",
+      "source_timestamps": [
+        "02:17:42",
+        "02:18:36"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 80,
+      "id": "494-21-002",
+      "chapter": "Mortality",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "How does the guest want to die?",
+      "answer": "The guest hopes to die on the job, ideally instantaneously, without prolonged suffering. He constantly shares knowledge and empowers others so the company can thrive beyond his life.",
+      "source_timestamps": [
+        "02:19:23"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 54,
+      "id": "494-21-003",
+      "chapter": "Mortality",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "What gives the guest hope about humanity?",
+      "answer": "The guest has complete confidence in human kindness, generosity, and compassion. He believes people want to do good and help others, and this belief is constantly validated. This confidence in human nature gives him hope for the future.",
+      "source_timestamps": [
+        "02:20:56"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 70,
+      "id": "494-21-004",
+      "chapter": "Mortality",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "What future achievements does the guest find exciting?",
+      "answer": "The guest is excited about the many problems now within reach, such as ending disease, drastically reducing pollution, and achieving light-speed travel. These possibilities are expected in his lifetime and make him romantic about the future.",
+      "source_timestamps": [
+        "02:22:22",
+        "02:22:50"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 74,
+      "id": "494-21-005",
+      "chapter": "Mortality",
+      "guest": "Jensen Huang",
+      "episode": 494
+    },
+    {
+      "question": "What is the guest's plan for uploading consciousness to a robot?",
+      "answer": "The guest envisions sending a humanoid robot into space and uploading his life's data and AI consciousness to it. The AI would then travel at the speed of light and catch up with the robot, allowing his consciousness to continue into the future.",
+      "source_timestamps": [
+        "02:22:50"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 78,
+      "id": "494-21-006",
+      "chapter": "Mortality",
+      "guest": "Jensen Huang",
+      "episode": 494
+    }
+  ]
+}

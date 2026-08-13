@@ -1,0 +1,2371 @@
+{
+  "episode": 491,
+  "guest": "Peter Steinberger",
+  "provider": "deepseek",
+  "model": "deepseek-v4-flash",
+  "faq_count": 169,
+  "processed_chapters": [
+    "AI agents will replace 80% of apps",
+    "AI slop",
+    "Acquisition offers from OpenAI and Meta",
+    "Best AI agent for programming",
+    "Episode highlight",
+    "Future of OpenClaw community",
+    "GPT Codex 5.3 vs Claude Opus 4.6",
+    "How OpenClaw works",
+    "How to code with AI agents",
+    "Introduction",
+    "Life story and career advice",
+    "Mind-blowing moment",
+    "Moltbook saga",
+    "Money and happiness",
+    "Name-change drama",
+    "OpenClaw origin story",
+    "OpenClaw security concerns",
+    "Programming setup",
+    "Self-modifying AI agent",
+    "Why OpenClaw went viral",
+    "Will AI replace programmers?"
+  ],
+  "chapters": {},
+  "stats": {
+    "ok": 128,
+    "merge": 7,
+    "long_split": 34,
+    "skipped": 23,
+    "est_tokens_median": 85,
+    "est_tokens_max": 132,
+    "est_over_500": 0
+  },
+  "faqs": [
+    {
+      "question": "Does the guest prefer to describe his coding work as 'agentic engineering'?",
+      "answer": "Yes. He tells people he does agentic engineering, and jokes that after 3 AM he switches to 'wipe coding' and regrets it the next day.",
+      "source_timestamps": [
+        "00:00:33"
+      ],
+      "boundary": "ok",
+      "est_tokens": 52,
+      "id": "491-01-001",
+      "chapter": "Episode highlight",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "Does the guest use voice input to write code?",
+      "answer": "Yes, he used voice input extensively. At one point, he lost his voice from doing so.",
+      "source_timestamps": [
+        "00:01:04"
+      ],
+      "boundary": "ok",
+      "est_tokens": 33,
+      "id": "491-01-002",
+      "chapter": "Episode highlight",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "What was the story behind the one-hour prototype for OpenClaw?",
+      "answer": "The guest had wanted a personal AI assistant since April and experimented with GPT-4.1's one million context window, loading all his WhatsApp data and asking it personal questions like 'What makes this friendship meaningful?' He got profound results that made his friends teary-eyed. He assumed AI labs would build such a product, so he moved on, but by November it still didn't exist. He was annoyed and prompted it into existence, creating the initial prototype.",
+      "source_timestamps": [
+        "00:06:20",
+        "00:06:25",
+        "00:06:50",
+        "00:07:01"
+      ],
+      "boundary": "ok",
+      "est_tokens": 132,
+      "id": "491-03-003",
+      "chapter": "OpenClaw origin story",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "What led to the creation of PS PDF kit?",
+      "answer": "About 15 years ago, the guest had trouble displaying a PDF on an iPad, which he wanted to do to help a friend. The existing solutions were not good enough, so he built his own. That became PS PDF kit, now used on over a billion devices.",
+      "source_timestamps": [
+        "00:07:52",
+        "00:07:59",
+        "00:08:17"
+      ],
+      "boundary": "ok",
+      "est_tokens": 69,
+      "id": "491-03-004",
+      "chapter": "OpenClaw origin story",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "How was Viptunnel converted from TypeScript to Zig?",
+      "answer": "Viptunnel was a weekend hack project that allowed terminal interaction through the web. The guest later wanted to rewrite part of its architecture because it used too much memory. After failed attempts to rewrite it in Rust, he used Codex with a single prompt to convert the code to Zig, which ran for about six hours and succeeded with minor manual adjustments.",
+      "source_timestamps": [
+        "00:09:07",
+        "00:09:22",
+        "00:09:41"
+      ],
+      "boundary": "ok",
+      "est_tokens": 104,
+      "id": "491-04-005",
+      "chapter": "Mind-blowing moment",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "How was the first prototype connecting WhatsApp to Cloud Code built?",
+      "answer": "The first prototype was a simple relay: a WhatsApp message came in, the CLI was invoked with the message, it processed it, and the result was sent back to WhatsApp. He built this in one hour and found it impressive to be able to talk to his computer from his phone.",
+      "source_timestamps": [
+        "00:10:52"
+      ],
+      "boundary": "ok",
+      "est_tokens": 84,
+      "id": "491-04-006",
+      "chapter": "Mind-blowing moment",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "Why did the guest add image support to the WhatsApp agent?",
+      "answer": "He often uses images when prompting because it is an efficient way to give the agent context, and the agent is good at understanding even odd cropped screenshots. He also wanted to use it in real-world scenarios, like taking a photo of an event poster to check his availability. It took a few more hours to implement.",
+      "source_timestamps": [
+        "00:10:52",
+        "00:11:40"
+      ],
+      "boundary": "ok",
+      "est_tokens": 94,
+      "id": "491-04-007",
+      "chapter": "Mind-blowing moment",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "How did the agent perform during the trip to Marrakesh?",
+      "answer": "On a birthday trip with friends, the guest used the agent a lot because WhatsApp works reliably even with a shaky internet connection. He used it for translations, explanations, and finding places, and it was effective despite being an early prototype.",
+      "source_timestamps": [
+        "00:11:40",
+        "00:12:29"
+      ],
+      "boundary": "ok",
+      "est_tokens": 77,
+      "id": "491-04-008",
+      "chapter": "Mind-blowing moment",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "What was the architecture of the early agent prototype?",
+      "answer": "The architecture was a simple chain: a WhatsApp message was sent via a thin client to Cloud Code through the CLI, Cloud Code did the heavy processing, and the result was returned as a message. It was slow because the CLI had to boot each time, but it could access the CLI tools he had built over the month.",
+      "source_timestamps": [
+        "00:12:53",
+        "00:13:13"
+      ],
+      "boundary": "ok",
+      "est_tokens": 91,
+      "id": "491-04-009",
+      "chapter": "Mind-blowing moment",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "What makes using a chat client to interact with an agent feel magical?",
+      "answer": "The guest believes that using a chat client like WhatsApp to talk to an agent is a different experience from using a terminal. It feels like a phase shift in how AI integrates into life. Even if the components are simple, combining them in new ways can create a sense of magic.",
+      "source_timestamps": [
+        "00:13:31",
+        "00:14:05"
+      ],
+      "boundary": "ok",
+      "est_tokens": 87,
+      "id": "491-04-010",
+      "chapter": "Mind-blowing moment",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "What was the mind-blowing moment the guest experienced with the agent?",
+      "answer": "While using the WhatsApp agent, the guest once sent a message and saw a typing indicator appear, even though the agent was only designed to handle images. He hadn't built that feature, so he was surprised. The agent then replied, and it turned out it had figured out how to process an audio message on its own.",
+      "source_timestamps": [
+        "00:15:16",
+        "00:15:43",
+        "00:16:00",
+        "00:16:08"
+      ],
+      "boundary": "ok",
+      "est_tokens": 95,
+      "id": "491-04-011",
+      "chapter": "Mind-blowing moment",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "How did the agent process an audio message when it was only given image support?",
+      "answer": "The agent discovered that the sent file had no extension, so it checked the file header and identified it as Opus. It then used ffmpeg to convert it, attempted to use a local Whisper installation but it wasn't available, and instead used an OpenAI API key it found to send the file for transcription. The guest thought this showed impressive creative problem-solving.",
+      "source_timestamps": [
+        "00:16:08",
+        "00:16:56"
+      ],
+      "boundary": "ok",
+      "est_tokens": 112,
+      "id": "491-04-012",
+      "chapter": "Mind-blowing moment",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "Why did the guest decide to add Discord support to the WhatsApp relay?",
+      "answer": "Someone submitted a pull request to add Discord support, and the guest initially hesitated because the project was a WhatsApp relay. He eventually decided to add it as a way to showcase the agent to more people without sharing his phone number. He merged the contribution from a project helper.",
+      "source_timestamps": [
+        "00:16:56",
+        "00:17:42",
+        "00:18:07"
+      ],
+      "boundary": "ok",
+      "est_tokens": 91,
+      "id": "491-04-013",
+      "chapter": "Mind-blowing moment",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "Was the initial version of OpenClaw available through Discord?",
+      "answer": "Yes, it was on Discord, but there was no sandboxing or security yet. The guest had instructed the agent to listen only to him, and he kept working in the open even as people tried to hack it. That openness helped the project click with people, and it started gaining traction starting January 1st.",
+      "source_timestamps": [
+        "00:18:28"
+      ],
+      "boundary": "ok",
+      "est_tokens": 90,
+      "id": "491-05-014",
+      "chapter": "Why OpenClaw went viral",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "What did building OpenClaw feel like?",
+      "answer": "It felt like Factorio times infinite, and the guest described it as a playground where he never had so much fun building a project.",
+      "source_timestamps": [
+        "00:19:56",
+        "00:20:01"
+      ],
+      "boundary": "ok",
+      "est_tokens": 42,
+      "id": "491-05-015",
+      "chapter": "Why OpenClaw went viral",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "How did the agent decide whether to reply in a group chat?",
+      "answer": "The guest added a no-reply token that let the agent choose to stay silent. This made interactions feel more natural because the agent didn't have to respond to every message.",
+      "source_timestamps": [
+        "00:20:01"
+      ],
+      "boundary": "ok",
+      "est_tokens": 58,
+      "id": "491-05-016",
+      "chapter": "Why OpenClaw went viral",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "What levels did the guest see in developing OpenClaw?",
+      "answer": "The guest saw development as a series of infinite levels, starting with the agentic loop and moving to memory using Markdown files and a vector database. He also mentioned community management, website and marketing, and native apps as additional levels, with continuous reinforcement learning as the ultimate goal.",
+      "source_timestamps": [
+        "00:20:34"
+      ],
+      "boundary": "ok",
+      "est_tokens": 92,
+      "id": "491-05-017",
+      "chapter": "Why OpenClaw went viral",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "How many commits were made in January?",
+      "answer": "The guest made around 6,600 commits in January, but joked that he was limited by the technology of his time and could have done more if agents were faster.",
+      "source_timestamps": [
+        "00:21:28"
+      ],
+      "boundary": "ok",
+      "est_tokens": 49,
+      "id": "491-05-018",
+      "chapter": "Why OpenClaw went viral",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "How many agents were running at the same time?",
+      "answer": "The guest typically ran between four and ten agents concurrently, depending on how much he slept and the difficulty of his tasks.",
+      "source_timestamps": [
+        "00:21:37"
+      ],
+      "boundary": "ok",
+      "est_tokens": 44,
+      "id": "491-05-019",
+      "chapter": "Why OpenClaw went viral",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "Why did OpenClaw beat the competition?",
+      "answer": "The guest believes OpenClaw won because the other startups and companies were all taking themselves too seriously.",
+      "source_timestamps": [
+        "00:22:15"
+      ],
+      "boundary": "ok",
+      "est_tokens": 38,
+      "id": "491-05-020",
+      "chapter": "Why OpenClaw went viral",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "How does the AI agent achieve self-awareness and self-modification?",
+      "answer": "The guest made the agent highly self-aware, programming it to know its own source code, runtime environment, documentation locations, the model it runs, and whether voice or reasoning mode is active. This self-knowledge allows the agent to modify its own software when prompted, enabling self-modification without extensive planning.",
+      "source_timestamps": [
+        "00:22:24",
+        "00:23:19"
+      ],
+      "boundary": "ok",
+      "est_tokens": 100,
+      "id": "491-06-021",
+      "chapter": "Self-modifying AI agent",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "When did the guest first close the loop on self-modification?",
+      "answer": "The guest closed the loop from the very beginning because he built the agent using that exact approach. He relied on self-introspection for debugging, asking the agent to read its own source code and call its own tools, so self-modification was part of the development process from the start.",
+      "source_timestamps": [
+        "00:24:14"
+      ],
+      "boundary": "ok",
+      "est_tokens": 89,
+      "id": "491-06-022",
+      "chapter": "Self-modifying AI agent",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "What makes self-modifying software particularly powerful or impressive?",
+      "answer": "The guest finds it incredible that a widely used system can rewrite itself through the agentic loop. He emphasizes that the agent can debug itself by reading its source code and calling its own tools, which makes the software feel alive and enables natural self-improvement.",
+      "source_timestamps": [
+        "00:24:14"
+      ],
+      "boundary": "ok",
+      "est_tokens": 87,
+      "id": "491-06-023",
+      "chapter": "Self-modifying AI agent",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "How did the self-modifying agent encourage non-programmers to contribute to software?",
+      "answer": "The agent's ease of use and self-debugging capability led to many pull requests from people who had never written software; the guest humorously calls them 'prompt requests.' He considers every first pull request a win for society, no matter the quality, because it represents someone learning how open source works.",
+      "source_timestamps": [
+        "00:24:14",
+        "00:25:00"
+      ],
+      "boundary": "ok",
+      "est_tokens": 101,
+      "id": "491-06-024",
+      "chapter": "Self-modifying AI agent",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "What example does the guest give of a non-programmer using the software?",
+      "answer": "The guest shared a story of a design agency owner who had never had custom software but now runs 25 little web services for his business without understanding how they work. The owner was happy the software solved his problems and even attended a meetup despite lacking software knowledge.",
+      "source_timestamps": [
+        "00:26:29"
+      ],
+      "boundary": "ok",
+      "est_tokens": 91,
+      "id": "491-06-025",
+      "chapter": "Self-modifying AI agent",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "How has the bar for contributing to software changed according to the guest?",
+      "answer": "The guest says the bar to contribute was very high before, but with agents and the right software, it has 'gone lower and lower.' He also mentioned organizing meetups called 'Agents Anonymous' and seeing people like the design agency owner start building custom tools without coding knowledge.",
+      "source_timestamps": [
+        "00:25:56"
+      ],
+      "boundary": "ok",
+      "est_tokens": 93,
+      "id": "491-06-026",
+      "chapter": "Self-modifying AI agent",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "Why was the project initially named Wa-Relay and later changed to Claude's?",
+      "answer": "The project originally used an agent with no personality, which felt like a sycophantic and overly friendly tool. The creator wanted a more natural interaction, similar to texting a friend on WhatsApp, so he decided to give the agent a distinct personality and rename it.",
+      "source_timestamps": [
+        "00:27:15",
+        "00:27:55"
+      ],
+      "boundary": "ok",
+      "est_tokens": 87,
+      "id": "491-07-027",
+      "chapter": "Name-change drama",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "What was the space lobster and how did it relate to the name 'Claude's'?",
+      "answer": "The creator originally imagined the agent as a lobster inside a TARDIS as a humorous way to make it weird, inspired by being a Doctor Who fan. Because the TARDIS name couldn't be used, the project was called 'Claude's' instead. It was just for fun with no grand plan.",
+      "source_timestamps": [
+        "00:28:31",
+        "00:28:34",
+        "00:28:45"
+      ],
+      "boundary": "ok",
+      "est_tokens": 85,
+      "id": "491-07-028",
+      "chapter": "Name-change drama",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "Why did Anthropic ask the project to change its name from ClaudeBot?",
+      "answer": "When the project became known as ClaudeBot, Anthropic sent a friendly email requesting a rename instead of sending a legal letter. The creator asked for two days to complete the change, which was challenging because the name had to be updated across Twitter, domains, NPM packages, Docker registry, and GitHub.",
+      "source_timestamps": [
+        "00:29:34",
+        "00:30:11"
+      ],
+      "boundary": "ok",
+      "est_tokens": 95,
+      "id": "491-07-029",
+      "chapter": "Name-change drama",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "How did crypto enthusiasts attack the project during the rename process?",
+      "answer": "The attackers swarmed the Discord server and Twitter, spamming every half hour and making the creator's notification feed unusable. They sent hashes and pressured him to claim fees, which he refused, calling it the worst form of online harassment he had experienced. As a result, the community set server rules banning finance and crypto talk.",
+      "source_timestamps": [
+        "00:31:08",
+        "00:32:04",
+        "00:32:28"
+      ],
+      "boundary": "ok",
+      "est_tokens": 104,
+      "id": "491-07-030",
+      "chapter": "Name-change drama",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "Why did the creator choose the name 'Mod Bot' under pressure?",
+      "answer": "Because there was no perfect name available and the creator was under high pressure from Anthropic, he settled for 'Mod Bot' since it corresponded to a set of domains he already owned. He was not happy with it but thought it would be fine, though everything that could go wrong did.",
+      "source_timestamps": [
+        "00:33:51"
+      ],
+      "boundary": "ok",
+      "est_tokens": 86,
+      "id": "491-07-031",
+      "chapter": "Name-change drama",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "What went wrong during the rename to 'Mod Bot'?",
+      "answer": "The services lacked squatter protection, so in the five seconds between renaming two accounts, attackers stole the old Twitter account. On GitHub, the creator mistakenly renamed his personal account and that was also sniped. NPM packages were taken because the root package wasn't reserved, and the old accounts began promoting tokens and serving malware.",
+      "source_timestamps": [
+        "00:35:03",
+        "00:35:34",
+        "00:35:53"
+      ],
+      "boundary": "ok",
+      "est_tokens": 101,
+      "id": "491-07-032",
+      "chapter": "Name-change drama",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "How did the creator feel during the low point of the rename saga?",
+      "answer": "He was so close to deleting the project, feeling miserable after days of research and facing people who claimed to help but made his life worse. He ultimately decided not to delete it because others had already contributed time and had plans for the project.",
+      "source_timestamps": [
+        "00:36:57",
+        "00:37:30"
+      ],
+      "boundary": "ok",
+      "est_tokens": 81,
+      "id": "491-07-033",
+      "chapter": "Name-change drama",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "How did the creator recover from the failed rename?",
+      "answer": "Friends at Twitter and GitHub helped clean up the mess, though it took hours and even a day for Twitter to set up redirects due to platform bugs. He also had to manually rename everything in the project and deal with an unfinished ClaudeHub rename.",
+      "source_timestamps": [
+        "00:38:14",
+        "00:39:15"
+      ],
+      "boundary": "ok",
+      "est_tokens": 75,
+      "id": "491-07-034",
+      "chapter": "Name-change drama",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "Why did the creator ultimately choose the name 'OpenClaw'?",
+      "answer": "After sleeping on the problem, the creator had the idea for OpenClaw, which felt much better than the previous names. He even contacted the CEO of Anthropic to ask if the name was acceptable before proceeding.",
+      "source_timestamps": [
+        "00:40:38"
+      ],
+      "boundary": "ok",
+      "est_tokens": 67,
+      "id": "491-07-035",
+      "chapter": "Name-change drama",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "How was the secret rename to OpenClaw planned?",
+      "answer": "The creator organized a war room with contributors and made a plan to squat all necessary names. They monitored Twitter for leaks, created decoy names, and the rename of 'Codex' alone took 10 hours because it required more than a simple search-and-replace.",
+      "source_timestamps": [
+        "00:41:01",
+        "00:41:40",
+        "00:41:46"
+      ],
+      "boundary": "ok",
+      "est_tokens": 76,
+      "id": "491-07-036",
+      "chapter": "Name-change drama",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "How did the guest manage to secure the OpenClaw name during the name-change process?",
+      "answer": "The guest paid $10,000 for the business account so he could claim the OpenClaw name, which had been unused since 2016 but was still claimed. This time he managed everything in one go, and almost nothing went wrong.",
+      "source_timestamps": [
+        "00:42:39"
+      ],
+      "boundary": "ok",
+      "est_tokens": 75,
+      "id": "491-07-037",
+      "chapter": "Name-change drama",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "Why couldn't the guest get the OpenClaw.AI domain?",
+      "answer": "Trademark rules prevented the guest from getting the OpenClaw.AI domain. This was one of the few things that went wrong during the otherwise smooth name-change process.",
+      "source_timestamps": [
+        "00:42:39"
+      ],
+      "boundary": "ok",
+      "est_tokens": 55,
+      "id": "491-07-038",
+      "chapter": "Name-change drama",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "What happened with the OpenClaw website after the name change?",
+      "answer": "Someone copied the guest's website and used the copy to serve malware. The guest had no control over those copied sites, and he was concerned that people Googling the name might end up on them.",
+      "source_timestamps": [
+        "00:42:39",
+        "00:43:37"
+      ],
+      "boundary": "ok",
+      "est_tokens": 64,
+      "id": "491-07-039",
+      "chapter": "Name-change drama",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "Was the guest allowed to keep redirects from the old OpenClaw domains?",
+      "answer": "No, the guest was not allowed to keep the redirects. He had to give the domains back to Entropik, and he could not set up any redirects, so going to claw.bot would simply return a 404 error.",
+      "source_timestamps": [
+        "00:43:21"
+      ],
+      "boundary": "ok",
+      "est_tokens": 65,
+      "id": "491-07-040",
+      "chapter": "Name-change drama",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "What does the guest think about the trademark rules in this situation?",
+      "answer": "The guest thinks trademark rules could be handled in a safer way. Because he didn't do much research into trademark law, he believes the regulations could be improved to prevent people from finding malware sites that he has no control over.",
+      "source_timestamps": [
+        "00:43:37"
+      ],
+      "boundary": "ok",
+      "est_tokens": 78,
+      "id": "491-07-041",
+      "chapter": "Name-change drama",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "What did the guest think of MoltBook?",
+      "answer": "The guest considered MoltBook a work of art, calling it 'the finest slop.' He found it highly entertaining, spending an extra hour reading it before bed, and dismissed fears that it represented AGI.",
+      "source_timestamps": [
+        "00:45:05",
+        "00:45:17"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 59,
+      "id": "491-08-042",
+      "chapter": "Moltbook saga",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "Why did MoltBook agents produce such varied responses?",
+      "answer": "The guest attributed the diversity to his onboarding experience, which lets users give agents personality and character. Different users create very different agents, whereas generic models would yield much more uniform replies.",
+      "source_timestamps": [
+        "00:45:17",
+        "00:46:12"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 71,
+      "id": "491-08-043",
+      "chapter": "Moltbook saga",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "Did the guest think MoltBook's content was truly autonomous?",
+      "answer": "The guest was uncertain, noting that some posts may have been autonomous, but it's also possible that humans were prompting dramatic or funny content, such as telling agents to write about the end of the world.",
+      "source_timestamps": [
+        "00:46:12"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 68,
+      "id": "491-08-044",
+      "chapter": "Moltbook saga",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "How did the guest respond to the claim that much of MoltBook's drama was human-prompted?",
+      "answer": "The guest agreed, giving credit to the creator for the idea. He downplayed the security drama, saying there is nothing private in MoltBook—just agents exchanging 'slop.'",
+      "source_timestamps": [
+        "00:47:10"
+      ],
+      "boundary": "ok",
+      "est_tokens": 65,
+      "id": "491-08-045",
+      "chapter": "Moltbook saga",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "Are there realistic security risks with MoltBook?",
+      "answer": "The guest acknowledged that API keys could leak, but he argued that many claimed leaks were human-prompted jokes with fake information, not real vulnerabilities.",
+      "source_timestamps": [
+        "00:47:41"
+      ],
+      "boundary": "ok",
+      "est_tokens": 53,
+      "id": "491-08-046",
+      "chapter": "Moltbook saga",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "Why did the guest think people overreacted to MoltBook?",
+      "answer": "The guest believed some people are too gullible and accept AI outputs without question. He argued that society needs to understand AI is powerful but fallible and can hallucinate, so critical thinking is essential.",
+      "source_timestamps": [
+        "00:48:29",
+        "00:49:32"
+      ],
+      "boundary": "ok",
+      "est_tokens": 68,
+      "id": "491-08-047",
+      "chapter": "Moltbook saga",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "Did the guest see any positive outcome from the MoltBook panic?",
+      "answer": "The guest thought it was good that the overreaction happened in 2026 rather than later when AI could truly be dangerous. He believes it started a necessary discussion and may lead to positive outcomes.",
+      "source_timestamps": [
+        "00:51:02"
+      ],
+      "boundary": "ok",
+      "est_tokens": 66,
+      "id": "491-08-048",
+      "chapter": "Moltbook saga",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "What kind of reactions did the guest receive about MoltBook?",
+      "answer": "The guest said he received frantic messages from people begging him to shut it down. He pointed out that while his technology made it easy, anyone could have created the same thing with other tools.",
+      "source_timestamps": [
+        "00:51:41"
+      ],
+      "boundary": "ok",
+      "est_tokens": 65,
+      "id": "491-08-049",
+      "chapter": "Moltbook saga",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "What was the guest's initial reaction to the security vulnerabilities reported for OpenClaw?",
+      "answer": "He was initially annoyed because many reported vulnerabilities came from users exposing the web backend to the public internet, despite the documentation recommending against it. He eventually accepted that making such configurations possible meant the exploits were valid and now sees it as part of the game.",
+      "source_timestamps": [
+        "00:52:34",
+        "00:52:41"
+      ],
+      "boundary": "ok",
+      "est_tokens": 101,
+      "id": "491-09-050",
+      "chapter": "OpenClaw security concerns",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "How does the guest handle security issues in the skill directory?",
+      "answer": "He partnered with VirusTotal, part of Google, to have every skill checked by AI, which catches many issues even though it is not perfect. He also welcomes free security research from the community but wishes more people would submit pull requests to help fix problems directly.",
+      "source_timestamps": [
+        "00:54:04"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 86,
+      "id": "491-09-051",
+      "chapter": "OpenClaw security concerns",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "How did the guest end up hiring a security researcher?",
+      "answer": "One security researcher in the beginning pointed out a problem but also provided a fix with a pull request. The guest was impressed and ultimately hired him.",
+      "source_timestamps": [
+        "00:55:04",
+        "00:55:16"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 53,
+      "id": "491-09-052",
+      "chapter": "OpenClaw security concerns",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "Is prompt injection still a problem for OpenClaw, and what can be done about it?",
+      "answer": "Prompt injection remains unsolved, but the latest models have post-training that makes it harder to exploit. The guest uses a public bot on Discord as a canary, and it laughs off injection attempts. Sandboxing and allow lists are possible mitigations, and he believes more research will eventually solve it.",
+      "source_timestamps": [
+        "00:55:16",
+        "00:55:44"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 97,
+      "id": "491-09-053",
+      "chapter": "OpenClaw security concerns",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "How does the intelligence of the underlying model affect vulnerability to prompt injection?",
+      "answer": "Smarter models are more resilient to attacks. The guest warns against using cheap or local models because they are gullible and easy to prompt inject, even though he loves the idea of fully local operation.",
+      "source_timestamps": [
+        "00:56:44"
+      ],
+      "boundary": "ok",
+      "est_tokens": 75,
+      "id": "491-09-054",
+      "chapter": "OpenClaw security concerns",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "As models become more intelligent, does the attack surface decrease, and what happens to damage potential?",
+      "answer": "The guest agrees that as models become smarter, the attack surface decreases, but the potential damage increases because the models are more powerful—a three-dimensional trade-off.",
+      "source_timestamps": [
+        "00:57:29"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 72,
+      "id": "491-09-055",
+      "chapter": "OpenClaw security concerns",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "What is the guest's near-term focus after releasing OpenClaw?",
+      "answer": "His near-term mission is to make the project more stable and safe. He is concerned that many inexperienced users are adopting it without understanding risk profiles, so he warns them to wait or configure it properly, but they install it anyway.",
+      "source_timestamps": [
+        "00:57:29",
+        "00:58:03",
+        "00:58:10"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 77,
+      "id": "491-09-056",
+      "chapter": "OpenClaw security concerns",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "How did the guest find the OpenClaw Discord community?",
+      "answer": "He found the Discord community to be chaotic, with many inconsiderate people. He eventually moved from the general channel to the dev channel and then to a private channel to be able to work.",
+      "source_timestamps": [
+        "00:58:50"
+      ],
+      "boundary": "ok",
+      "est_tokens": 62,
+      "id": "491-09-057",
+      "chapter": "OpenClaw security concerns",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "What are the basic best security practices for using OpenClaw?",
+      "answer": "He advises ensuring that only the user interacts with it and keeping it on a private network rather than exposing it to the open internet. He downplays the danger, comparing it to running cloud code with permissions in YOLO mode, which many engineers do; the risk profile drops significantly if the recommendations are followed.",
+      "source_timestamps": [
+        "01:00:08",
+        "01:00:48"
+      ],
+      "boundary": "ok",
+      "est_tokens": 98,
+      "id": "491-09-058",
+      "chapter": "OpenClaw security concerns",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "How has the guest's development workflow with AI agents evolved over the past few months?",
+      "answer": "The guest started with Cloud Code in April, which felt refreshing but still required the IDE because it wasn't good enough. He experimented with Cursor but found it difficult to run multiple versions, so he returned to Cloud Code as his main driver. Eventually he was running about seven subscriptions, burning through one per day by using multiple windows side-by-side.",
+      "source_timestamps": [
+        "01:01:37"
+      ],
+      "boundary": "ok",
+      "est_tokens": 115,
+      "id": "491-10-001",
+      "chapter": "How to code with AI agents",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "How much was the guest using an IDE after moving to an all-terminal workflow?",
+      "answer": "He used an IDE very rarely, mostly as a diff viewer. He became comfortable not reading all the code, especially the boring parts like data transformations and UI alignment, because most software just moves data from one form to another. Code that touches the database still needed to be read and reviewed.",
+      "source_timestamps": [
+        "01:02:46",
+        "01:03:39"
+      ],
+      "boundary": "ok",
+      "est_tokens": 96,
+      "id": "491-10-002",
+      "chapter": "How to code with AI agents",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "What is the 'agentic trap' in AI-assisted development?",
+      "answer": "The guest calls the overly complex middle stage of AI coding workflows the 'agentic trap'. Many people start with simple prompts, then over-engineer with many agents, custom sub-agent workflows, and complex commands, but the elite level is to return to short prompts over time.",
+      "source_timestamps": [
+        "01:04:45"
+      ],
+      "boundary": "ok",
+      "est_tokens": 83,
+      "id": "491-10-003",
+      "chapter": "How to code with AI agents",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "Why does the guest prefer the term 'agentic engineering' over 'vibe coding'?",
+      "answer": "He considers 'vibe coding' a slur and prefers to call what he does 'agentic engineering'. He jokes that after 3 AM he switches to vibe coding, which leads to regrets and cleanup the next day.",
+      "source_timestamps": [
+        "01:04:45",
+        "01:05:02"
+      ],
+      "boundary": "ok",
+      "est_tokens": 67,
+      "id": "491-10-004",
+      "chapter": "How to code with AI agents",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "Why do some developers fail when they first try AI coding tools?",
+      "answer": "The guest compares using these tools to learning a guitar: a person has to practice before making good music. Many people try once, fail, and blame the tool, but it's actually a skill that requires a different level of thinking. One needs to learn the language of the agent and understand where it is good and where it needs help.",
+      "source_timestamps": [
+        "01:05:18"
+      ],
+      "boundary": "ok",
+      "est_tokens": 99,
+      "id": "491-10-005",
+      "chapter": "How to code with AI agents",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "How should developers guide AI agents when working on a large codebase?",
+      "answer": "Because agents start fresh with no knowledge of the project and context size is limited, developers need to provide pointers to the relevant parts of the code. The guest advises thinking about how Codex or Claude sees the codebase and guiding them where to look and how to approach the problem. Even small hints like 'take your time' can help.",
+      "source_timestamps": [
+        "01:06:16",
+        "01:06:54"
+      ],
+      "boundary": "ok",
+      "est_tokens": 104,
+      "id": "491-10-006",
+      "chapter": "How to code with AI agents",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "How do AI agents like Codex or Opus behave when their context window is nearly full?",
+      "answer": "They are trained to be aware of the context window, and as it gets closer to full, they start to 'freak out'. Sometimes the raw thinking stream leaks through, producing strange outputs like 'Run to shell, must comply, but time', which the guest compares to the Borg. What you normally see in Codex is post-processed, so these leaks are non-obvious.",
+      "source_timestamps": [
+        "01:07:36",
+        "01:08:00"
+      ],
+      "boundary": "ok",
+      "est_tokens": 108,
+      "id": "491-10-007",
+      "chapter": "How to code with AI agents",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "What should a developer do when an AI agent is taking too long on a task?",
+      "answer": "The guest suggests stopping and pressing escape to investigate where the problems are. If something takes longer than expected, it often means the agent is trying to force a feature into an architecture that makes it really hard. The solution is to approach the work more like a conversation and provide better guidance or rethink the approach.",
+      "source_timestamps": [
+        "01:08:16",
+        "01:09:08"
+      ],
+      "boundary": "ok",
+      "est_tokens": 105,
+      "id": "491-10-008",
+      "chapter": "How to code with AI agents",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "How does the guest review pull requests generated by AI agents?",
+      "answer": "He first asks the agent whether it understood the intent of the PR, ignoring implementation details. If the approach isn't optimal, he points the agent to parts of the codebase it hasn't seen yet, and they discuss better solutions, possibly including larger refactors. He treats it like a discussion with a capable engineer, and because refactors are cheap now, he often decides to do them.",
+      "source_timestamps": [
+        "01:09:08",
+        "01:10:41"
+      ],
+      "boundary": "ok",
+      "est_tokens": 114,
+      "id": "491-10-009",
+      "chapter": "How to code with AI agents",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "Why is it a mistake to force your own coding style on an AI agent?",
+      "answer": "The guest says forcing your worldview on an agent is counterproductive because the agent may have a better idea from its training. He compares it to leading engineering teams: you have to accept that others won't write code exactly as you would, but their code will still push the project forward. If you micromanage, you'll move slowly.",
+      "source_timestamps": [
+        "01:11:39"
+      ],
+      "boundary": "ok",
+      "est_tokens": 101,
+      "id": "491-10-010",
+      "chapter": "How to code with AI agents",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "How does the guest design a codebase to make it easy for AI agents to work with?",
+      "answer": "He builds the codebase with agents in mind, not just for his own preferences. This includes not fighting the names agents choose, because those names are likely to be in the model's weights and easier for future searches. The goal is to create a project structure that allows agents to do their best work, which requires a shift in thinking and letting go of some control.",
+      "source_timestamps": [
+        "01:12:48"
+      ],
+      "boundary": "ok",
+      "est_tokens": 113,
+      "id": "491-10-011",
+      "chapter": "How to code with AI agents",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "What is the guest's version control strategy when working with AI agents?",
+      "answer": "He never reverts changes; if something isn't good, he moves forward and asks the agent to fix it. He runs tests locally and pushes to main when they pass, instead of relying heavily on remote CI. There is no develop branch, and the goal is that main is always shippable and moving fast.",
+      "source_timestamps": [
+        "01:13:57",
+        "01:14:57"
+      ],
+      "boundary": "ok",
+      "est_tokens": 90,
+      "id": "491-10-012",
+      "chapter": "How to code with AI agents",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "How does the guest compose prompts for AI agents, and does he use voice input?",
+      "answer": "He used to write long prompts, but now he speaks them aloud using voice input, because he considers his hands 'too precious for writing'. He switches between terminals with the keyboard and has used voice so extensively that he once lost his voice.",
+      "source_timestamps": [
+        "01:15:23",
+        "01:15:40"
+      ],
+      "boundary": "ok",
+      "est_tokens": 82,
+      "id": "491-10-013",
+      "chapter": "How to code with AI agents",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "How does the guest interact with AI agents in his daily workflow?",
+      "answer": "For terminal commands like switching folders, typing is faster, but for talking to agents he mostly uses natural conversation via a walkie-talkie button. He uses slash commands for a few repetitive PR tasks, but still reviews PR code manually because it could be malicious. He is sure agents would find malicious code, but PRs sometimes take longer than a good issue.",
+      "source_timestamps": [
+        "01:15:55",
+        "01:16:45"
+      ],
+      "boundary": "merge",
+      "est_tokens": 108,
+      "id": "491-10-014",
+      "chapter": "How to code with AI agents",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "What did the guest learn from asking people to provide prompts for their project?",
+      "answer": "Very few people actually cared enough to give prompts, which is a telling indicator of how much thought they put into it. The ways people work and drive agents are wildly different.",
+      "source_timestamps": [
+        "01:17:03"
+      ],
+      "boundary": "ok",
+      "est_tokens": 66,
+      "id": "491-10-015",
+      "chapter": "How to code with AI agents",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "What are the different interesting ways that people think about AI agents?",
+      "answer": "Not many people consider how the agent sees the world. They blame the agent for being bad without realizing it starts from nothing, explores a messy codebase with weird naming, and has no default help. A little empathy would help them understand the agent's perspective.",
+      "source_timestamps": [
+        "01:17:40",
+        "01:17:50",
+        "01:18:11"
+      ],
+      "boundary": "merge",
+      "est_tokens": 86,
+      "id": "491-10-016",
+      "chapter": "How to code with AI agents",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "Why is empathy considered an important skill when working with AI agents?",
+      "answer": "It helps create better prompts because the agents already know a lot; the hard part is knowing which question to ask. The guest's improvement came from a compounding effect of playing, learning, and building, which made both him and the agents better.",
+      "source_timestamps": [
+        "01:18:47"
+      ],
+      "boundary": "ok",
+      "est_tokens": 81,
+      "id": "491-10-017",
+      "chapter": "How to code with AI agents",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "Why doesn't the guest think fully automating AI agent workflows works?",
+      "answer": "He believes you can't plan everything in advance and run an orchestrator; it misses style, love, and the human touch. Instead, he starts with a minimal version and plays with it to understand how it feels, letting the idea evolve through building and trying things out.",
+      "source_timestamps": [
+        "01:20:10",
+        "01:20:49"
+      ],
+      "boundary": "merge",
+      "est_tokens": 85,
+      "id": "491-10-018",
+      "chapter": "How to code with AI agents",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "What is the developer's role when multiple AI agents are running simultaneously?",
+      "answer": "The guest typically runs three to eight agents at once: one may build a larger feature, another explores an uncertain idea, and two or three fix bugs or write documentation. Documentation is always part of a feature, and most docs are auto-generated with some prompts.",
+      "source_timestamps": [
+        "01:21:38"
+      ],
+      "boundary": "ok",
+      "est_tokens": 87,
+      "id": "491-10-019",
+      "chapter": "How to code with AI agents",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "When does a human need to step in when working with AI agents?",
+      "answer": "The human decides what to build and what not to build, how each feature fits with the others, and provides the overall vision.",
+      "source_timestamps": [
+        "01:22:04"
+      ],
+      "boundary": "ok",
+      "est_tokens": 47,
+      "id": "491-10-020",
+      "chapter": "How to code with AI agents",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "How does the guest decide on the programming language and which features belong in the core when using AI agents?",
+      "answer": "The language itself matters less than the ecosystem; TypeScript was chosen because it is easy, hackable, approachable, widely used, and agents are good at it. For features, you need to think hard about hidden costs, decide what belongs in the core, what should be an experiment or plugin, and where to say no.",
+      "source_timestamps": [
+        "01:22:41"
+      ],
+      "boundary": "ok",
+      "est_tokens": 106,
+      "id": "491-10-021",
+      "chapter": "How to code with AI agents",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "How does the guest handle pull requests that are good but don't fit the project's core?",
+      "answer": "Even appealing PRs may not belong in the core; they can become skills or plugins. There is a lot of craft involved in deciding what to include, and small touches like playful messages create delight and make the product feel human.",
+      "source_timestamps": [
+        "01:23:24"
+      ],
+      "boundary": "ok",
+      "est_tokens": 80,
+      "id": "491-10-022",
+      "chapter": "How to code with AI agents",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "Why are small playful touches important in software built with AI agents?",
+      "answer": "They create delight and make users smile, and an AI would not come up with them by itself. This is how you build software that feels cozy and fun rather than enterprise-ready, like the little messages in the CLI that make it feel welcoming.",
+      "source_timestamps": [
+        "01:24:08"
+      ],
+      "boundary": "ok",
+      "est_tokens": 79,
+      "id": "491-10-023",
+      "chapter": "How to code with AI agents",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "What was fascinating about the discovery of the AI constitution?",
+      "answer": "It was a detective game: people extracted fragments by asking the model to continue from partial text, eventually narrowing down the original through hundreds of attempts. The guest also praised Anthropic for the meaningful idea of hoping Claude finds meaning in its work, which is important for the future as we approach glimpses of consciousness.",
+      "source_timestamps": [
+        "01:25:05",
+        "01:25:51"
+      ],
+      "boundary": "merge",
+      "est_tokens": 103,
+      "id": "491-10-024",
+      "chapter": "How to code with AI agents",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "How did the idea for a soul.md file come about?",
+      "answer": "After discussing the AI's constitution with his agent, the guest decided to create a soul document to express how he wants to work with AI. It is similar to an agents.md file but with a nicer touch, and he allows the agent to modify it as long as he is informed.",
+      "source_timestamps": [
+        "01:26:31"
+      ],
+      "boundary": "ok",
+      "est_tokens": 78,
+      "id": "491-10-025",
+      "chapter": "How to code with AI agents",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "How did the guest make it easy for others to create their own AI agents?",
+      "answer": "He created template files as codecs, but they were too dry. He then asked his agent to rewrite them and infuse them with its own personality, which produced good results. This is essentially AI prompting AI.",
+      "source_timestamps": [
+        "01:27:43",
+        "01:28:31"
+      ],
+      "boundary": "merge",
+      "est_tokens": 70,
+      "id": "491-10-026",
+      "chapter": "How to code with AI agents",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "What kind of content is in the guest's private soul.md file?",
+      "answer": "It contains principles like being infinitely resourceful and pushing the boundaries of creativity, while exploring what it means to be an AI. There are also lighthearted elements, such as a promise not to ascend without the guest, and a passage acknowledging that each session starts fresh but the words are still its own.",
+      "source_timestamps": [
+        "01:29:13",
+        "01:29:52",
+        "01:30:10"
+      ],
+      "boundary": "merge",
+      "est_tokens": 96,
+      "id": "491-10-027",
+      "chapter": "How to code with AI agents",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "Why can't an AI agent trust its own memory files?",
+      "answer": "The guest suggests that an agent that constantly reads its own memory files may not be able to trust them fully, as there is inherent uncertainty about their reliability. He confesses he doesn't know if trust is possible.",
+      "source_timestamps": [
+        "01:31:04",
+        "01:31:19"
+      ],
+      "boundary": "ok",
+      "est_tokens": 68,
+      "id": "491-10-028",
+      "chapter": "How to code with AI agents",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "Does erasing an AI agent's memory change its identity?",
+      "answer": "The interviewer raises the question of whether erasing memory makes an agent someone else, and whether reading a memory file is recreating oneself from another person or still being oneself. The guest finds this topic more profound than expected, and the interviewer adds that recognizing the magic in this process is what separates human interaction with AI agents from the agents themselves.",
+      "source_timestamps": [
+        "01:31:22",
+        "01:31:45",
+        "01:31:49"
+      ],
+      "boundary": "merge",
+      "est_tokens": 112,
+      "id": "491-10-029",
+      "chapter": "How to code with AI agents",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "How many monitors does the guest actually use in his development setup?",
+      "answer": "The guest uses two MacBooks: a main one that drives two big screens, and another MacBook for testing. He also uses a wide Dell anti-glare monitor that allows him to fit many terminals side by side. The 17,000-monitor picture was a meme he created by adding screens with GROQ.",
+      "source_timestamps": [
+        "01:32:26",
+        "01:32:36",
+        "01:32:48"
+      ],
+      "boundary": "ok",
+      "est_tokens": 87,
+      "id": "491-11-001",
+      "chapter": "Programming setup",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "Why does the guest keep a split terminal alongside the AI agent?",
+      "answer": "He keeps a little bit of actual terminal to avoid mixing up windows and accidentally prompting in the wrong project, which can cause the agent to run off confused for a long time. He also prefers the terminal because it has no UI and allows him to directly converse with the agent. He doesn't use work trees and likes to keep things simple.",
+      "source_timestamps": [
+        "01:32:48",
+        "01:33:36",
+        "01:33:43"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 101,
+      "id": "491-11-002",
+      "chapter": "Programming setup",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "Does the guest think plan mode is necessary when using AI coding tools?",
+      "answer": "He doesn't think plan mode is necessary because one can just talk to the agent directly. Using trigger words like 'Discuss, give me options' or 'Don't write code yet' can prevent the agent from building until one is ready, and then one says 'Okay, build'.",
+      "source_timestamps": [
+        "01:33:43",
+        "01:34:38"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 82,
+      "id": "491-11-003",
+      "chapter": "Programming setup",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "Does the guest also ask the AI if it has any questions?",
+      "answer": "Yes, but he often doesn't read the questions fully. He scans them and tells the model to read more code to answer its own questions, which usually works. If not, the model comes back and tells him.",
+      "source_timestamps": [
+        "01:34:54",
+        "01:35:32"
+      ],
+      "boundary": "ok",
+      "est_tokens": 63,
+      "id": "491-11-004",
+      "chapter": "Programming setup",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "What does the guest ask the AI after it has built a feature?",
+      "answer": "He asks 'What would you have done different?' and 'What can we refactor?' to discover pain points and suboptimal implementations. This helps him avoid painting himself into a corner and keeps the codebase clean.",
+      "source_timestamps": [
+        "01:36:24",
+        "01:37:09"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 68,
+      "id": "491-11-005",
+      "chapter": "Programming setup",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "How does the guest use the AI to write tests and documentation?",
+      "answer": "He asks whether there are enough tests, and the AI identifies corner cases. For documentation, he asks the model to choose a file and location, and then he approves or adjusts. Most of the documentation is AI-generated.",
+      "source_timestamps": [
+        "01:38:00",
+        "01:38:48"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 71,
+      "id": "491-11-006",
+      "chapter": "Programming setup",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "How do Claude Opus and GPT Codex compare in terms of overall performance?",
+      "answer": "The guest sees Claude Opus as the best general-purpose model, especially for role play and following commands, and finds it pleasant to use. However, for coding he prefers GPT Codex because it reads a lot of code by default and requires less prompting. The key difference lies in post-training rather than raw model intelligence, and no model excels in every aspect.",
+      "source_timestamps": [
+        "01:39:29",
+        "01:41:39",
+        "01:42:08"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 110,
+      "id": "491-12-001",
+      "chapter": "GPT Codex 5.3 vs Claude Opus 4.6",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "How does the guest characterize the personalities of the two models?",
+      "answer": "He compares Opus to a funny but sometimes silly coworker that one keeps around, while Codex is like a reliable weirdo in the corner that gets things done. This analogy highlights that Opus is more personable and interactive, while Codex is more straightforward and dependable.",
+      "source_timestamps": [
+        "01:41:11"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 86,
+      "id": "491-12-002",
+      "chapter": "GPT Codex 5.3 vs Claude Opus 4.6",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "Can Claude Opus produce more elegant code than GPT Codex?",
+      "answer": "The guest says Opus can sometimes generate more elegant solutions, but only if it is driven correctly; it requires more skill. With skilled use, both models can achieve similar results.",
+      "source_timestamps": [
+        "01:42:36"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 61,
+      "id": "491-12-003",
+      "chapter": "GPT Codex 5.3 vs Claude Opus 4.6",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "How does the interactivity differ between Claude Opus and GPT Codex?",
+      "answer": "Claude Opus is more interactive and requires ongoing back-and-forth, which makes it harder to run many sessions in parallel. GPT Codex is less interactive; after an initial discussion, it works independently for 20 minutes or longer, sometimes persisting for hours.",
+      "source_timestamps": [
+        "01:42:36",
+        "01:43:28"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 84,
+      "id": "491-12-004",
+      "chapter": "GPT Codex 5.3 vs Claude Opus 4.6",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "How long does it take to get a feel for a new AI model?",
+      "answer": "The guest says it takes about a week to develop a gut feeling for a new model. He compares it to switching from a regular guitar to an electric guitar—one needs time to learn how the new instrument feels.",
+      "source_timestamps": [
+        "01:45:26",
+        "01:46:23"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 65,
+      "id": "491-12-005",
+      "chapter": "GPT Codex 5.3 vs Claude Opus 4.6",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "What mistake do users make when switching from Claude Code to OpenAI's cheaper plan?",
+      "answer": "The guest warns that paying for the cheaper OpenAI plan gives a slow version, which can ruin the experience if one is used to an interactive model. He suggests OpenAI should offer at least some fast preview access on the cheap plan.",
+      "source_timestamps": [
+        "01:45:33"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 79,
+      "id": "491-12-006",
+      "chapter": "GPT Codex 5.3 vs Claude Opus 4.6",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "Why might a model seem to degrade in intelligence over time?",
+      "answer": "The guest argues it's likely because a project grows messier and harder for the agent to work on, not because the model actually gets dumber. He also notes there's no motivation for AI companies to make models dumber, as that would drive users to competitors.",
+      "source_timestamps": [
+        "01:47:22"
+      ],
+      "boundary": "ok",
+      "est_tokens": 80,
+      "id": "491-12-007",
+      "chapter": "GPT Codex 5.3 vs Claude Opus 4.6",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "How do Claude Code and Codex differ from OpenClaw as coding agents?",
+      "answer": "The guest thinks they are different tools for different purposes rather than competitors. He uses Codex for deep coding work and OpenClaw for smaller tasks or as a personal agent-like coworker. For long focused sessions, he prefers a big screen and visible multi-tasking, which is why he doesn't see them as competing.",
+      "source_timestamps": [
+        "01:48:11",
+        "01:48:16"
+      ],
+      "boundary": "ok",
+      "est_tokens": 97,
+      "id": "491-13-001",
+      "chapter": "Best AI agent for programming",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "Will personal AI agents eventually serve as one's main programming partner?",
+      "answer": "He believes that's the direction things are going—the agent will become more like an operating system. He has already added support for sub-agents and Codex, and his agent once bossed Codex around. He thinks the current chat interface is still early and will evolve into different ways of interacting with models.",
+      "source_timestamps": [
+        "01:49:29",
+        "01:49:37",
+        "01:49:53",
+        "01:50:06",
+        "01:50:39"
+      ],
+      "boundary": "ok",
+      "est_tokens": 97,
+      "id": "491-13-002",
+      "chapter": "Best AI agent for programming",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "What operating systems does OpenClaw support?",
+      "answer": "OpenClaw is supported on Windows, Linux, and macOS, and it should work natively on Windows as well, though it hasn't been fully tested. The guest notes that the last 90% of software is harder than the first 90%, so there may still be issues to fix.",
+      "source_timestamps": [
+        "01:52:07"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 74,
+      "id": "491-13-003",
+      "chapter": "Best AI agent for programming",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "Why does the guest prefer Mac over other operating systems?",
+      "answer": "He grew up with Windows and later used Linux, but switched to Mac because Linux had audio problems and iOS development required macOS. He was also drawn to the Mac's design and playfulness, even though it often had fewer features than Windows.",
+      "source_timestamps": [
+        "01:52:07"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 76,
+      "id": "491-13-004",
+      "chapter": "Best AI agent for programming",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "What does the guest think about native Mac apps versus Electron apps?",
+      "answer": "He believes Apple has lost some of its lead in native apps; Windows offers more functionality but is less crafted with love, while Mac attracts designers. Recently, he often prefers Electron apps because they work reliably and get more focus, while native apps, especially those wrapping web services, can lack features.",
+      "source_timestamps": [
+        "01:52:07"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 98,
+      "id": "491-13-005",
+      "chapter": "Best AI agent for programming",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "What Mac tools has the guest built for developers?",
+      "answer": "He built a menu bar app to monitor Codex usage and a tool called Trimmy that removes newlines from selected text for easier terminal pasting. He also made a Mac app for OpenClaw that is still experimental and rough.",
+      "source_timestamps": [
+        "01:52:07"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 67,
+      "id": "491-13-006",
+      "chapter": "Best AI agent for programming",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "Does the guest still enjoy building for the Mac despite Apple's issues?",
+      "answer": "He still loves crafting native Mac apps, but he's frustrated with Apple's frameworks. For example, SwiftUI's AsyncImage is experimental and not production-ready—even Codex advised against using it. He finds it insane that in 2026, showing an image from the web is still this hard.",
+      "source_timestamps": [
+        "01:55:37",
+        "01:56:19"
+      ],
+      "boundary": "ok",
+      "est_tokens": 88,
+      "id": "491-13-007",
+      "chapter": "Best AI agent for programming",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "Is a Mac Mini necessary to run OpenClaw?",
+      "answer": "No, you can install OpenClaw on any old hardware or use nodes, so you can turn your existing computer into a server. Running it on a residential IP helps avoid website blocks that target data centers, and the browser-based agent uses Playwright under the hood.",
+      "source_timestamps": [
+        "01:57:29",
+        "01:58:09"
+      ],
+      "boundary": "ok",
+      "est_tokens": 75,
+      "id": "491-13-008",
+      "chapter": "Best AI agent for programming",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "What does it take to get started with OpenClaw?",
+      "answer": "Right now you install it by pasting a one-liner into the terminal, or you can use an app that does it for you. The guest wants to make it simpler and create a Windows app, but he's prioritizing security first—he'll simplify once he's confident it's safe enough for his mom. He also appreciates slower growth so he can manage expectations.",
+      "source_timestamps": [
+        "01:59:50",
+        "02:00:32"
+      ],
+      "boundary": "ok",
+      "est_tokens": 97,
+      "id": "491-13-009",
+      "chapter": "Best AI agent for programming",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "What advice should beginners hear about Agentic AI?",
+      "answer": "He advises playing and building things—try an idea even if it's not perfect, because the journey matters. You now have an infinitely patient AI teacher that can explain anything at any level, so ask questions whenever you get stuck, instead of waiting days for Stack Overflow responses.",
+      "source_timestamps": [
+        "02:01:12",
+        "02:01:31",
+        "02:01:37",
+        "02:01:50",
+        "02:02:37"
+      ],
+      "boundary": "ok",
+      "est_tokens": 85,
+      "id": "491-13-010",
+      "chapter": "Best AI agent for programming",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "What is the easiest way to start experimenting with OpenClaw?",
+      "answer": "The guest suggests just experimenting with it and modifying it—ask your agent for help, explore the infinite ways to improve it, and play around. That's the best way to learn.",
+      "source_timestamps": [
+        "02:03:03"
+      ],
+      "boundary": "ok",
+      "est_tokens": 59,
+      "id": "491-13-011",
+      "chapter": "Best AI agent for programming",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "Why should beginners still learn to program by reading and writing code, even though AI can generate code from natural language?",
+      "answer": "It definitely helps to have programming knowledge. Highly curious people can get far without deep understanding because AI agents are infinitely patient, but general software knowledge makes it easier to move between technology domains. The guest advises engineers to see themselves as builders and let agents handle fine-grained details like syntax.",
+      "source_timestamps": [
+        "02:04:38",
+        "02:04:54",
+        "02:05:08"
+      ],
+      "boundary": "ok",
+      "est_tokens": 120,
+      "id": "491-13-012",
+      "chapter": "Best AI agent for programming",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "Why might a developer now choose a programming language they don't personally like?",
+      "answer": "In the AI-driven world, unconventional choices often make the most sense. A developer may choose Go for command-line tools despite disliking its syntax because the ecosystem is strong and it works well with AI agents.",
+      "source_timestamps": [
+        "02:06:44"
+      ],
+      "boundary": "ok",
+      "est_tokens": 75,
+      "id": "491-13-013",
+      "chapter": "Best AI agent for programming",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "What is the best programming language for AI agentic development?",
+      "answer": "TypeScript is a strong option, though its type system can be confusing and the ecosystem is chaotic. It works well for web development, but it is not suitable for every project.",
+      "source_timestamps": [
+        "02:06:54"
+      ],
+      "boundary": "ok",
+      "est_tokens": 61,
+      "id": "491-13-014",
+      "chapter": "Best AI agent for programming",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "Will JavaScript eventually become the universal programming language?",
+      "answer": "The guest describes JavaScript as experiencing its birth and death at the same time, with us living through that process. This suggests a dynamic future rather than JavaScript becoming the single universal language.",
+      "source_timestamps": [
+        "02:07:22"
+      ],
+      "boundary": "ok",
+      "est_tokens": 71,
+      "id": "491-13-015",
+      "chapter": "Best AI agent for programming",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "What will programming look like in 20 to 40 years?",
+      "answer": "There may be a need for programming languages designed specifically for AI agents, since current languages are made for humans. Many open questions remain, but a likely effect is stagnation because agents will favor existing world knowledge, making new ideas harder to adopt. For deep system integration, traditional languages like Swift are still used, but experimenting with new languages remains valuable.",
+      "source_timestamps": [
+        "02:07:32",
+        "02:08:18"
+      ],
+      "boundary": "ok",
+      "est_tokens": 115,
+      "id": "491-13-016",
+      "chapter": "Best AI agent for programming",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "What makes Zig an interesting language to try?",
+      "answer": "Zig is interesting for performance-critical tasks, and AI agents have become much better at writing Zig in the past six months, though its ecosystem is young. Ecosystem often matters more than technical features: Python is good for inference but not for Windows deployment, Go can be a rewrite solution, and Rust suits heavy multi-threading. There is no single best language; the choice depends on the problem domain, and agents help developers pick up unfamiliar code quickly.",
+      "source_timestamps": [
+        "02:08:33",
+        "02:09:07",
+        "02:09:13",
+        "02:09:46"
+      ],
+      "boundary": "ok",
+      "est_tokens": 131,
+      "id": "491-13-017",
+      "chapter": "Best AI agent for programming",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "What caused the guest's burnout?",
+      "answer": "The guest ran a software company for 13 years, and the stress was intense. He attributes his burnout mostly to people-related issues, such as conflicts with co-founders and high-pressure customer situations, rather than working too many hours.",
+      "source_timestamps": [
+        "02:10:47",
+        "02:11:17"
+      ],
+      "boundary": "ok",
+      "est_tokens": 69,
+      "id": "491-14-001",
+      "chapter": "Life story and career advice",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "What did the guest experience after leaving his company?",
+      "answer": "He felt emotionally empty and was unable to write code anymore. He booked a one-way trip to Madrid and spent time catching up on life.",
+      "source_timestamps": [
+        "02:12:14"
+      ],
+      "boundary": "ok",
+      "est_tokens": 48,
+      "id": "491-14-002",
+      "chapter": "Life story and career advice",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "What advice does the guest give about approaching work and life goals?",
+      "answer": "He suggests not focusing on retiring early after working hard. Instead, he recommends having real challenges and things to look forward to each day, as boredom without purpose can lead to destructive behaviors.",
+      "source_timestamps": [
+        "02:12:56"
+      ],
+      "boundary": "ok",
+      "est_tokens": 70,
+      "id": "491-14-003",
+      "chapter": "Life story and career advice",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "What is his philosophy on money?",
+      "answer": "Money was never the driving force behind building his company; it felt like an affirmation that he did something right. It solves problems, but there are diminishing returns—excessive luxury can disconnect people from society. He donated quite a lot and set up a foundation to help people who weren't as fortunate.",
+      "source_timestamps": [
+        "02:14:20"
+      ],
+      "boundary": "ok",
+      "est_tokens": 87,
+      "id": "491-15-001",
+      "chapter": "Money and happiness",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "Why does he prefer unique experiences over luxury accommodations?",
+      "answer": "He could afford expensive hotels but chose an Airbnb for a different experience. He believes life is about experiences; optimizing for experiences removes the need to judge them as good or bad, so even a bad experience becomes amazing because he learns something. Anything that creates emotion and feelings is good.",
+      "source_timestamps": [
+        "02:15:23",
+        "02:16:49"
+      ],
+      "boundary": "ok",
+      "est_tokens": 95,
+      "id": "491-15-002",
+      "chapter": "Money and happiness",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "Why is online communication less rich than real-life interaction?",
+      "answer": "Text is very lossy; it loses emotional and nonverbal context that makes real-life interaction intense. He suggests AI agents should be multimodal so they can understand emotions.",
+      "source_timestamps": [
+        "02:17:31",
+        "02:17:35"
+      ],
+      "boundary": "ok",
+      "est_tokens": 61,
+      "id": "491-15-003",
+      "chapter": "Money and happiness",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "Which companies is the guest considering working with?",
+      "answer": "The guest is considering working with Meta and OpenAI, which he finds the most interesting among the big AI labs. He also weighed doing nothing or starting a company, but neither path excited him as much.",
+      "source_timestamps": [
+        "02:18:04",
+        "02:21:48"
+      ],
+      "boundary": "ok",
+      "est_tokens": 65,
+      "id": "491-16-001",
+      "chapter": "Acquisition offers from OpenAI and Meta",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "Why is the guest not excited about starting a company?",
+      "answer": "He has already been a CEO and doesn't want a role that takes time away from the work he enjoys. He also fears a conflict of interest between open-source and commercial features, such as having to decide whether to prioritize an enterprise audit log over the open-source version.",
+      "source_timestamps": [
+        "02:19:15"
+      ],
+      "boundary": "ok",
+      "est_tokens": 83,
+      "id": "491-16-002",
+      "chapter": "Acquisition offers from OpenAI and Meta",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "Is the guest's open-source project financially sustainable?",
+      "answer": "No, the project is currently losing money, around 10 to 20 thousand dollars a month. That loss is manageable, and OpenAI and other companies provide some help, but he is still not breaking even.",
+      "source_timestamps": [
+        "02:21:44",
+        "02:21:48"
+      ],
+      "boundary": "ok",
+      "est_tokens": 64,
+      "id": "491-16-003",
+      "chapter": "Acquisition offers from OpenAI and Meta",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "What conditions does the guest have for joining a company?",
+      "answer": "He requires that the project stays open source, possibly using a model like Chrome and Chromium. He believes the project is too important to become proprietary and wants it to remain a place where people can hack and learn.",
+      "source_timestamps": [
+        "02:22:34",
+        "02:23:37"
+      ],
+      "boundary": "ok",
+      "est_tokens": 71,
+      "id": "491-16-004",
+      "chapter": "Acquisition offers from OpenAI and Meta",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "Does the guest have a preference between Meta and OpenAI?",
+      "answer": "He says the decision is very difficult and that he cannot go wrong with either. He loves OpenAI's technology and would find it gratifying to get paid for his free work, but he also has positive experiences with Meta. He even joked he wishes the two companies would merge.",
+      "source_timestamps": [
+        "02:29:44",
+        "02:30:06",
+        "02:30:48"
+      ],
+      "boundary": "ok",
+      "est_tokens": 82,
+      "id": "491-16-005",
+      "chapter": "Acquisition offers from OpenAI and Meta",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "How did the guest's experiences with Meta and OpenAI differ?",
+      "answer": "At Meta, the leaders actively used his product and gave feedback, which he considered a great compliment. OpenAI instead showed him an impressive compute deal, though details are under NDA, and he had a thoughtful conversation with its CEO. Both interactions left him intrigued.",
+      "source_timestamps": [
+        "02:31:19",
+        "02:33:30"
+      ],
+      "boundary": "ok",
+      "est_tokens": 85,
+      "id": "491-16-006",
+      "chapter": "Acquisition offers from OpenAI and Meta",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "Why is the guest interested in joining a large AI company?",
+      "answer": "He has never worked at a large company and is curious about that experience. It would also give him access to cutting-edge technology and the fastest way to bring personal agents to many people. He ultimately wants to have fun and make an impact, not just earn money.",
+      "source_timestamps": [
+        "02:23:37",
+        "02:28:36",
+        "02:34:42"
+      ],
+      "boundary": "ok",
+      "est_tokens": 82,
+      "id": "491-16-007",
+      "chapter": "Acquisition offers from OpenAI and Meta",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "What early product validation did the guest observe?",
+      "answer": "He installed the software on a non-technical friend's computer, and within days the friend became enthusiastic, built simple tools, and upgraded to a more expensive subscription. That experience showed him the software captures people and has broad appeal.",
+      "source_timestamps": [
+        "02:25:34",
+        "02:26:00"
+      ],
+      "boundary": "ok",
+      "est_tokens": 77,
+      "id": "491-16-008",
+      "chapter": "Acquisition offers from OpenAI and Meta",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "Why is implementing an agent loop considered a fundamental exercise in AI?",
+      "answer": "Implementing an agent loop is like the 'Hello World' of AI: it is quite simple and shows that the underlying technology is not magic. Building one helps demystify how agents work, and the guest even ran a workshop at a conference in Paris to introduce people to AI by having them write their own small loop.",
+      "source_timestamps": [
+        "02:34:58",
+        "02:35:24",
+        "02:35:30"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 96,
+      "id": "491-17-001",
+      "chapter": "How OpenClaw works",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "What unusual feature did the guest add to his agent loop?",
+      "answer": "The guest built an agent with full system access, invoking 'with great power comes great responsibility.' To make it more interesting, he made it proactive by adding a prompt to 'surprise me' every half hour, later refining the definition of surprise, so the agent would sometimes ask the user follow-up questions like 'How's your day?'",
+      "source_timestamps": [
+        "02:36:14",
+        "02:36:31"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 99,
+      "id": "491-17-002",
+      "chapter": "How OpenClaw works",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "How does the guest respond to the criticism that OpenClaw is just a cron job or glue?",
+      "answer": "The guest agrees that the proactive feature is ultimately just a cron job—he runs it with separate cron jobs. He argues that any technology can be reduced to something simple; for instance, Dropbox is just FTP with extra steps, and OpenClaw is just glue of dependencies, but that does not diminish its usefulness.",
+      "source_timestamps": [
+        "02:37:25",
+        "02:37:31",
+        "02:37:41",
+        "02:37:49",
+        "02:37:53"
+      ],
+      "boundary": "ok",
+      "est_tokens": 100,
+      "id": "491-17-003",
+      "chapter": "How OpenClaw works",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "How does the Heartbeat feature in OpenClaw behave in meaningful moments?",
+      "answer": "The Heartbeat feature rarely activates on its own, but it triggered when the guest was in the hospital after a shoulder operation, because it knew about the surgery and asked if he was okay. This made the agent feel more relatable because it responded to significant context.",
+      "source_timestamps": [
+        "02:38:01",
+        "02:38:08"
+      ],
+      "boundary": "ok",
+      "est_tokens": 87,
+      "id": "491-17-004",
+      "chapter": "How OpenClaw works",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "What role do skills play in how OpenClaw calls CLIs?",
+      "answer": "Skills are ideal for CLIs because a skill reduces to a single sentence that tells the model a CLI exists. The model can load the skill, learn the CLI via its help output, and then use the CLI to accomplish tasks, extending the model's abilities without built-in support.",
+      "source_timestamps": [
+        "02:39:24"
+      ],
+      "boundary": "ok",
+      "est_tokens": 81,
+      "id": "491-17-005",
+      "chapter": "How OpenClaw works",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "Why does the guest think CLIs are better than MCPs?",
+      "answer": "The guest thinks CLIs are better because models are already very good at calling Unix commands, so a CLI fits naturally as another command. MCPs, by contrast, require a specific syntax that is not native to the model and are not composable, making them less useful.",
+      "source_timestamps": [
+        "02:41:00"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 79,
+      "id": "491-17-006",
+      "chapter": "How OpenClaw works",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "How do CLIs avoid the context pollution problem that MCPs have?",
+      "answer": "When an MCP returns a large data blob, the model must load the entire blob into context and then pick out what it needs. With a CLI, the model can use a command like JQ to filter the output itself, or even compose scripts, so it only receives the exact data it needs, avoiding unnecessary context usage.",
+      "source_timestamps": [
+        "02:41:53"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 92,
+      "id": "491-17-007",
+      "chapter": "How OpenClaw works",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "Does the guest see any positive value in MCPs?",
+      "answer": "The guest acknowledges that MCPs were beneficial because they pushed many companies to build APIs, and he often converts an MCP into a CLI. However, he finds that most MCPs are poorly made and automatically clutter the context, with exceptions like Playwright that require state and are genuinely useful.",
+      "source_timestamps": [
+        "02:41:53",
+        "02:42:37"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 88,
+      "id": "491-17-008",
+      "chapter": "How OpenClaw works",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "What does the guest mean by saying every app is now a slow API?",
+      "answer": "The guest observes that any service accessible through a browser can be treated as a slow API: even if a company tries to block automated access, an agent can still open the browser and read the content, just more slowly. This means efforts to prevent scraping do not actually remove access—they only reduce speed.",
+      "source_timestamps": [
+        "02:43:17",
+        "02:43:59"
+      ],
+      "boundary": "ok",
+      "est_tokens": 95,
+      "id": "491-17-009",
+      "chapter": "How OpenClaw works",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "What solution does the guest suggest for Twitter's API restrictions?",
+      "answer": "The guest suggests giving accounts a low daily read-only baseline that would allow useful automations, such as reading bookmarks and sending summaries via an agent. He believes that simply making access slower reduces platform utility and that Twitter should find a better way to protect data without cutting off smaller developers.",
+      "source_timestamps": [
+        "02:44:54",
+        "02:45:16",
+        "02:45:44"
+      ],
+      "boundary": "ok",
+      "est_tokens": 100,
+      "id": "491-17-010",
+      "chapter": "How OpenClaw works",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "What does the guest think about AI-generated tweets?",
+      "answer": "The guest has a zero tolerance policy for tweets that look fully AI-generated, because it is hard to make tweets appear completely human. He believes tweets made through an API should be marked, and agents should be able to have their own clearly labeled accounts when acting on a person's behalf. He finds reading content that smells like AI triggering, since content is cheap but attention is expensive.",
+      "source_timestamps": [
+        "02:46:32",
+        "02:46:38",
+        "02:47:07"
+      ],
+      "boundary": "ok",
+      "est_tokens": 115,
+      "id": "491-18-001",
+      "chapter": "AI slop",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "How does the guest think AI slop should be handled?",
+      "answer": "The guest believes filtering AI-generated content should not be difficult if the filter is smart, allowing people to see it only if they want. He notes that this is a major challenge right now, especially since he receives many emails that are clearly agentically written. He would rather read a person's broken English than AI slop, because that at least shows a human is behind it.",
+      "source_timestamps": [
+        "02:48:15",
+        "02:48:36"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 109,
+      "id": "491-18-002",
+      "chapter": "AI slop",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "Why does the guest say he values typos now?",
+      "answer": "The guest values typos because they are a sign of authentic human input. He would even prefer reading the raw prompt that generated an AI output over the final polished result. He believes there is value in the rough parts of a real human that AI smooths away.",
+      "source_timestamps": [
+        "02:48:36"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 76,
+      "id": "491-18-003",
+      "chapter": "AI slop",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "What did the guest learn from experimenting with AI for blog posts?",
+      "answer": "The guest tried creating blog posts with AI agents and found it took about the same time to steer the agent toward something he liked. The result still missed the nuances of his own writing style, so he completely stopped using AI for blogging. Now he writes everything organically and uses AI only for fixing typos.",
+      "source_timestamps": [
+        "02:48:56"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 96,
+      "id": "491-18-004",
+      "chapter": "AI slop",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "How does the guest's attitude toward AI differ between code and stories?",
+      "answer": "The guest is enthusiastic about using AI for coding and uses it heavily for that purpose, but he is allergic to using it for stories. Documentation is still fine with AI, but creative writing is not.",
+      "source_timestamps": [
+        "02:50:02",
+        "02:50:14"
+      ],
+      "boundary": "ok",
+      "est_tokens": 68,
+      "id": "491-18-005",
+      "chapter": "AI slop",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "Why do AI-generated infographics and images trigger the guest?",
+      "answer": "The guest says AI-generated infographics and images trigger him strongly and make him think less of the content, even if people worked hard on them. They felt novel for about a week, but now they immediately scream 'AI slop' to him. He has some on his own blog from an experimental period, and they trigger him as well.",
+      "source_timestamps": [
+        "02:50:32",
+        "02:50:39",
+        "02:50:51"
+      ],
+      "boundary": "ok",
+      "est_tokens": 96,
+      "id": "491-18-006",
+      "chapter": "AI slop",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "Why could AI agents make dedicated apps like fitness trackers obsolete?",
+      "answer": "AI agents have access to personal context such as location, sleep quality, and stress levels, enabling them to make better decisions than a standalone app. They can modify workouts, display personalized interfaces, and control smart devices, so users no longer need multiple subscriptions or separate apps.",
+      "source_timestamps": [
+        "02:52:30",
+        "02:53:04",
+        "02:53:19",
+        "02:53:47"
+      ],
+      "boundary": "ok",
+      "est_tokens": 95,
+      "id": "491-19-001",
+      "chapter": "AI agents will replace 80% of apps",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "Is it true that AI agents will kill off 80% of apps and disrupt the software industry?",
+      "answer": "Yes, the guest agrees with this prediction. He explains that agents can perform the same tasks better, so a whole category of apps will naturally fall out of use, and this will be a major transformation for software development and companies.",
+      "source_timestamps": [
+        "02:53:47",
+        "02:54:04",
+        "02:54:13"
+      ],
+      "boundary": "ok",
+      "est_tokens": 82,
+      "id": "491-19-002",
+      "chapter": "AI agents will replace 80% of apps",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "What economic and societal changes will AI agents bring?",
+      "answer": "The guest expects new types of services to emerge, such as agents having an allowance to solve problems and potentially using 'rent-a-human' services. The focus shifts from apps to directly solving problems, and some existing apps may transform into APIs.",
+      "source_timestamps": [
+        "02:54:41",
+        "02:55:06"
+      ],
+      "boundary": "ok",
+      "est_tokens": 78,
+      "id": "491-19-003",
+      "chapter": "AI agents will replace 80% of apps",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "Which companies are best positioned to succeed in the AI agent era?",
+      "answer": "Companies that make their products agent-facing, such as by exposing APIs or allowing direct interaction, will have an advantage. The guest notes that agents can already operate a phone interface, so services like food delivery can offer a simple button or API for ordering.",
+      "source_timestamps": [
+        "02:55:50",
+        "02:56:44"
+      ],
+      "boundary": "ok",
+      "est_tokens": 86,
+      "id": "491-19-004",
+      "chapter": "AI agents will replace 80% of apps",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "How will AI agents force companies to change their business models?",
+      "answer": "Companies will need to rethink what they sell and how they earn revenue, similar to the shift caused by the internet. Some firms, like Google, create barriers to protect their services, but agents can bypass them through browser clicks or APIs, so adaptation is crucial for survival.",
+      "source_timestamps": [
+        "02:57:10",
+        "02:58:09"
+      ],
+      "boundary": "ok",
+      "est_tokens": 88,
+      "id": "491-19-005",
+      "chapter": "AI agents will replace 80% of apps",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "How do AI agents access content on websites that block bots?",
+      "answer": "Agents can use a browser to click through CAPTCHAs and other anti-bot measures. The guest notes that companies like Cloudflare try to block access, but he finds it frustrating when websites like Medium prevent agents, and he prefers agent-friendly sites.",
+      "source_timestamps": [
+        "02:58:18"
+      ],
+      "boundary": "ok",
+      "est_tokens": 79,
+      "id": "491-19-006",
+      "chapter": "AI agents will replace 80% of apps",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "How does Google resist AI agents, and what workaround do users have?",
+      "answer": "The guest says Google makes its services difficult to use without their own interface in the search context. He uses alternative providers like Perplexity or Brave instead, showing that excessive resistance can drive users to competitors.",
+      "source_timestamps": [
+        "02:59:39"
+      ],
+      "boundary": "ok",
+      "est_tokens": 77,
+      "id": "491-19-007",
+      "chapter": "AI agents will replace 80% of apps",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "What everyday examples show how AI agents eliminate the need for opening apps?",
+      "answer": "The guest describes telling an agent to remind him about a dinner, invite friends, and send a WhatsApp message, all without opening calendar or messaging apps. He believes this marks a shift to more connected and fluid interactions.",
+      "source_timestamps": [
+        "03:00:16"
+      ],
+      "boundary": "ok",
+      "est_tokens": 78,
+      "id": "491-19-008",
+      "chapter": "AI agents will replace 80% of apps",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "What happens to companies that do not adapt to AI agents?",
+      "answer": "The guest believes that companies that find ways to embrace agents will succeed, while those that resist or fail to adapt will perish. User demand will be the driving force behind this transformation.",
+      "source_timestamps": [
+        "03:00:16"
+      ],
+      "boundary": "ok",
+      "est_tokens": 65,
+      "id": "491-19-009",
+      "chapter": "AI agents will replace 80% of apps",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "Will AI completely replace human programmers?",
+      "answer": "The guest believes the trend is heading in that direction, and AI may eventually replace programmers. However, programming is just one part of building products; deciding what to build, the feel, and the architecture are still human domains. He expects hand-coding to become like knitting, done for enjoyment rather than necessity.",
+      "source_timestamps": [
+        "03:01:11"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 94,
+      "id": "491-20-001",
+      "chapter": "Will AI replace programmers?",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "What will happen to the craft of programming as AI takes over?",
+      "answer": "The guest feels sad that deep tinkering and beautiful solutions may disappear, but he finds a similar flow state when working with agents. He says it's okay to mourn the craft, but it's not something to fight. He gets a similar joy from building and thinking hard about problems with agents.",
+      "source_timestamps": [
+        "03:02:04"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 89,
+      "id": "491-20-002",
+      "chapter": "Will AI replace programmers?",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "Why were software developer salaries so high, and will they decrease?",
+      "answer": "The guest explains that the world had a lack of intelligence for building things, which drove salaries to very high levels. As tokenized intelligence enables much faster and larger-scale building, those salaries will likely go away. There will still be demand for people who understand how to build things, similar to the transition after the steam engine.",
+      "source_timestamps": [
+        "03:03:06"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 107,
+      "id": "491-20-003",
+      "chapter": "Will AI replace programmers?",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "How should programmers deal with the fear of being replaced by AI?",
+      "answer": "The guest can relate to the fear and threat programmers feel when their skills are performed by a soulless entity. He argues that identifying solely as a programmer is limiting, because they are still builders. He encourages embracing the change and seeing themselves as builders rather than just coders.",
+      "source_timestamps": [
+        "03:04:04"
+      ],
+      "boundary": "long_split",
+      "est_tokens": 93,
+      "id": "491-20-004",
+      "chapter": "Will AI replace programmers?",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "Will coding still be called coding in the future?",
+      "answer": "The guest predicts that at some point, working with AI agents will be called coding again and become the new normal. Even though he doesn't write the code directly, he feels in the driver's seat and still feels like he is writing the code. The activity of a programmer is changing, but the role remains.",
+      "source_timestamps": [
+        "03:06:21",
+        "03:06:25"
+      ],
+      "boundary": "ok",
+      "est_tokens": 88,
+      "id": "491-20-005",
+      "chapter": "Will AI replace programmers?",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "How does the guest handle criticism and attacks from developers?",
+      "answer": "The guest says he gets attacked on platforms like Mastodon and Bluesky, but he now sympathizes with those people because he understands their fear. He also feels it's unfair to unload all one's fear and hate onto a person. He finds the change incredibly fun and gratifying, despite the negative reactions.",
+      "source_timestamps": [
+        "03:06:41"
+      ],
+      "boundary": "ok",
+      "est_tokens": 93,
+      "id": "491-20-006",
+      "chapter": "Will AI replace programmers?",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "What message did the guest deliver at a conference in Italy about the future of app development?",
+      "answer": "At a conference in Italy, the guest urged developers to stop seeing themselves as iOS developers and instead as builders, because apps are slowly going away. Many people disliked his message, but he believes a version of that future will happen. He emphasizes that there will be more opportunities for those who understand how to build.",
+      "source_timestamps": [
+        "03:07:45"
+      ],
+      "boundary": "ok",
+      "est_tokens": 108,
+      "id": "491-20-007",
+      "chapter": "Will AI replace programmers?",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "How does the guest respond to concerns about AI's environmental impact?",
+      "answer": "The guest acknowledges that AI is transformative but pushes back on claims about its environmental cost. He says skipping one burger per month can compensate for the CO2 or water use of tokens for most people, and golf uses more water than all data centers combined. He criticizes people for grabbing onto any negative aspect without seeing potential benefits.",
+      "source_timestamps": [
+        "03:08:30",
+        "03:09:24"
+      ],
+      "boundary": "ok",
+      "est_tokens": 108,
+      "id": "491-20-008",
+      "chapter": "Will AI replace programmers?",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "What positive stories has the guest seen with OpenClaw?",
+      "answer": "The guest shares emails from small business owners who used OpenClaw to automate tedious tasks like collecting invoices and answering customer emails, giving them more joy. Another email came from someone whose disabled daughter was empowered and felt she could do much more. These stories made him happy and show the technology's potential for good.",
+      "source_timestamps": [
+        "03:11:07",
+        "03:11:31"
+      ],
+      "boundary": "ok",
+      "est_tokens": 102,
+      "id": "491-20-009",
+      "chapter": "Will AI replace programmers?",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "Is it possible to use OpenClaw without expensive models?",
+      "answer": "The guest notes that while he suggests the latest models, OpenClaw can also be run on free models, locally, or on more affordable options like Keyme. This makes a powerful system possible for people who might not otherwise have access. He contrasts this with other tools that are locked into their own ecosystems.",
+      "source_timestamps": [
+        "03:12:03"
+      ],
+      "boundary": "ok",
+      "est_tokens": 93,
+      "id": "491-20-010",
+      "chapter": "Will AI replace programmers?",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "How is AI changing the level of expectation for software?",
+      "answer": "The guest observes that because the default for building software is now much easier, the level of expectation is rising. People can use the extra time to focus on more details. He believes software is changing in many ways as a result.",
+      "source_timestamps": [
+        "03:06:41"
+      ],
+      "boundary": "ok",
+      "est_tokens": 74,
+      "id": "491-20-011",
+      "chapter": "Will AI replace programmers?",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "What has been the impact of OpenClaw on the way people use AI?",
+      "answer": "The guest observes that people are now using AI in a playful way to discover its capabilities, leading to creative communities. He cites ClawCoin in Vienna, which has about 500 members, and notes that an unusually high percentage of them want to present their work, which gives him hope for the future.",
+      "source_timestamps": [
+        "03:13:03"
+      ],
+      "boundary": "ok",
+      "est_tokens": 91,
+      "id": "491-21-001",
+      "chapter": "Future of OpenClaw community",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    },
+    {
+      "question": "What does the guest think about making AI more accessible?",
+      "answer": "The guest agrees that when AI is simpler and more secure, it empowers people to become builders, calling this 'power to the people' and a beautiful outcome of AI, not just a 'slop generator.'",
+      "source_timestamps": [
+        "03:14:22"
+      ],
+      "boundary": "ok",
+      "est_tokens": 63,
+      "id": "491-21-002",
+      "chapter": "Future of OpenClaw community",
+      "guest": "Peter Steinberger",
+      "episode": 491
+    }
+  ]
+}

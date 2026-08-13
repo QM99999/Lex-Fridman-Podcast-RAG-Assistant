@@ -1,0 +1,44 @@
+﻿services:
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.14.3
+    container_name: es-lex
+    environment:
+      discovery.type: single-node
+      xpack.security.enabled: "false"
+      ES_JAVA_OPTS: -Xms1g -Xmx1g
+    ports:
+      - "9200:9200"
+    volumes:
+      - es_data:/usr/share/elasticsearch/data
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fs http://localhost:9200/_cluster/health || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 15
+      start_period: 20s
+    restart: unless-stopped
+
+  app:
+    build: .
+    ports:
+      - "8501:8501"
+    env_file:
+      - .env
+    environment:
+      # Inside the compose network the app talks to ES by service name.
+      # On the host, scripts keep using ES_URL=http://localhost:9200.
+      ES_URL: http://elasticsearch:9200
+      PREFECT_SERVER_ANALYTICS_ENABLED: "false"  # silence telemetry sqlite-lock noise
+    volumes:
+      - ./data:/app/data
+      - ./.env:/app/.env
+      - ./app.py:/app/app.py
+      - ./pages:/app/pages
+      - ./src:/app/src
+    depends_on:
+      elasticsearch:
+        condition: service_healthy
+    restart: unless-stopped
+
+volumes:
+  es_data:
