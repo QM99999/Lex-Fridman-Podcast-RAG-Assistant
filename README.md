@@ -373,7 +373,7 @@ best answer model: gpt-5.4-mini (81.9% good)
    ```bash
    pip install -r requirements.txt
    ```
-2. **(Optional) Copy the env file** (needed for CLI runs; fill in your OpenAI API key)
+2. **Copy the env file**
    ```bash
    cp .env.example .env
    ```

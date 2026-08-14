@@ -377,7 +377,7 @@ best answer model: gpt-5.4-mini (81.9% good)
    ```bash
    pip install -r requirements.txt
    ```
-2. **（可选）复制环境文件**（命令行运行时需要，填入你的 OpenAI API key）
+2. **复制环境文件**
    ```bash
    cp .env.example .env
    ```
